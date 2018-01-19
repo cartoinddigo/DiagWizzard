@@ -27,9 +27,13 @@ with open(fsource) as csvfile:
     
 uri = QgsDataSourceURI()
 uri.setDatabase('C:\CartoInddigo\DiagBuilder\db\diagBuilder2.sqlite')
-uri.setDataSource("", "FD","","CODGEO in ("+bliste+")")
+uri.setDataSource("", "FD","","CODGEO in ("+bliste+") AND DCLT NOT IN ("+bliste+")")
 FluxSorants = iface.addVectorLayer(uri.uri(), "FluxSortants", "spatialite")
-uri.setDataSource("", "FD","","DCLT in ("+bliste+")")
+uri.setDataSource("", "FD","","DCLT in ("+bliste+") AND CODGEO NOT IN ("+bliste+")")
 FluxEntrants = iface.addVectorLayer(uri.uri(), "FluxEntrants", "spatialite")
+uri.setDataSource("", "FD","","DCLT in ("+bliste+") AND CODGEO IN ("+bliste+")")
+FluxInternes = iface.addVectorLayer(uri.uri(), "FluxInternes", "spatialite")
+
+print(FluxInternes)
 uri.setDataSource("", "communes-pt2","geom")
 compt = iface.addVectorLayer(uri.uri(), "compt", "spatialite")
