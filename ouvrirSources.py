@@ -15,6 +15,7 @@ from PyQt4.QtGui import QFileDialog
 import processing
 from pyspatialite import dbapi2 as db
 
+from shutil import copyfile
 import os
 import csv
 
@@ -37,6 +38,8 @@ def EspaceTravail(self):
         os.mkdir(pathuser+'/export')
     if not os.path.exists(pathuser+'/projects'):
         os.mkdir(pathuser+'/projects')
+    if not os.path.isfile(pathuser+'/projects/basemap.qgs'):
+        copyfile('C:/CartoInddigo/DiagWizzard/qgs/basemap.qgs', pathuser+'/projects/basemap.qgs')
     if not os.path.exists(pathuser+'/tableaux'):
         os.mkdir(pathuser+'/tableaux')
     if not os.path.exists(pathuser+'/recu'):
