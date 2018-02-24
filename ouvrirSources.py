@@ -28,7 +28,7 @@ def EspaceTravail(self):
     pathuser = str(QFileDialog.getExistingDirectory(self, "Select Directory"))
     print(pathuser)
 
-    print("Test et creation de l'environnement de travail")
+    print("Test et creation de l'environnement de travail...")
 
     if not os.path.exists(pathuser+'/data'):
         os.mkdir(pathuser+'/data')
@@ -57,6 +57,7 @@ def EspaceTravail(self):
     if not os.path.exists(pathuser+'/recu'):
         os.mkdir(pathuser+'/recu')
     return pathuser
+    print("...effectue.")
 
 def ChargeSource(pathuser):
     """Charge la liste des communes cibles"""
@@ -79,7 +80,7 @@ def ListeSource(fsource):
         sliste = str(liste)
         sliste = sliste.replace(" ","").replace("[","").replace("]","")
         bliste = sliste.replace("_","")
-        print(sliste)
+#        print(sliste)
     return (sliste)
 
 def ListeBPE(fsource):
@@ -94,8 +95,9 @@ def ListeBPE(fsource):
         liste = [i[0] for i in table]
         bliste = str(liste)
         bliste = bliste.replace(" ","").replace("[","").replace("]","").replace("_","")
-        print(bliste)
+#        print(bliste)
     return (bliste)
+    
 
 def ExtractComPt(sliste):
     """Extrait les centres communaux depuis la base Spatialite"""
@@ -104,6 +106,7 @@ def ExtractComPt(sliste):
     uri.setDatabase('C:\CartoInddigo\DiagBuilder\db\diagBuilder2.sqlite')
     uri.setDataSource("", "communes-pt2","geom", "_INSEE in ("+sliste+")") #filtrer sur un champs, ajouter ,"CHAMP=VALEUR"
     sp_com_pt = iface.addVectorLayer(uri.uri(), "com_pt", "spatialite")
+    print("...effectue.")
     if not sp_com_pt:
         print "spatialite communes-pt2 failed to load!"
     compt = QgsVectorFileWriter.writeAsVectorFormat(sp_com_pt, pathuser+'/vector/'+"com_pt.shp", "CP2154", None, "ESRI Shapefile")
@@ -119,6 +122,7 @@ def ExtractComPoly(sliste):
     uri.setDatabase('C:\CartoInddigo\DiagBuilder\db\diagBuilder2.sqlite')
     uri.setDataSource("", "communes-poly2","geom", "_INSEE in ("+sliste+")") #filtrer sur un champs, ajouter ,"CHAMP=VALEUR"
     sp_com_poly = iface.addVectorLayer(uri.uri(), "com_poly", "spatialite")
+    print("...effectue.")
     if not sp_com_poly:
         print "spatialite communes-poly2 failed to load!"
     compoly = QgsVectorFileWriter.writeAsVectorFormat(sp_com_poly, pathuser+'/vector/'+"com_poly.shp", "CP2154", None, "ESRI Shapefile")
@@ -127,13 +131,15 @@ def ExtractComPoly(sliste):
     if not com_poly:
         print "Selection de limites communales impossible à charger !"
     #Algoritme Dissolve pour créer la ZOI
-    print("Dissole : Creation de la ZOI...")
+    print("Dissolve : Creation de la ZOI...")
     dissolve93=processing.runalg('qgis:dissolve', pathuser+'/vector/'+"com_poly.shp",True,None,pathuser+'/vector/'+"zone93")
     zone93 = iface.addVectorLayer(pathuser+'/vector/'+"zone93.shp", "zone 93", "ogr")
     #Algoritme Reprojecte pour créer la ZOI en WGS 84
-    print("Rreproject : Reprojection de la ZOI vers WGS84...")
+    print("...effectue.")
+    print("Reproject : Reprojection de la ZOI vers WGS84...")
     reproject84 = processing.runalg('qgis:reprojectlayer', pathuser+'/vector/'+"zone93.shp",'EPSG:4326',pathuser+'/vector/'+"zone84")
     zone84 = iface.addVectorLayer(pathuser+'/vector/'+"zone84.shp", "zone 84", "ogr")
+    print("...effectue.")
 
 def ExtractComIris(sliste):
     """Extrait le decoupage iris depuis la base Spatialite"""
@@ -147,6 +153,7 @@ def ExtractComIris(sliste):
     comiris = QgsVectorFileWriter.writeAsVectorFormat(sp_iris3, pathuser+'/vector/'+"com_iris.shp", "CP2154", None, "ESRI Shapefile")
     QgsMapLayerRegistry.instance().removeMapLayers( [sp_iris3.id()] )
     com_iris = iface.addVectorLayer(pathuser+'/vector/'+"com_iris.shp", "com_iris", "ogr")
+    print("...effectue.")
     if not com_iris:
         print "Selection d'iris impossible à charger !"
     return(com_iris)
@@ -171,12 +178,14 @@ def RGP(iliste):
     uri.setDatabase('C:\CartoInddigo\DiagBuilder\db\diagBuilder2.sqlite')
     uri.setDataSource("", "RGP","","IRIS in ("+iliste+")") #TODO !!attention au codes iris sans les 0 dans la table RGP !!
     sRGP = iface.addVectorLayer(uri.uri(), "sRGP", "spatialite")
+    print("...effectue.")
     print("Export CSV des donnees du RGP...")
     fRGP = QgsVectorFileWriter.writeAsVectorFormat(sRGP, pathuser+'/tableaux/'+"DonneeRGP.csv", "CP1250", None, "CSV")
     res = processing.runalg('qgis:joinattributestable', pathuser+'/vector/'+"com_iris.shp",pathuser+'/tableaux/'+"DonneeRGP.csv",'dcomiris','IRIS',pathuser+'/vector/'+"DonneeRGP.shp")
     layer = QgsVectorLayer(res['OUTPUT_LAYER'], "Donnees RGP", "ogr")
     QgsMapLayerRegistry.instance().addMapLayer(layer)
     QgsMapLayerRegistry.instance().removeMapLayers( [sRGP.id()] )
+    print("...effectue.")
     
 def BPE(bliste):
     """Extrait les données RGP"""
@@ -190,6 +199,7 @@ def BPE(bliste):
     vlayer = iface.addVectorLayer(BPEGeom, "DonneesBPE", "delimitedtext")
     uri.setDataSource("", "VariablesBPE","")
     m = iface.addVectorLayer(uri.uri(), "m", "spatialite")
+    print("...effectue.")
     print("BPE - Decodage des modalites...")
     shpField='typequ'
     csvField='cEquip'
@@ -199,10 +209,13 @@ def BPE(bliste):
     joinObject.targetFieldName = shpField
     joinObject.memoryCache = True
     vlayer.addJoin(joinObject)
+    print("...effectue.")
     print("Export CSV des donnees de la BPE...")
     writer = QgsVectorFileWriter.writeAsVectorFormat(vlayer, pathuser+'/vector/'+"DonneesBPE_data.shp", "utf-8", None, "ESRI Shapefile")
     DonneesBPR_data = iface.addVectorLayer(pathuser+'/vector/'+"DonneesBPE_data.shp", "DonneesBPR_dat", "ogr")
-    print("Export des données achevée")
+    print("...effectue.")
+    print("Export des donnees acheve")
+    print("Veuillez maintenant creer le fichier centres.shp")
     
     
 
