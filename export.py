@@ -13,8 +13,8 @@ project = QFileDialog.getOpenFileName(None, "Selectionner le fichier source", pa
 canvas = QgsMapCanvas(None)
 # Load project
 bridge = QgsLayerTreeMapCanvasBridge(QgsProject.instance().layerTreeRoot(), canvas)
-QgsProject.instance().read(QFileInfo(projet))
-base = QFileInfo(projet)
+QgsProject.instance().read(QFileInfo(project))
+base = QFileInfo(project)
 nom = base.baseName()
 print (nom)
 # Load the composer
