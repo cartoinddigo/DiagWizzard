@@ -15,9 +15,9 @@ from PyQt4.QtGui import QFileDialog
 import processing
 from pyspatialite import dbapi2 as db
 
-from shutil import copyfile
 import os
 import csv
+from shutil import copyfile
 
 pathuser = ""
 fsource = ""
@@ -40,6 +40,18 @@ def EspaceTravail(self):
         os.mkdir(pathuser+'/projects')
     if not os.path.isfile(pathuser+'/projects/basemap.qgs'):
         copyfile('C:/CartoInddigo/DiagWizzard/qgs/basemap.qgs', pathuser+'/projects/basemap.qgs')
+    if not os.path.isfile(pathuser+'/projects/BPE_Commerces.qgs'):
+        copyfile('C:/CartoInddigo/DiagWizzard/qgs/BPE_Commerces.qgs', pathuser+'/projects/BPE_Commerces.qgs')
+    if not os.path.isfile(pathuser+'/projects/BPE_Enseignement.qgs'):
+        copyfile('C:/CartoInddigo/DiagWizzard/qgs/BPE_Enseignement.qgs', pathuser+'/projects/BPE_Enseignement.qgs')
+    if not os.path.isfile(pathuser+'/projects/BPE_Sante.qgs'):
+        copyfile('C:/CartoInddigo/DiagWizzard/qgs/BPE_Sante.qgs', pathuser+'/projects/BPE_Sante.qgs')
+    if not os.path.isfile(pathuser+'/projects/BPE_Services.qgs'):
+        copyfile('C:/CartoInddigo/DiagWizzard/qgs/BPE_Services.qgs', pathuser+'/projects/BPE_Services.qgs')
+    if not os.path.isfile(pathuser+'/projects/BPE_SportLoisirs.qgs'):
+        copyfile('C:/CartoInddigo/DiagWizzard/qgs/BPE_SportLoisirs.qgs', pathuser+'/projects/BPE_SportLoisirs.qgs')
+    if not os.path.isfile(pathuser+'/projects/BPE_Tourisme.qgs'):
+        copyfile('C:/CartoInddigo/DiagWizzard/qgs/BPE_Tourisme.qgs', pathuser+'/projects/BPE_Tourisme.qgs')
     if not os.path.exists(pathuser+'/tableaux'):
         os.mkdir(pathuser+'/tableaux')
     if not os.path.exists(pathuser+'/recu'):
@@ -190,6 +202,7 @@ def BPE(bliste):
     print("Export CSV des donnees de la BPE...")
     writer = QgsVectorFileWriter.writeAsVectorFormat(vlayer, pathuser+'/vector/'+"DonneesBPE_data.shp", "utf-8", None, "ESRI Shapefile")
     DonneesBPR_data = iface.addVectorLayer(pathuser+'/vector/'+"DonneesBPE_data.shp", "DonneesBPR_dat", "ogr")
+    print("Export des données achevée")
     
     
 
@@ -215,15 +228,3 @@ if sliste == "":
     iliste = ListeIris("com_iris")
     RGP(iliste)
     BPE(bliste)
-    
-
-
-
-
-
-
-
-
-
-
-
