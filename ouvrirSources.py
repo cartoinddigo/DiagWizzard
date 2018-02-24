@@ -38,26 +38,20 @@ def EspaceTravail(self):
         os.mkdir(pathuser+'/export')
     if not os.path.exists(pathuser+'/projects'):
         os.mkdir(pathuser+'/projects')
-    if not os.path.isfile(pathuser+'/projects/basemap.qgs'):
-        copyfile('C:/CartoInddigo/DiagWizzard/qgs/basemap.qgs', pathuser+'/projects/basemap.qgs')
-    if not os.path.isfile(pathuser+'/projects/BPE_Commerces.qgs'):
-        copyfile('C:/CartoInddigo/DiagWizzard/qgs/BPE_Commerces.qgs', pathuser+'/projects/BPE_Commerces.qgs')
-    if not os.path.isfile(pathuser+'/projects/BPE_Enseignement.qgs'):
-        copyfile('C:/CartoInddigo/DiagWizzard/qgs/BPE_Enseignement.qgs', pathuser+'/projects/BPE_Enseignement.qgs')
-    if not os.path.isfile(pathuser+'/projects/BPE_Sante.qgs'):
-        copyfile('C:/CartoInddigo/DiagWizzard/qgs/BPE_Sante.qgs', pathuser+'/projects/BPE_Sante.qgs')
-    if not os.path.isfile(pathuser+'/projects/BPE_Services.qgs'):
-        copyfile('C:/CartoInddigo/DiagWizzard/qgs/BPE_Services.qgs', pathuser+'/projects/BPE_Services.qgs')
-    if not os.path.isfile(pathuser+'/projects/BPE_SportLoisirs.qgs'):
-        copyfile('C:/CartoInddigo/DiagWizzard/qgs/BPE_SportLoisirs.qgs', pathuser+'/projects/BPE_SportLoisirs.qgs')
-    if not os.path.isfile(pathuser+'/projects/BPE_Tourisme.qgs'):
-        copyfile('C:/CartoInddigo/DiagWizzard/qgs/BPE_Tourisme.qgs', pathuser+'/projects/BPE_Tourisme.qgs')
     if not os.path.exists(pathuser+'/tableaux'):
         os.mkdir(pathuser+'/tableaux')
     if not os.path.exists(pathuser+'/recu'):
         os.mkdir(pathuser+'/recu')
-    return pathuser
+    listeqgs = os.listdir('C:/CartoInddigo/DiagWizzard/qgs/')
+    print(listeqgs)
+    for j in listeqgs:
+        if not os.path.isfile (pathuser+'/projects/' + j):
+            copyfile('C:/CartoInddigo/DiagWizzard/qgs/' + j, pathuser+'/projects/' + j)
     print("...effectue.")
+    return pathuser
+    
+    
+
 
 def ChargeSource(pathuser):
     """Charge la liste des communes cibles"""
@@ -215,7 +209,7 @@ def BPE(bliste):
     DonneesBPR_data = iface.addVectorLayer(pathuser+'/vector/'+"DonneesBPE_data.shp", "DonneesBPR_dat", "ogr")
     print("...effectue.")
     print("Export des donnees acheve")
-    print("Veuillez maintenant creer le fichier centres.shp")
+    print("Veuillez maintenant creer le fichier centres.shp et exportet le réseau routier OSM... (OSM_streets.shp)")
     
     
 
