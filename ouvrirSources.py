@@ -180,6 +180,11 @@ def RGP(iliste):
     QgsMapLayerRegistry.instance().addMapLayer(layer)
     QgsMapLayerRegistry.instance().removeMapLayers( [sRGP.id()] )
     print("...effectue.")
+    print("Extraction des centres des iris...")
+    centroids = processing.runalg('qgis:convertgeometrytype', layer, 0, pathuser+'/vector/'+"iris_data_pt.shp")
+    layer = iface.addVectorLayer(pathuser+'/vector/'+"iris_data_pt.shp", "iris_data_pt", "ogr")
+    print("...effectue.")
+
     
 def BPE(bliste):
     """Extrait les données RGP"""
@@ -206,7 +211,7 @@ def BPE(bliste):
     print("...effectue.")
     print("Export CSV des donnees de la BPE...")
     writer = QgsVectorFileWriter.writeAsVectorFormat(vlayer, pathuser+'/vector/'+"DonneesBPE_data.shp", "utf-8", None, "ESRI Shapefile")
-    DonneesBPR_data = iface.addVectorLayer(pathuser+'/vector/'+"DonneesBPE_data.shp", "DonneesBPR_dat", "ogr")
+    DonneesBPE_data = iface.addVectorLayer(pathuser+'/vector/'+"DonneesBPE_data.shp", "DonneesBPE_data", "ogr")
     print("...effectue.")
     print("Export des donnees acheve")
     print("Veuillez maintenant creer le fichier centres.shp et exportet le réseau routier OSM... (OSM_streets.shp)")
