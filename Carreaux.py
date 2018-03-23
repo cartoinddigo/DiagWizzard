@@ -5,13 +5,15 @@ from qgis.PyQt.QtGui import *
 from qgis.PyQt.QtWidgets import *
 from PyQt4.QtGui import QFileDialog
 from pyspatialite import dbapi2 as db
+import processing
 
 
 import os
 import csv
-
+filter = "shp(*.shp)"
 pathuser = str(QFileDialog.getExistingDirectory(None, "Select Directory"))
-car2 = iface.addVectorLayer(pathuser+'/vector/'+"carreaux.shp", "car2_93", "ogr")
+csource = QFileDialog.getOpenFileName(None, "Selectionner le fichier source", pathuser, filter)
+car2 = iface.addVectorLayer(csource, "carreaux", "ogr")
 layer=qgis.utils.iface.activeLayer()
 iter = layer.getFeatures()
 table = []
@@ -33,6 +35,11 @@ joinObject.joinFieldName = csvField
 joinObject.targetFieldName = shpField
 joinObject.memoryCache = True
 car2.addJoin(joinObject)
+QgsVectorFileWriter.writeAsVectorFormat(car2, pathuser+'/vector/'+"carreaux_data.shp", "CP2154", None, "ESRI Shapefile")
+centroids = processing.runalg('qgis:convertgeometrytype', car2, 0, pathuser+'/vector/'+"carreaux_data_pt.shp")
+iface.addVectorLayer(pathuser+'/vector/'+"carreaux_data_pt.shp", "carreaux_data_pt", "ogr")
+
+
 
 
     
