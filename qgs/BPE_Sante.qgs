@@ -20,31 +20,37 @@
     <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Unchecked" id="Centres20180215231002390" source="../vector/Centres.shp" name="Centres">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="0" providerKey="ogr" checked="Qt::Checked" id="OSM_street20180215230818187" source="../vector/OSM_streets.shp" name="OSM_street">
+    <layer-tree-layer expanded="0" providerKey="ogr" checked="Qt::Unchecked" id="OSM_street20180215230818187" source="../vector/OSM_streets.shp" name="OSM_street">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="com_poly20171221112250562" source="../vector/com_poly.shp" name="com_poly">
+    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Unchecked" id="com_poly20171221112250562" source="../vector/com_poly.shp" name="com_poly">
       <customproperties/>
     </layer-tree-layer>
     <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="zone9320171221112229437" source="../vector/zone93.shp" name="zone93">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" providerKey="delimitedtext" checked="Qt::Checked" id="gares_cypres20171212094027421" source="file:///C:/CartoInddigo/DiagBuilder/db/gares-cypres.csv?encoding=System&amp;type=csv&amp;delimiter=;&amp;quote=&amp;escape=&amp;xyDms=yes&amp;wktField=geom&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no" name="gares-cypres">
+    <layer-tree-layer expanded="1" providerKey="delimitedtext" checked="Qt::Unchecked" id="gares_cypres20171212094027421" source="file:///c:/CartoInddigo/DiagBuilder/db/gares-cypres.csv?encoding=System&amp;type=csv&amp;delimiter=;&amp;quote=&amp;escape=&amp;xyDms=yes&amp;wktField=geom&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no" name="gares-cypres">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="urbain20171124230705656" source="C:/CartoInddigo/Mes Données SIG/vecteurs/CLC/urbain.TAB" name="urbain">
+    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Unchecked" id="urbain20171124230705656" source="c:/CartoInddigo/Mes Données SIG/vecteurs/CLC/urbain.TAB" name="urbain">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="ZONE_OCCUPATION_SOL_copier20171124224507718" source="C:/CartoInddigo/Mes Données SIG/vecteurs/R120_1-1_SHP_LAMB93_FR-ED121/OCCUPATION_SOL/ZONE_OCCUPATION_SOL.SHP|layerid=0|subset=&quot;NATURE&quot; = 'Eau'" name="ZONE_OCCUPATION_SOL copier">
+    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Unchecked" id="ZONE_OCCUPATION_SOL_copier20171124224507718" source="c:/CartoInddigo/Mes Données SIG/vecteurs/R120_1-1_SHP_LAMB93_FR-ED121/OCCUPATION_SOL/ZONE_OCCUPATION_SOL.SHP|layerid=0|subset=&quot;NATURE&quot; = 'Eau'" name="ZONE_OCCUPATION_SOL copier">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="ZONE_OCCUPATION_SOL_copier_copier20180215231410500" source="C:/CartoInddigo/Mes Données SIG/vecteurs/R120_1-1_SHP_LAMB93_FR-ED121/OCCUPATION_SOL/ZONE_OCCUPATION_SOL.SHP|layerid=0|subset=&quot;NATURE&quot; = 'Forêt'" name="ZONE_OCCUPATION_SOL copier copier">
+    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Unchecked" id="ZONE_OCCUPATION_SOL20180309095055163" source="c:/CartoInddigo/Mes Données SIG/vecteurs/R120_1-1_SHP_LAMB93_FR-ED121/OCCUPATION_SOL/ZONE_OCCUPATION_SOL.SHP" name="ZONE_OCCUPATION_SOL">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="TRONCON_HYDROGRAPHIQUE20171124224124250" source="C:/CartoInddigo/Mes Données SIG/vecteurs/R120_1-1_SHP_LAMB93_FR-ED121/HYDROGRAPHIE/TRONCON_HYDROGRAPHIQUE.SHP" name="TRONCON_HYDROGRAPHIQUE">
+    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Unchecked" id="ZONE_OCCUPATION_SOL_copier_copier20180215231410500" source="c:/CartoInddigo/Mes Données SIG/vecteurs/R120_1-1_SHP_LAMB93_FR-ED121/OCCUPATION_SOL/ZONE_OCCUPATION_SOL.SHP" name="ZONE_OCCUPATION_SOL copier copier">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Unchecked" id="departements_20140306_5m20171125005933609" source="C:/CartoInddigo/Mes Données SIG/vecteurs/departements-20140306-5m.shp" name="departements-20140306-5m">
+    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Unchecked" id="TRONCON_HYDROGRAPHIQUE20171124224124250" source="c:/CartoInddigo/Mes Données SIG/vecteurs/R120_1-1_SHP_LAMB93_FR-ED121/HYDROGRAPHIE/TRONCON_HYDROGRAPHIQUE.SHP" name="TRONCON_HYDROGRAPHIQUE">
+      <customproperties/>
+    </layer-tree-layer>
+    <layer-tree-layer expanded="1" providerKey="gdal" checked="Qt::Checked" id="OpenStreetMap20180328145728289" source="&lt;GDAL_WMS>&#xa;  &lt;Service name=&quot;TMS&quot;>&#xa;    &lt;ServerUrl>http://tile.openstreetmap.org/${z}/${x}/${y}.png&lt;/ServerUrl>&#xa;  &lt;/Service>&#xa;  &lt;DataWindow>&#xa;    &lt;UpperLeftX>-20037508.34&lt;/UpperLeftX>&#xa;    &lt;UpperLeftY>20037508.34&lt;/UpperLeftY>&#xa;    &lt;LowerRightX>20037508.34&lt;/LowerRightX>&#xa;    &lt;LowerRightY>-20037508.34&lt;/LowerRightY>&#xa;    &lt;TileLevel>19&lt;/TileLevel>&#xa;    &lt;TileCountX>1&lt;/TileCountX>&#xa;    &lt;TileCountY>1&lt;/TileCountY>&#xa;    &lt;YOrigin>top&lt;/YOrigin>&#xa;  &lt;/DataWindow>&#xa;  &lt;Projection>EPSG:3857&lt;/Projection>&#xa;  &lt;BlockSizeX>256&lt;/BlockSizeX>&#xa;  &lt;BlockSizeY>256&lt;/BlockSizeY>&#xa;  &lt;BandsCount>3&lt;/BandsCount>&#xa;  &lt;Cache />&#xa;&lt;/GDAL_WMS>&#xa;" name="OpenStreetMap">
+      <customproperties/>
+    </layer-tree-layer>
+    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Unchecked" id="departements_20140306_5m20171125005933609" source="c:/CartoInddigo/Mes Données SIG/vecteurs/departements-20140306-5m.shp" name="departements-20140306-5m">
       <customproperties/>
     </layer-tree-layer>
   </layer-tree-group>
@@ -52,37 +58,41 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>-42227.17688648134935647</xmin>
-      <ymin>6115342.16171643696725368</ymin>
-      <xmax>1268914.81178471772000194</xmax>
-      <ymax>7118692.96265869960188866</ymax>
+      <xmin>34782.02549704993725754</xmin>
+      <ymin>5390940.09000575169920921</ymin>
+      <xmax>95553.40030845193541609</xmax>
+      <ymax>5448504.06657024472951889</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
     <destinationsrs>
       <spatialrefsys>
-        <proj4>+proj=lcc +lat_1=49 +lat_2=44 +lat_0=46.5 +lon_0=3 +x_0=700000 +y_0=6600000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
-        <srsid>145</srsid>
-        <srid>2154</srid>
-        <authid>EPSG:2154</authid>
-        <description>RGF93 / Lambert-93</description>
-        <projectionacronym>lcc</projectionacronym>
-        <ellipsoidacronym>GRS80</ellipsoidacronym>
+        <proj4>+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs</proj4>
+        <srsid>3857</srsid>
+        <srid>3857</srid>
+        <authid>EPSG:3857</authid>
+        <description>WGS 84 / Pseudo Mercator</description>
+        <projectionacronym>merc</projectionacronym>
+        <ellipsoidacronym>WGS84</ellipsoidacronym>
         <geographicflag>false</geographicflag>
       </spatialrefsys>
     </destinationsrs>
     <rendermaptile>0</rendermaptile>
     <layer_coordinate_transform_info>
-      <layer_coordinate_transform destAuthId="EPSG:2154" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="Equipements_Scolaires_copier20180215234641312"/>
-      <layer_coordinate_transform destAuthId="EPSG:2154" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="OSM_street20180215230818187"/>
-      <layer_coordinate_transform destAuthId="EPSG:2154" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="zone9320171221112229437"/>
-      <layer_coordinate_transform destAuthId="EPSG:2154" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="com_poly20171221112250562"/>
-      <layer_coordinate_transform destAuthId="EPSG:2154" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="TRONCON_HYDROGRAPHIQUE20171124224124250"/>
-      <layer_coordinate_transform destAuthId="EPSG:2154" srcAuthId="USER:100000" srcDatumTransform="-1" destDatumTransform="-1" layerid="urbain20171124230705656"/>
-      <layer_coordinate_transform destAuthId="EPSG:2154" srcAuthId="EPSG:102110" srcDatumTransform="-1" destDatumTransform="-1" layerid="ZONE_OCCUPATION_SOL_copier_copier20180215231410500"/>
-      <layer_coordinate_transform destAuthId="EPSG:2154" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ZONE_OCCUPATION_SOL_copier20171124224507718"/>
-      <layer_coordinate_transform destAuthId="EPSG:2154" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="gares_cypres20171212094027421"/>
-      <layer_coordinate_transform destAuthId="EPSG:2154" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="Equipements_Scolaires_copier20180215233213062"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ZONE_OCCUPATION_SOL20180309095055163"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="OSM_street20180215230818187"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="OSM_Humanitarian_Data_Model20180309094341026"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="Centres20180215231002390"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="zone9320171221112229437"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="com_poly20171221112250562"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="TRONCON_HYDROGRAPHIQUE20171124224124250"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="USER:100002" srcDatumTransform="-1" destDatumTransform="-1" layerid="urbain20171124230705656"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:102110" srcDatumTransform="-1" destDatumTransform="-1" layerid="ZONE_OCCUPATION_SOL_copier_copier20180215231410500"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ZONE_OCCUPATION_SOL_copier20171124224507718"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="OpenStreetMap20180328145728289"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="gares_cypres20171212094027421"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="Equipements_Scolaires_copier20180215233213062"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="zone93_copier20180309094731614"/>
     </layer_coordinate_transform_info>
   </mapcanvas>
   <layer-tree-canvas>
@@ -101,6 +111,8 @@
       <item>Centres20180215231002390</item>
       <item>ZONE_OCCUPATION_SOL_copier_copier20180215231410500</item>
       <item>Equipements_Scolaires_copier20180215233213062</item>
+      <item>ZONE_OCCUPATION_SOL20180309095055163</item>
+      <item>OpenStreetMap20180328145728289</item>
     </custom-order>
   </layer-tree-canvas>
   <legend updateDrawingOrder="true">
@@ -129,14 +141,14 @@
         <legendlayerfile isInOverview="0" layerid="Centres20180215231002390" visible="0"/>
       </filegroup>
     </legendlayer>
-    <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="OSM_street" showFeatureCount="0">
+    <legendlayer drawingOrder="-1" open="false" checked="Qt::Unchecked" name="OSM_street" showFeatureCount="0">
       <filegroup open="false" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="OSM_street20180215230818187" visible="1"/>
+        <legendlayerfile isInOverview="0" layerid="OSM_street20180215230818187" visible="0"/>
       </filegroup>
     </legendlayer>
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="com_poly" showFeatureCount="0">
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="com_poly" showFeatureCount="0">
       <filegroup open="true" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="com_poly20171221112250562" visible="1"/>
+        <legendlayerfile isInOverview="0" layerid="com_poly20171221112250562" visible="0"/>
       </filegroup>
     </legendlayer>
     <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="zone93" showFeatureCount="0">
@@ -144,29 +156,39 @@
         <legendlayerfile isInOverview="0" layerid="zone9320171221112229437" visible="1"/>
       </filegroup>
     </legendlayer>
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="gares-cypres" showFeatureCount="0">
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="gares-cypres" showFeatureCount="0">
       <filegroup open="true" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="gares_cypres20171212094027421" visible="1"/>
+        <legendlayerfile isInOverview="0" layerid="gares_cypres20171212094027421" visible="0"/>
       </filegroup>
     </legendlayer>
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="urbain" showFeatureCount="0">
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="urbain" showFeatureCount="0">
       <filegroup open="true" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="urbain20171124230705656" visible="1"/>
+        <legendlayerfile isInOverview="0" layerid="urbain20171124230705656" visible="0"/>
       </filegroup>
     </legendlayer>
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="ZONE_OCCUPATION_SOL copier" showFeatureCount="0">
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="ZONE_OCCUPATION_SOL copier" showFeatureCount="0">
       <filegroup open="true" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="ZONE_OCCUPATION_SOL_copier20171124224507718" visible="1"/>
+        <legendlayerfile isInOverview="0" layerid="ZONE_OCCUPATION_SOL_copier20171124224507718" visible="0"/>
       </filegroup>
     </legendlayer>
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="ZONE_OCCUPATION_SOL copier copier" showFeatureCount="0">
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="ZONE_OCCUPATION_SOL" showFeatureCount="0">
       <filegroup open="true" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="ZONE_OCCUPATION_SOL_copier_copier20180215231410500" visible="1"/>
+        <legendlayerfile isInOverview="0" layerid="ZONE_OCCUPATION_SOL20180309095055163" visible="0"/>
       </filegroup>
     </legendlayer>
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="TRONCON_HYDROGRAPHIQUE" showFeatureCount="0">
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="ZONE_OCCUPATION_SOL copier copier" showFeatureCount="0">
       <filegroup open="true" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="TRONCON_HYDROGRAPHIQUE20171124224124250" visible="1"/>
+        <legendlayerfile isInOverview="0" layerid="ZONE_OCCUPATION_SOL_copier_copier20180215231410500" visible="0"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="TRONCON_HYDROGRAPHIQUE" showFeatureCount="0">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile isInOverview="0" layerid="TRONCON_HYDROGRAPHIQUE20171124224124250" visible="0"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="OpenStreetMap" showFeatureCount="0">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile isInOverview="0" layerid="OpenStreetMap20180328145728289" visible="1"/>
       </filegroup>
     </legendlayer>
     <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="departements-20140306-5m" showFeatureCount="0">
@@ -175,7 +197,7 @@
       </filegroup>
     </legendlayer>
   </legend>
-  <Composer title="Composeur 1" visible="1">
+  <Composer title="Composeur 1" visible="0">
     <Composition resizeToContentsMarginLeft="0" snapping="0" showPages="1" guidesVisible="1" resizeToContentsMarginTop="0" worldFileMap="{f04fab1a-e2bd-4e18-9549-31ce6355c3d4}" alignmentSnap="1" printResolution="300" paperWidth="210" gridVisible="0" snapGridOffsetX="0" smartGuides="1" snapGridOffsetY="0" resizeToContentsMarginRight="0" snapTolerancePixels="5" printAsRaster="0" generateWorldFile="0" paperHeight="250" numPages="1" snapGridResolution="10" resizeToContentsMarginBottom="0">
       <symbol alpha="1" clip_to_extent="1" type="fill" name="">
         <layer pass="0" class="SimpleFill" locked="0">
@@ -192,43 +214,45 @@
           <prop k="style" v="solid"/>
         </layer>
       </symbol>
-      <ComposerScaleBar lineCapStyle="square" style="Line Ticks Up" numMapUnitsPerScaleBarUnit="1000" segmentSizeMode="0" alignment="0" numSegments="1" segmentMillimeters="91.0641" lineJoinStyle="miter" minBarWidth="9" numUnitsPerSegment="500" units="1" labelBarSpace="3" outlineWidth="0.3" numSegmentsLeft="0" maxBarWidth="121" height="1" boxContentSpace="1" mapId="0" unitLabel=" km">
+      <ComposerScaleBar lineCapStyle="square" style="Line Ticks Up" numMapUnitsPerScaleBarUnit="1" segmentSizeMode="0" alignment="0" numSegments="1" segmentMillimeters="35.3699" lineJoinStyle="miter" minBarWidth="9" numUnitsPerSegment="250" units="1" labelBarSpace="3" outlineWidth="0.3" numSegmentsLeft="0" maxBarWidth="121" height="1" boxContentSpace="1" mapId="0" unitLabel="m">
         <scaleBarFont description="MS Shell Dlg 2,8,-1,5,50,0,0,0,0,0" style=""/>
         <fillColor alpha="255" red="77" blue="77" green="75"/>
         <fillColor2 alpha="255" red="255" blue="255" green="255"/>
         <strokeColor alpha="255" red="77" blue="77" green="75"/>
         <textColor alpha="255" red="77" blue="77" green="75"/>
-        <ComposerItem pagey="233.175" page="1" id="" lastValidViewScaleFactor="-1" positionMode="5" positionLock="false" x="140.243" y="233.175" visibility="1" zValue="8" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="101.914" outlineWidth="0.3" excludeFromExports="0" uuid="{cef5166a-01c7-4571-a6e4-e7f94e097e56}" height="10.625" itemRotation="0" frame="false" pagex="140.243">
+        <ComposerItem pagey="239.375" page="1" id="" lastValidViewScaleFactor="-1" positionMode="6" positionLock="false" x="0" y="239.375" visibility="1" zValue="8" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="44.2699" outlineWidth="0.3" excludeFromExports="0" uuid="{cef5166a-01c7-4571-a6e4-e7f94e097e56}" height="10.625" itemRotation="0" frame="false" pagex="0">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
           <customproperties/>
         </ComposerItem>
       </ComposerScaleBar>
-      <ComposerLegend symbolWidth="7" title="Légende" rasterBorderWidth="0" titleAlignment="1" map="0" wmsLegendWidth="50" rasterBorderColor="0,0,0,255" wrapChar="" fontColor="#4d4b4d" legendFilterByAtlas="0" columnCount="1" wmsLegendHeight="25" columnSpace="2" symbolHeight="4" equalColumnWidth="0" resizeToContents="1" splitLayer="0" boxSpace="2" rasterBorder="1">
+      <ComposerLegend symbolWidth="10" title="" rasterBorderWidth="0" titleAlignment="1" map="0" wmsLegendWidth="50" rasterBorderColor="0,0,0,255" wrapChar="" fontColor="#4d4b4d" legendFilterByAtlas="0" columnCount="1" wmsLegendHeight="25" columnSpace="0" symbolHeight="5" equalColumnWidth="0" resizeToContents="1" splitLayer="0" boxSpace="1" rasterBorder="1">
         <styles>
-          <style marginBottom="2" name="title">
+          <style name="title">
             <styleFont description="Tahoma,18,-1,5,50,0,0,0,0,0" style=""/>
           </style>
-          <style marginTop="2" name="group">
+          <style name="group">
             <styleFont description="MS Shell Dlg 2,14,-1,5,50,0,0,0,0,0" style=""/>
           </style>
-          <style marginTop="2" name="subgroup">
-            <styleFont description="MS Shell Dlg 2,12,-1,5,50,0,0,0,0,0" style=""/>
+          <style name="subgroup">
+            <styleFont description="Tahoma,22,-1,5,50,0,0,0,0,0" style=""/>
           </style>
-          <style marginTop="2" name="symbol">
+          <style name="symbol">
             <styleFont description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" style=""/>
           </style>
-          <style marginTop="2" marginLeft="2" name="symbolLabel">
-            <styleFont description="Tahoma,10,-1,5,50,0,0,0,0,0" style=""/>
+          <style name="symbolLabel">
+            <styleFont description="Tahoma,8,-1,5,50,0,0,0,0,0" style=""/>
           </style>
         </styles>
         <layer-tree-group expanded="1" checked="Qt::Checked" name="">
           <customproperties/>
           <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="Equipements_Scolaires_copier20180215233213062" source="../vector/DonneesBPE_data.shp|layerid=0|subset=&quot;m_LCat&quot; = 'Sante'  AND (&quot;qualite_xy&quot; = 'Acceptable'  or  &quot;qualite_xy&quot; = 'Bonne')" name="Santé">
-            <customproperties/>
+            <customproperties>
+              <property key="legend/node-order" value="0,1,2,3,4,5"/>
+            </customproperties>
           </layer-tree-layer>
         </layer-tree-group>
-        <ComposerItem pagey="187.3" page="1" id="" lastValidViewScaleFactor="-1" positionMode="6" positionLock="false" x="-0.5501" y="187.3" visibility="1" zValue="7" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="117.9" outlineWidth="0.3" excludeFromExports="0" uuid="{dce5e2a3-732d-4836-99d3-41ab15870a68}" height="62.7" itemRotation="0" frame="false" pagex="-0.5501">
+        <ComposerItem pagey="-7.36932e-17" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="88.302" y="-7.36932e-17" visibility="1" zValue="7" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="95.9" outlineWidth="0.3" excludeFromExports="0" uuid="{dce5e2a3-732d-4836-99d3-41ab15870a68}" height="41.3" itemRotation="0" frame="false" pagex="88.302">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
           <customproperties/>
@@ -246,7 +270,7 @@
       <ComposerItemGroup>
         <ComposerItemGroupElement uuid="{339a0925-4fe8-4c8c-982a-7d7124be6c69}"/>
         <ComposerItemGroupElement uuid="{ba7bfd60-6066-4c6b-880e-53b86eaaba71}"/>
-        <ComposerItem pagey="1.54445" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="204.337" y="1.54445" visibility="1" zValue="5" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="4.14687" outlineWidth="0.3" excludeFromExports="0" uuid="{31b470bb-9319-49a3-97e4-2985b75d39b2}" height="10.3486" itemRotation="0" frame="false" pagex="204.337">
+        <ComposerItem pagey="1" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="204.337" y="1" visibility="1" zValue="5" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="4.14687" outlineWidth="0.3" excludeFromExports="0" uuid="{31b470bb-9319-49a3-97e4-2985b75d39b2}" height="10.3486" itemRotation="0" frame="false" pagex="204.337">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
           <customproperties/>
@@ -255,7 +279,7 @@
       <ComposerLabel valign="128" marginX="1" marginY="1" labelText="N" htmlState="0" halign="4">
         <LabelFont description="Tahoma,10,-1,5,50,0,0,0,0,0" style=""/>
         <FontColor red="77" blue="77" green="75"/>
-        <ComposerItem pagey="7.20555" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="204.337" y="7.20555" visibility="1" zValue="4" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="4.14687" outlineWidth="0.3" excludeFromExports="0" uuid="{339a0925-4fe8-4c8c-982a-7d7124be6c69}" height="4.6875" itemRotation="0" frame="false" pagex="204.337">
+        <ComposerItem pagey="6.6611" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="204.337" y="6.6611" visibility="1" zValue="4" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="4.14687" outlineWidth="0.3" excludeFromExports="0" uuid="{339a0925-4fe8-4c8c-982a-7d7124be6c69}" height="4.6875" itemRotation="0" frame="false" pagex="204.337">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
           <customproperties/>
@@ -277,23 +301,23 @@
             <prop k="style" v="solid"/>
           </layer>
         </symbol>
-        <ComposerItem pagey="1.54445" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="205.077" y="1.54445" visibility="1" zValue="3" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="2.66516" outlineWidth="0.3" excludeFromExports="0" uuid="{ba7bfd60-6066-4c6b-880e-53b86eaaba71}" height="6.13608" itemRotation="0" frame="false" pagex="205.077">
+        <ComposerItem pagey="1" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="205.077" y="1" visibility="1" zValue="3" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="2.66516" outlineWidth="0.3" excludeFromExports="0" uuid="{ba7bfd60-6066-4c6b-880e-53b86eaaba71}" height="6.13608" itemRotation="0" frame="false" pagex="205.077">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
           <customproperties/>
         </ComposerItem>
       </ComposerShape>
-      <ComposerLabel valign="128" marginX="3" marginY="0" labelText="POLES GENERATEURS DE DEPLACEMENTS" htmlState="0" halign="1">
-        <LabelFont description="Tahoma,28,-1,5,50,0,0,0,0,0" style=""/>
+      <ComposerLabel valign="128" marginX="3" marginY="0" labelText="POLES GENERATEURS DE DEPLACEMENTS" htmlState="0" halign="4">
+        <LabelFont description="Tahoma,24,-1,5,50,0,0,0,0,0" style=""/>
         <FontColor red="77" blue="77" green="75"/>
-        <ComposerItem pagey="0" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="0" y="0" visibility="1" zValue="2" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="210" outlineWidth="0.3" excludeFromExports="0" uuid="{4da924ac-d3d2-4893-8681-55385d023cab}" height="13.4375" itemRotation="0" frame="false" pagex="0">
+        <ComposerItem pagey="0" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="0" y="0" visibility="1" zValue="2" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="86.7976" outlineWidth="0.3" excludeFromExports="0" uuid="{4da924ac-d3d2-4893-8681-55385d023cab}" height="42.5414" itemRotation="0" frame="false" pagex="0">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="206" blue="84" green="222"/>
           <customproperties/>
         </ComposerItem>
       </ComposerLabel>
       <ComposerMap followPreset="false" mapRotation="0" keepLayerSet="false" followPresetName="" id="0" previewMode="Cache" drawCanvasItems="true">
-        <Extent ymin="5519007.40374692156910896" xmin="225449.95651223891763948" ymax="5521341.66213785950094461" xmax="227522.1075337297806982"/>
+        <Extent ymin="5519007.40374692156910896" xmin="225449.95651223891763948" ymax="5521054.481741052120924" xmax="227522.1075337297806982"/>
         <LayerSet/>
         <Grid/>
         <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{6aca13ec-3a45-4d73-946e-421721572d83}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grille 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
@@ -345,7 +369,7 @@
           <annotationFontProperties description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" style=""/>
         </ComposerMapGrid>
         <AtlasMap scalingMode="2" atlasDriven="1" margin="0"/>
-        <ComposerItem pagey="13.4375" page="1" id="" lastValidViewScaleFactor="1.8" positionMode="0" positionLock="false" x="-2.46843e-15" y="13.4375" visibility="1" zValue="1" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="210" outlineWidth="0.25" excludeFromExports="0" uuid="{f04fab1a-e2bd-4e18-9549-31ce6355c3d4}" height="236.563" itemRotation="0" frame="false" pagex="-2.46843e-15">
+        <ComposerItem pagey="42.5414" page="1" id="" lastValidViewScaleFactor="1.8" positionMode="0" positionLock="false" x="-1.29765e-14" y="42.5414" visibility="1" zValue="1" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="210" outlineWidth="0.25" excludeFromExports="0" uuid="{f04fab1a-e2bd-4e18-9549-31ce6355c3d4}" height="207.459" itemRotation="0" frame="false" pagex="-1.29765e-14">
           <FrameColor alpha="255" red="70" blue="105" green="105"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
           <customproperties/>
@@ -1004,6 +1028,12 @@
       <previewExpression>COALESCE( "id", '&lt;NULL>' )</previewExpression>
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+      <extent>
+        <xmin>489603</xmin>
+        <ymin>6281872</ymin>
+        <xmax>518486</xmax>
+        <ymax>6307258</ymax>
+      </extent>
       <id>Equipements_Scolaires_copier20180215233213062</id>
       <datasource>../vector/DonneesBPE_data.shp|layerid=0|subset="m_LCat" = 'Sante'  AND ("qualite_xy" = 'Acceptable'  or  "qualite_xy" = 'Bonne')</datasource>
       <keywordList>
@@ -1679,6 +1709,9 @@ def my_form_open(dialog, layer, feature):
         <edittype widgetv2type="TextEdit" name="maxspeed">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
+        <edittype widgetv2type="TextEdit" name="ref">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
         <edittype widgetv2type="TextEdit" name="name">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
@@ -1691,103 +1724,250 @@ def my_form_open(dialog, layer, feature):
         <edittype widgetv2type="TextEdit" name="source_max">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="surface">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="zone_maxsp">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="ref">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
         <edittype widgetv2type="TextEdit" name="junction">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="maxweight">
+        <edittype widgetv2type="TextEdit" name="level">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="layer">
+        <edittype widgetv2type="TextEdit" name="surface">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="old_ref">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="access">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="lit">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="source_hig">
+        <edittype widgetv2type="TextEdit" name="lanes_back">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="lanes">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="noexit">
+        <edittype widgetv2type="TextEdit" name="lanes_forw">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="step_count">
+        <edittype widgetv2type="TextEdit" name="maxweight">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="width">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="source_inc">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="incline">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="maxheight">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="service">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="wheelchair">
+        <edittype widgetv2type="TextEdit" name="access">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="foot">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="motorcar">
+        <edittype widgetv2type="TextEdit" name="service">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="tracktype">
+        <edittype widgetv2type="TextEdit" name="old_ref">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="bridge">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="bicycle">
+        <edittype widgetv2type="TextEdit" name="layer">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="network">
+        <edittype widgetv2type="TextEdit" name="ref_FR_FAN">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="alt_name">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="trailblaze">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="osmc_symbo">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="horse">
+        <edittype widgetv2type="TextEdit" name="name_cadas">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="sidewalk">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="footway">
+        <edittype widgetv2type="TextEdit" name="lit">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="constructi">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="tracktype">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="admin_leve">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="border_typ">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="boundary">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="vehicle">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="motor_vehi">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cycleway">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="bicycle">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="segregated">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="mtb_scale">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="trail_visi">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="horse">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="wheelchair">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="addr_city">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="addr_postc">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="addr_stree">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="motorcar">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="width">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="tunnel">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="cycleway_b">
+        <edittype widgetv2type="TextEdit" name="maxheight">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="toll">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="noexit">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="covered">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="motorcycle">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="cutting">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="passing_pl">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="goods">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="oneway_bic">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="alt_name">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="snowmobile">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="ski">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="railway">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="source_bri">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="incline">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="step_count">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="handrail">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="source_one">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="smoothness">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="descriptio">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="embankment">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="mhs_inscri">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="historic">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="ref_mhs">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="heritage_o">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="heritage">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="wikidata">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="source_ref">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="mtb_scale_">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="name_oc">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="parking_la">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="parking">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="parking_co">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="name_es">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="name_etymo">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="mtb_scal_1">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="footway">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="fee">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="sloped_cur">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="crossing">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="tactile_pa">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="arcade_lef">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="wall">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="sac_scale">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="maxspeed_b">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
@@ -2731,43 +2911,93 @@ def my_form_open(dialog, layer, feature):
         <alias field="osm_id" index="1" name=""/>
         <alias field="osm_type" index="2" name=""/>
         <alias field="maxspeed" index="3" name=""/>
-        <alias field="name" index="4" name=""/>
-        <alias field="highway" index="5" name=""/>
-        <alias field="oneway" index="6" name=""/>
-        <alias field="source_max" index="7" name=""/>
-        <alias field="surface" index="8" name=""/>
-        <alias field="zone_maxsp" index="9" name=""/>
-        <alias field="ref" index="10" name=""/>
-        <alias field="junction" index="11" name=""/>
-        <alias field="maxweight" index="12" name=""/>
-        <alias field="layer" index="13" name=""/>
-        <alias field="old_ref" index="14" name=""/>
-        <alias field="access" index="15" name=""/>
-        <alias field="lit" index="16" name=""/>
-        <alias field="source_hig" index="17" name=""/>
-        <alias field="lanes" index="18" name=""/>
-        <alias field="noexit" index="19" name=""/>
-        <alias field="step_count" index="20" name=""/>
-        <alias field="width" index="21" name=""/>
-        <alias field="source_inc" index="22" name=""/>
-        <alias field="incline" index="23" name=""/>
-        <alias field="maxheight" index="24" name=""/>
-        <alias field="service" index="25" name=""/>
-        <alias field="wheelchair" index="26" name=""/>
-        <alias field="foot" index="27" name=""/>
-        <alias field="motorcar" index="28" name=""/>
-        <alias field="tracktype" index="29" name=""/>
-        <alias field="bridge" index="30" name=""/>
-        <alias field="bicycle" index="31" name=""/>
-        <alias field="network" index="32" name=""/>
-        <alias field="alt_name" index="33" name=""/>
-        <alias field="trailblaze" index="34" name=""/>
-        <alias field="osmc_symbo" index="35" name=""/>
-        <alias field="horse" index="36" name=""/>
-        <alias field="sidewalk" index="37" name=""/>
-        <alias field="footway" index="38" name=""/>
-        <alias field="tunnel" index="39" name=""/>
-        <alias field="cycleway_b" index="40" name=""/>
+        <alias field="ref" index="4" name=""/>
+        <alias field="name" index="5" name=""/>
+        <alias field="highway" index="6" name=""/>
+        <alias field="oneway" index="7" name=""/>
+        <alias field="source_max" index="8" name=""/>
+        <alias field="junction" index="9" name=""/>
+        <alias field="level" index="10" name=""/>
+        <alias field="surface" index="11" name=""/>
+        <alias field="lanes_back" index="12" name=""/>
+        <alias field="lanes" index="13" name=""/>
+        <alias field="lanes_forw" index="14" name=""/>
+        <alias field="maxweight" index="15" name=""/>
+        <alias field="access" index="16" name=""/>
+        <alias field="foot" index="17" name=""/>
+        <alias field="service" index="18" name=""/>
+        <alias field="old_ref" index="19" name=""/>
+        <alias field="bridge" index="20" name=""/>
+        <alias field="layer" index="21" name=""/>
+        <alias field="ref_FR_FAN" index="22" name=""/>
+        <alias field="name_cadas" index="23" name=""/>
+        <alias field="sidewalk" index="24" name=""/>
+        <alias field="lit" index="25" name=""/>
+        <alias field="constructi" index="26" name=""/>
+        <alias field="tracktype" index="27" name=""/>
+        <alias field="admin_leve" index="28" name=""/>
+        <alias field="border_typ" index="29" name=""/>
+        <alias field="boundary" index="30" name=""/>
+        <alias field="vehicle" index="31" name=""/>
+        <alias field="motor_vehi" index="32" name=""/>
+        <alias field="cycleway" index="33" name=""/>
+        <alias field="bicycle" index="34" name=""/>
+        <alias field="segregated" index="35" name=""/>
+        <alias field="mtb_scale" index="36" name=""/>
+        <alias field="trail_visi" index="37" name=""/>
+        <alias field="horse" index="38" name=""/>
+        <alias field="wheelchair" index="39" name=""/>
+        <alias field="addr_city" index="40" name=""/>
+        <alias field="addr_postc" index="41" name=""/>
+        <alias field="addr_stree" index="42" name=""/>
+        <alias field="motorcar" index="43" name=""/>
+        <alias field="width" index="44" name=""/>
+        <alias field="tunnel" index="45" name=""/>
+        <alias field="maxheight" index="46" name=""/>
+        <alias field="toll" index="47" name=""/>
+        <alias field="noexit" index="48" name=""/>
+        <alias field="covered" index="49" name=""/>
+        <alias field="motorcycle" index="50" name=""/>
+        <alias field="cutting" index="51" name=""/>
+        <alias field="passing_pl" index="52" name=""/>
+        <alias field="goods" index="53" name=""/>
+        <alias field="oneway_bic" index="54" name=""/>
+        <alias field="alt_name" index="55" name=""/>
+        <alias field="snowmobile" index="56" name=""/>
+        <alias field="ski" index="57" name=""/>
+        <alias field="railway" index="58" name=""/>
+        <alias field="source_bri" index="59" name=""/>
+        <alias field="incline" index="60" name=""/>
+        <alias field="step_count" index="61" name=""/>
+        <alias field="handrail" index="62" name=""/>
+        <alias field="source_one" index="63" name=""/>
+        <alias field="smoothness" index="64" name=""/>
+        <alias field="descriptio" index="65" name=""/>
+        <alias field="embankment" index="66" name=""/>
+        <alias field="mhs_inscri" index="67" name=""/>
+        <alias field="historic" index="68" name=""/>
+        <alias field="ref_mhs" index="69" name=""/>
+        <alias field="heritage_o" index="70" name=""/>
+        <alias field="heritage" index="71" name=""/>
+        <alias field="wikidata" index="72" name=""/>
+        <alias field="source_ref" index="73" name=""/>
+        <alias field="mtb_scale_" index="74" name=""/>
+        <alias field="name_oc" index="75" name=""/>
+        <alias field="parking_la" index="76" name=""/>
+        <alias field="parking" index="77" name=""/>
+        <alias field="parking_co" index="78" name=""/>
+        <alias field="name_es" index="79" name=""/>
+        <alias field="name_etymo" index="80" name=""/>
+        <alias field="mtb_scal_1" index="81" name=""/>
+        <alias field="footway" index="82" name=""/>
+        <alias field="fee" index="83" name=""/>
+        <alias field="sloped_cur" index="84" name=""/>
+        <alias field="crossing" index="85" name=""/>
+        <alias field="tactile_pa" index="86" name=""/>
+        <alias field="arcade_lef" index="87" name=""/>
+        <alias field="wall" index="88" name=""/>
+        <alias field="sac_scale" index="89" name=""/>
+        <alias field="maxspeed_b" index="90" name=""/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
@@ -2907,49 +3137,168 @@ def my_form_open(dialog, layer, feature):
         <default field="osm_id" expression=""/>
         <default field="osm_type" expression=""/>
         <default field="maxspeed" expression=""/>
+        <default field="ref" expression=""/>
         <default field="name" expression=""/>
         <default field="highway" expression=""/>
         <default field="oneway" expression=""/>
         <default field="source_max" expression=""/>
-        <default field="surface" expression=""/>
-        <default field="zone_maxsp" expression=""/>
-        <default field="ref" expression=""/>
         <default field="junction" expression=""/>
-        <default field="maxweight" expression=""/>
-        <default field="layer" expression=""/>
-        <default field="old_ref" expression=""/>
-        <default field="access" expression=""/>
-        <default field="lit" expression=""/>
-        <default field="source_hig" expression=""/>
+        <default field="level" expression=""/>
+        <default field="surface" expression=""/>
+        <default field="lanes_back" expression=""/>
         <default field="lanes" expression=""/>
-        <default field="noexit" expression=""/>
-        <default field="step_count" expression=""/>
-        <default field="width" expression=""/>
-        <default field="source_inc" expression=""/>
-        <default field="incline" expression=""/>
-        <default field="maxheight" expression=""/>
-        <default field="service" expression=""/>
-        <default field="wheelchair" expression=""/>
+        <default field="lanes_forw" expression=""/>
+        <default field="maxweight" expression=""/>
+        <default field="access" expression=""/>
         <default field="foot" expression=""/>
-        <default field="motorcar" expression=""/>
-        <default field="tracktype" expression=""/>
+        <default field="service" expression=""/>
+        <default field="old_ref" expression=""/>
         <default field="bridge" expression=""/>
-        <default field="bicycle" expression=""/>
-        <default field="network" expression=""/>
-        <default field="alt_name" expression=""/>
-        <default field="trailblaze" expression=""/>
-        <default field="osmc_symbo" expression=""/>
-        <default field="horse" expression=""/>
+        <default field="layer" expression=""/>
+        <default field="ref_FR_FAN" expression=""/>
+        <default field="name_cadas" expression=""/>
         <default field="sidewalk" expression=""/>
-        <default field="footway" expression=""/>
+        <default field="lit" expression=""/>
+        <default field="constructi" expression=""/>
+        <default field="tracktype" expression=""/>
+        <default field="admin_leve" expression=""/>
+        <default field="border_typ" expression=""/>
+        <default field="boundary" expression=""/>
+        <default field="vehicle" expression=""/>
+        <default field="motor_vehi" expression=""/>
+        <default field="cycleway" expression=""/>
+        <default field="bicycle" expression=""/>
+        <default field="segregated" expression=""/>
+        <default field="mtb_scale" expression=""/>
+        <default field="trail_visi" expression=""/>
+        <default field="horse" expression=""/>
+        <default field="wheelchair" expression=""/>
+        <default field="addr_city" expression=""/>
+        <default field="addr_postc" expression=""/>
+        <default field="addr_stree" expression=""/>
+        <default field="motorcar" expression=""/>
+        <default field="width" expression=""/>
         <default field="tunnel" expression=""/>
-        <default field="cycleway_b" expression=""/>
+        <default field="maxheight" expression=""/>
+        <default field="toll" expression=""/>
+        <default field="noexit" expression=""/>
+        <default field="covered" expression=""/>
+        <default field="motorcycle" expression=""/>
+        <default field="cutting" expression=""/>
+        <default field="passing_pl" expression=""/>
+        <default field="goods" expression=""/>
+        <default field="oneway_bic" expression=""/>
+        <default field="alt_name" expression=""/>
+        <default field="snowmobile" expression=""/>
+        <default field="ski" expression=""/>
+        <default field="railway" expression=""/>
+        <default field="source_bri" expression=""/>
+        <default field="incline" expression=""/>
+        <default field="step_count" expression=""/>
+        <default field="handrail" expression=""/>
+        <default field="source_one" expression=""/>
+        <default field="smoothness" expression=""/>
+        <default field="descriptio" expression=""/>
+        <default field="embankment" expression=""/>
+        <default field="mhs_inscri" expression=""/>
+        <default field="historic" expression=""/>
+        <default field="ref_mhs" expression=""/>
+        <default field="heritage_o" expression=""/>
+        <default field="heritage" expression=""/>
+        <default field="wikidata" expression=""/>
+        <default field="source_ref" expression=""/>
+        <default field="mtb_scale_" expression=""/>
+        <default field="name_oc" expression=""/>
+        <default field="parking_la" expression=""/>
+        <default field="parking" expression=""/>
+        <default field="parking_co" expression=""/>
+        <default field="name_es" expression=""/>
+        <default field="name_etymo" expression=""/>
+        <default field="mtb_scal_1" expression=""/>
+        <default field="footway" expression=""/>
+        <default field="fee" expression=""/>
+        <default field="sloped_cur" expression=""/>
+        <default field="crossing" expression=""/>
+        <default field="tactile_pa" expression=""/>
+        <default field="arcade_lef" expression=""/>
+        <default field="wall" expression=""/>
+        <default field="sac_scale" expression=""/>
+        <default field="maxspeed_b" expression=""/>
       </defaults>
       <previewExpression></previewExpression>
     </maplayer>
+    <maplayer minimumScale="inf" maximumScale="1e+08" type="raster" hasScaleBasedVisibilityFlag="0">
+      <extent>
+        <xmin>-20037508.33999999985098839</xmin>
+        <ymin>-20037508.33999999985098839</ymin>
+        <xmax>20037508.33999999985098839</xmax>
+        <ymax>20037508.33999999985098839</ymax>
+      </extent>
+      <id>OpenStreetMap20180328145728289</id>
+      <datasource>&lt;GDAL_WMS>
+  &lt;Service name="TMS">
+    &lt;ServerUrl>http://tile.openstreetmap.org/${z}/${x}/${y}.png&lt;/ServerUrl>
+  &lt;/Service>
+  &lt;DataWindow>
+    &lt;UpperLeftX>-20037508.34&lt;/UpperLeftX>
+    &lt;UpperLeftY>20037508.34&lt;/UpperLeftY>
+    &lt;LowerRightX>20037508.34&lt;/LowerRightX>
+    &lt;LowerRightY>-20037508.34&lt;/LowerRightY>
+    &lt;TileLevel>19&lt;/TileLevel>
+    &lt;TileCountX>1&lt;/TileCountX>
+    &lt;TileCountY>1&lt;/TileCountY>
+    &lt;YOrigin>top&lt;/YOrigin>
+  &lt;/DataWindow>
+  &lt;Projection>EPSG:3857&lt;/Projection>
+  &lt;BlockSizeX>256&lt;/BlockSizeX>
+  &lt;BlockSizeY>256&lt;/BlockSizeY>
+  &lt;BandsCount>3&lt;/BandsCount>
+  &lt;Cache />
+&lt;/GDAL_WMS>
+</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>OpenStreetMap</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs</proj4>
+          <srsid>3857</srsid>
+          <srid>3857</srid>
+          <authid>EPSG:3857</authid>
+          <description>WGS 84 / Pseudo Mercator</description>
+          <projectionacronym>merc</projectionacronym>
+          <ellipsoidacronym>WGS84</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <customproperties>
+        <property key="embeddedWidgets/count" value="0"/>
+        <property key="identify/format" value="Value"/>
+        <property key="ol_layer_type" value="OpenStreetMap"/>
+      </customproperties>
+      <provider>gdal</provider>
+      <noData>
+        <noDataList bandNo="1" useSrcNoData="0"/>
+        <noDataList bandNo="2" useSrcNoData="0"/>
+        <noDataList bandNo="3" useSrcNoData="0"/>
+      </noData>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <pipe>
+        <rasterrenderer opacity="1" alphaBand="0" blueBand="3" greenBand="2" type="multibandcolor" redBand="1">
+          <rasterTransparency/>
+        </rasterrenderer>
+        <brightnesscontrast brightness="0" contrast="0"/>
+        <huesaturation colorizeGreen="128" colorizeOn="0" colorizeRed="255" colorizeBlue="128" grayscaleMode="3" saturation="0" colorizeStrength="100"/>
+        <rasterresampler maxOversampling="2"/>
+      </pipe>
+      <blendMode>0</blendMode>
+    </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Line" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>TRONCON_HYDROGRAPHIQUE20171124224124250</id>
-      <datasource>C:/CartoInddigo/Mes Données SIG/vecteurs/R120_1-1_SHP_LAMB93_FR-ED121/HYDROGRAPHIE/TRONCON_HYDROGRAPHIQUE.SHP</datasource>
+      <datasource>c:/CartoInddigo/Mes Données SIG/vecteurs/R120_1-1_SHP_LAMB93_FR-ED121/HYDROGRAPHIE/TRONCON_HYDROGRAPHIQUE.SHP</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -3253,8 +3602,114 @@ def my_form_open(dialog, layer, feature):
       <previewExpression>COALESCE( "LARGEUR", '&lt;NULL>' )</previewExpression>
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+      <id>ZONE_OCCUPATION_SOL20180309095055163</id>
+      <datasource>c:/CartoInddigo/Mes Données SIG/vecteurs/R120_1-1_SHP_LAMB93_FR-ED121/OCCUPATION_SOL/ZONE_OCCUPATION_SOL.SHP</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>ZONE_OCCUPATION_SOL</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=lcc +lat_1=49 +lat_2=44 +lat_0=46.5 +lon_0=3 +x_0=700000 +y_0=6600000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
+          <srsid>145</srsid>
+          <srid>2154</srid>
+          <authid>EPSG:2154</authid>
+          <description>RGF93 / Lambert-93</description>
+          <projectionacronym>lcc</projectionacronym>
+          <ellipsoidacronym>GRS80</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <provider encoding="UTF-8">ogr</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <edittypes>
+        <edittype widgetv2type="TextEdit" name="NATURE">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+      </edittypes>
+      <renderer-v2 forceraster="0" symbollevels="0" type="singleSymbol" enableorderby="0">
+        <symbols>
+          <symbol alpha="1" clip_to_extent="1" type="fill" name="0">
+            <layer pass="0" class="SimpleFill" locked="0">
+              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="color" v="251,101,41,255"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0.26"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
+            </layer>
+          </symbol>
+        </symbols>
+        <rotation/>
+        <sizescale scalemethod="diameter"/>
+      </renderer-v2>
+      <labeling type="simple"/>
+      <customproperties/>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerTransparency>0</layerTransparency>
+      <displayfield>NATURE</displayfield>
+      <label>0</label>
+      <labelattributes>
+        <label fieldname="" text="Étiquette"/>
+        <family fieldname="" name="MS Shell Dlg 2"/>
+        <size fieldname="" units="pt" value="12"/>
+        <bold fieldname="" on="0"/>
+        <italic fieldname="" on="0"/>
+        <underline fieldname="" on="0"/>
+        <strikeout fieldname="" on="0"/>
+        <color fieldname="" red="0" blue="0" green="0"/>
+        <x fieldname=""/>
+        <y fieldname=""/>
+        <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
+        <angle fieldname="" value="0" auto="0"/>
+        <alignment fieldname="" value="center"/>
+        <buffercolor fieldname="" red="255" blue="255" green="255"/>
+        <buffersize fieldname="" units="pt" value="1"/>
+        <bufferenabled fieldname="" on=""/>
+        <multilineenabled fieldname="" on=""/>
+        <selectedonly on=""/>
+      </labelattributes>
+      <annotationform>.</annotationform>
+      <aliases>
+        <alias field="NATURE" index="0" name=""/>
+      </aliases>
+      <excludeAttributesWMS/>
+      <excludeAttributesWFS/>
+      <attributeactions default="-1"/>
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
+        <columns/>
+      </attributetableconfig>
+      <editform>.</editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath>.</editforminitfilepath>
+      <editforminitcode><![CDATA[]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <widgets/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <defaults>
+        <default field="NATURE" expression=""/>
+      </defaults>
+      <previewExpression></previewExpression>
+    </maplayer>
+    <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>ZONE_OCCUPATION_SOL_copier20171124224507718</id>
-      <datasource>C:/CartoInddigo/Mes Données SIG/vecteurs/R120_1-1_SHP_LAMB93_FR-ED121/OCCUPATION_SOL/ZONE_OCCUPATION_SOL.SHP|layerid=0|subset="NATURE" = 'Eau'</datasource>
+      <datasource>c:/CartoInddigo/Mes Données SIG/vecteurs/R120_1-1_SHP_LAMB93_FR-ED121/OCCUPATION_SOL/ZONE_OCCUPATION_SOL.SHP|layerid=0|subset="NATURE" = 'Eau'</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -3558,7 +4013,7 @@ def my_form_open(dialog, layer, feature):
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>ZONE_OCCUPATION_SOL_copier_copier20180215231410500</id>
-      <datasource>C:/CartoInddigo/Mes Données SIG/vecteurs/R120_1-1_SHP_LAMB93_FR-ED121/OCCUPATION_SOL/ZONE_OCCUPATION_SOL.SHP|layerid=0|subset="NATURE" = 'Forêt'</datasource>
+      <datasource>c:/CartoInddigo/Mes Données SIG/vecteurs/R120_1-1_SHP_LAMB93_FR-ED121/OCCUPATION_SOL/ZONE_OCCUPATION_SOL.SHP</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -3584,9 +4039,6 @@ def my_form_open(dialog, layer, feature):
       </map-layer-style-manager>
       <edittypes>
         <edittype widgetv2type="TextEdit" name="NATURE">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="orig_ogc_fid">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
@@ -3812,7 +4264,6 @@ def my_form_open(dialog, layer, feature):
       <annotationform>../projets</annotationform>
       <aliases>
         <alias field="NATURE" index="0" name=""/>
-        <alias field="orig_ogc_fid" index="1" name=""/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
@@ -3846,14 +4297,20 @@ def my_form_open(dialog, layer, feature):
 ]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
-      <widgets/>
+      <widgets>
+        <widget name="orig_ogc_fid">
+          <config>
+            <option key="IsMultiline" value="false"/>
+            <option key="UseHtml" value="false"/>
+          </config>
+        </widget>
+      </widgets>
       <conditionalstyles>
         <rowstyles/>
         <fieldstyles/>
       </conditionalstyles>
       <defaults>
         <default field="NATURE" expression=""/>
-        <default field="orig_ogc_fid" expression=""/>
       </defaults>
       <previewExpression></previewExpression>
     </maplayer>
@@ -4947,7 +5404,7 @@ def my_form_open(dialog, layer, feature):
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>departements_20140306_5m20171125005933609</id>
-      <datasource>C:/CartoInddigo/Mes Données SIG/vecteurs/departements-20140306-5m.shp</datasource>
+      <datasource>c:/CartoInddigo/Mes Données SIG/vecteurs/departements-20140306-5m.shp</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -4982,6 +5439,9 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="wikipedia">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="_Dep">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
@@ -5295,6 +5755,7 @@ def my_form_open(dialog, layer, feature):
         <alias field="nom" index="1" name=""/>
         <alias field="nuts3" index="2" name=""/>
         <alias field="wikipedia" index="3" name=""/>
+        <alias field="_Dep" index="4" name=""/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
@@ -5340,12 +5801,13 @@ def my_form_open(dialog, layer, feature):
         <default field="nom" expression=""/>
         <default field="nuts3" expression=""/>
         <default field="wikipedia" expression=""/>
+        <default field="_Dep" expression=""/>
       </defaults>
       <previewExpression></previewExpression>
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>gares_cypres20171212094027421</id>
-      <datasource>file:///C:/CartoInddigo/DiagBuilder/db/gares-cypres.csv?encoding=System&amp;type=csv&amp;delimiter=;&amp;quote=&amp;escape=&amp;xyDms=yes&amp;wktField=geom&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no</datasource>
+      <datasource>file:///c:/CartoInddigo/DiagBuilder/db/gares-cypres.csv?encoding=System&amp;type=csv&amp;delimiter=;&amp;quote=&amp;escape=&amp;xyDms=yes&amp;wktField=geom&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -6113,7 +6575,7 @@ def my_form_open(dialog, layer, feature):
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>urbain20171124230705656</id>
-      <datasource>C:/CartoInddigo/Mes Données SIG/vecteurs/CLC/urbain.TAB</datasource>
+      <datasource>c:/CartoInddigo/Mes Données SIG/vecteurs/CLC/urbain.TAB</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -6419,6 +6881,12 @@ def my_form_open(dialog, layer, feature):
       <previewExpression></previewExpression>
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+      <extent>
+        <xmin>486385.00899804075015709</xmin>
+        <ymin>6274527.26597730629146099</ymin>
+        <xmax>522761.1296049608499743</xmax>
+        <ymax>6308737.42659513745456934</ymax>
+      </extent>
       <id>zone9320171221112229437</id>
       <datasource>../vector/zone93.shp</datasource>
       <keywordList>
@@ -6517,6 +6985,7 @@ def my_form_open(dialog, layer, feature):
       </renderer-v2>
       <labeling type="simple"/>
       <customproperties>
+        <property key="embeddedWidgets/count" value="0"/>
         <property key="labeling" value="pal"/>
         <property key="labeling/addDirectionSymbol" value="false"/>
         <property key="labeling/angleOffset" value="0"/>
@@ -6660,7 +7129,7 @@ def my_form_open(dialog, layer, feature):
       </customproperties>
       <blendMode>0</blendMode>
       <featureBlendMode>0</featureBlendMode>
-      <layerTransparency>80</layerTransparency>
+      <layerTransparency>0</layerTransparency>
       <displayfield>id</displayfield>
       <label>0</label>
       <labelattributes>
@@ -6809,6 +7278,9 @@ def my_form_open(dialog, layer, feature):
       <DistanceUnits type="QString">meters</DistanceUnits>
       <AreaUnits type="QString">m2</AreaUnits>
     </Measurement>
+    <LiveStats>
+      <SavedStats type="QStringList"/>
+    </LiveStats>
     <Legend>
       <filterByMap type="bool">false</filterByMap>
     </Legend>
@@ -6862,6 +7334,7 @@ def my_form_open(dialog, layer, feature):
         <value>Equipements_Scolaires_copier20180215233213062</value>
         <value>OSM_street20180215230818187</value>
         <value>TRONCON_HYDROGRAPHIQUE20171124224124250</value>
+        <value>ZONE_OCCUPATION_SOL20180309095055163</value>
         <value>ZONE_OCCUPATION_SOL_copier20171124224507718</value>
         <value>ZONE_OCCUPATION_SOL_copier_copier20180215231410500</value>
         <value>com_poly20171221112250562</value>
@@ -6873,6 +7346,7 @@ def my_form_open(dialog, layer, feature):
         <value>zone9320171221112229437</value>
       </LayerSnappingList>
       <LayerSnappingEnabledList type="QStringList">
+        <value>enabled</value>
         <value>enabled</value>
         <value>enabled</value>
         <value>enabled</value>
@@ -6905,8 +7379,10 @@ def my_form_open(dialog, layer, feature):
         <value>2</value>
         <value>2</value>
         <value>2</value>
+        <value>2</value>
       </LayerSnappingToleranceUnitList>
       <LayerSnapToList type="QStringList">
+        <value>to_vertex_and_segment</value>
         <value>to_vertex_and_segment</value>
         <value>to_vertex_and_segment</value>
         <value>to_vertex_and_segment</value>
@@ -6925,6 +7401,7 @@ def my_form_open(dialog, layer, feature):
       <DefaultSnapType type="QString">to vertex and segment</DefaultSnapType>
       <DefaultSnapTolerance type="double">0</DefaultSnapTolerance>
       <LayerSnappingToleranceList type="QStringList">
+        <value>0.000000</value>
         <value>0.000000</value>
         <value>0.000000</value>
         <value>0.000000</value>

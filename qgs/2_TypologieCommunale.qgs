@@ -1,14 +1,14 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis projectname="" version="2.18.15">
-  <title></title>
+<qgis projectname="Typologie Communale" version="2.18.15">
+  <title>Typologie Communale</title>
   <autotransaction active="0"/>
   <evaluateDefaultValues active="0"/>
   <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="">
     <customproperties/>
-    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Unchecked" id="Centres20180312202307735" source="Z:/10005879_PGD Grand Auch/vector/Centres.shp" name="Centres">
+    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Unchecked" id="com_pt20171221112141859" source="../vector/com_pt.shp" name="com_pt">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Unchecked" id="com_pt20171221112141859" source="C:/Users/tjacquemot/Desktop/TRANFERT/10005879_PGD Grand Auch/vector/com_pt.shp" name="com_pt">
+    <layer-tree-layer expanded="1" providerKey="delimitedtext" checked="Qt::Checked" id="gares_cypres20171212094027421" source="file:///C:/CartoInddigo/DiagBuilder/db/gares-cypres.csv?encoding=System&amp;type=csv&amp;delimiter=;&amp;quote=&amp;escape=&amp;xyDms=yes&amp;wktField=geom&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no" name="gares-cypres">
       <customproperties/>
     </layer-tree-layer>
     <layer-tree-layer expanded="0" providerKey="ogr" checked="Qt::Checked" id="TRONCON_ROUTE20180323100550645" source="C:\CartoInddigo\Mes Données SIG\vecteurs\R120_1-1_SHP_LAMB93_FR-ED121\RESEAU_ROUTIER\TRONCON_ROUTE.SHP" name="TRONCON_ROUTE">
@@ -17,15 +17,12 @@
     <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="departements_20140306_5m20171125005933609" source="C:/CartoInddigo/Mes Données SIG/vecteurs/departements-20140306-5m.shp" name="departements-20140306-5m">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="com_poly20171221112250562" source="C:/Users/tjacquemot/Desktop/TRANFERT/10005879_PGD Grand Auch/vector/com_poly.shp" name="com_poly">
-      <customproperties/>
-    </layer-tree-layer>
-    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="zone9320171221112229437" source="C:/Users/tjacquemot/Desktop/TRANFERT/10005879_PGD Grand Auch/vector/zone93.shp" name="zone93">
+    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="zone9320171221112229437" source="../vector/zone93.shp" name="zone93">
       <customproperties>
         <property key="overview" value="1"/>
       </customproperties>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" providerKey="delimitedtext" checked="Qt::Checked" id="gares_cypres20171212094027421" source="file:///C:/CartoInddigo/DiagBuilder/db/gares-cypres.csv?encoding=System&amp;type=csv&amp;delimiter=;&amp;quote=&amp;escape=&amp;xyDms=yes&amp;wktField=geom&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no" name="gares-cypres">
+    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="com_poly20171221112250562" source="../vector/com_poly.shp" name="com_poly">
       <customproperties/>
     </layer-tree-layer>
     <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="urbain20171124230705656" source="C:/CartoInddigo/Mes Données SIG/vecteurs/CLC/urbain.TAB" name="urbain">
@@ -40,7 +37,10 @@
     <layer-tree-layer expanded="1" providerKey="spatialite" checked="Qt::Checked" id="communes_pt220180312210157881" source="dbname='C:/CartoInddigo/DiagBuilder/db/diagBuilder2.sqlite' table=&quot;communes-pt2&quot; (geom) sql=&quot;dpop13&quot; > 1000" name="ComFr Pop 1000">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" providerKey="spatialite" checked="Qt::Checked" id="communes_poly220180312202436771" source="dbname='C:/CartoInddigo/DiagBuilder/db/diagBuilder2.sqlite' table=&quot;communes-poly2&quot; (geom) sql=" name="ComFr Typologie">
+    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="zone93_copier20180323111957407" source="../vector/zone93.shp" name="zone93 copier">
+      <customproperties/>
+    </layer-tree-layer>
+    <layer-tree-layer expanded="0" providerKey="spatialite" checked="Qt::Checked" id="communes_poly220180312202436771" source="dbname='C:/CartoInddigo/DiagBuilder/db/diagBuilder2.sqlite' table=&quot;communes-poly2&quot; (geom) sql=" name="ComFr Typologie">
       <customproperties/>
     </layer-tree-layer>
   </layer-tree-group>
@@ -48,10 +48,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>477390.88714735873509198</xmin>
-      <ymin>6268376.20269399881362915</ymin>
-      <xmax>515585.8137846247991547</xmax>
-      <ymax>6311402.42378967255353928</ymax>
+      <xmin>484431.06565997196594253</xmin>
+      <ymin>6268114.48602066747844219</ymin>
+      <xmax>522625.99229723803000525</xmax>
+      <ymax>6311140.70711634121835232</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -73,6 +73,7 @@
       <layer_coordinate_transform destAuthId="EPSG:2154" srcAuthId="USER:100013" srcDatumTransform="-1" destDatumTransform="-1" layerid="sirenselected20171201144911656"/>
       <layer_coordinate_transform destAuthId="EPSG:2154" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="car2_9320171124215653812"/>
       <layer_coordinate_transform destAuthId="EPSG:2154" srcAuthId="USER:100000" srcDatumTransform="-1" destDatumTransform="-1" layerid="forets20171125010636078"/>
+      <layer_coordinate_transform destAuthId="EPSG:2154" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="zone93_copier20180323104413192"/>
       <layer_coordinate_transform destAuthId="EPSG:2154" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="Centres20180312202307735"/>
       <layer_coordinate_transform destAuthId="EPSG:2154" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="zone_9320171124215250515"/>
       <layer_coordinate_transform destAuthId="EPSG:2154" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="com_pt20171221112141859"/>
@@ -84,6 +85,7 @@
       <layer_coordinate_transform destAuthId="EPSG:2154" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="com_pt_france20171124215653765"/>
       <layer_coordinate_transform destAuthId="EPSG:2154" srcAuthId="USER:100013" srcDatumTransform="-1" destDatumTransform="-1" layerid="sirenselected_copier20171201150433359"/>
       <layer_coordinate_transform destAuthId="EPSG:2154" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="communes_pt220180323094603419"/>
+      <layer_coordinate_transform destAuthId="EPSG:2154" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="zone93_copier20180323111957407"/>
       <layer_coordinate_transform destAuthId="EPSG:2154" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="memory_20171125003249890"/>
       <layer_coordinate_transform destAuthId="EPSG:2154" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="com_pt20171124223824843"/>
       <layer_coordinate_transform destAuthId="EPSG:2154" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="car20171124223824718"/>
@@ -97,9 +99,9 @@
       <layer_coordinate_transform destAuthId="EPSG:2154" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="TRONCON_HYDROGRAPHIQUE20171124224124250"/>
       <layer_coordinate_transform destAuthId="EPSG:2154" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="com_pt_copier20171124232931421"/>
       <layer_coordinate_transform destAuthId="EPSG:2154" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ZONE_OCCUPATION_SOL20171124224249468"/>
+      <layer_coordinate_transform destAuthId="EPSG:2154" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="TRONCON_ROUTE20180323100550645"/>
       <layer_coordinate_transform destAuthId="EPSG:2154" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="com_poly20171221112250562"/>
       <layer_coordinate_transform destAuthId="EPSG:2154" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="zone_93_copier20171201150455359"/>
-      <layer_coordinate_transform destAuthId="EPSG:2154" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="TRONCON_ROUTE20180323100550645"/>
       <layer_coordinate_transform destAuthId="EPSG:2154" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="ZONE_OCCUPATION_SOL_copier20171124224507718"/>
       <layer_coordinate_transform destAuthId="EPSG:2154" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="iris20171124215653828"/>
       <layer_coordinate_transform destAuthId="EPSG:2154" srcAuthId="EPSG:2154" srcDatumTransform="-1" destDatumTransform="-1" layerid="CONTOURS_IRIS_FE20171124170917171"/>
@@ -121,21 +123,21 @@
       <item>com_pt20171221112141859</item>
       <item>zone9320171221112229437</item>
       <item>com_poly20171221112250562</item>
-      <item>Centres20180312202307735</item>
       <item>communes_poly220180312202436771</item>
       <item>communes_pt220180312210157881</item>
       <item>TRONCON_ROUTE20180323100550645</item>
+      <item>zone93_copier20180323111957407</item>
     </custom-order>
   </layer-tree-canvas>
   <legend updateDrawingOrder="true">
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="Centres" showFeatureCount="0">
-      <filegroup open="true" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="Centres20180312202307735" visible="0"/>
-      </filegroup>
-    </legendlayer>
     <legendlayer drawingOrder="-1" open="true" checked="Qt::Unchecked" name="com_pt" showFeatureCount="0">
       <filegroup open="true" hidden="false">
         <legendlayerfile isInOverview="0" layerid="com_pt20171221112141859" visible="0"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="gares-cypres" showFeatureCount="0">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile isInOverview="0" layerid="gares_cypres20171212094027421" visible="1"/>
       </filegroup>
     </legendlayer>
     <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="TRONCON_ROUTE" showFeatureCount="0">
@@ -148,19 +150,14 @@
         <legendlayerfile isInOverview="0" layerid="departements_20140306_5m20171125005933609" visible="1"/>
       </filegroup>
     </legendlayer>
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="com_poly" showFeatureCount="0">
-      <filegroup open="true" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="com_poly20171221112250562" visible="1"/>
-      </filegroup>
-    </legendlayer>
     <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="zone93" showFeatureCount="0">
       <filegroup open="true" hidden="false">
         <legendlayerfile isInOverview="1" layerid="zone9320171221112229437" visible="1"/>
       </filegroup>
     </legendlayer>
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="gares-cypres" showFeatureCount="0">
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="com_poly" showFeatureCount="0">
       <filegroup open="true" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="gares_cypres20171212094027421" visible="1"/>
+        <legendlayerfile isInOverview="0" layerid="com_poly20171221112250562" visible="1"/>
       </filegroup>
     </legendlayer>
     <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="urbain" showFeatureCount="0">
@@ -183,8 +180,13 @@
         <legendlayerfile isInOverview="0" layerid="communes_pt220180312210157881" visible="1"/>
       </filegroup>
     </legendlayer>
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="ComFr Typologie" showFeatureCount="0">
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="zone93 copier" showFeatureCount="0">
       <filegroup open="true" hidden="false">
+        <legendlayerfile isInOverview="0" layerid="zone93_copier20180323111957407" visible="1"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer drawingOrder="-1" open="false" checked="Qt::Checked" name="ComFr Typologie" showFeatureCount="0">
+      <filegroup open="false" hidden="false">
         <legendlayerfile isInOverview="0" layerid="communes_poly220180312202436771" visible="1"/>
       </filegroup>
     </legendlayer>
@@ -207,22 +209,62 @@
         </layer>
       </symbol>
       <SnapLine y1="0" x1="0" y2="210" x2="0"/>
-      <ComposerLabel valign="64" marginX="1" marginY="1" labelText="Sources : INSEE, 2014.&#xa;Réalisation : INDDIGO, 2017" htmlState="0" halign="4">
-        <LabelFont description="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0" style=""/>
+      <ComposerLabel valign="128" marginX="1" marginY="1" labelText="N" htmlState="0" halign="4">
+        <LabelFont description="Tahoma,10,-1,5,50,0,0,0,0,0" style=""/>
         <FontColor red="77" blue="77" green="75"/>
-        <ComposerItem pagey="196.578" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="188.218" y="196.578" visibility="1" zValue="8" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="61.7822" outlineWidth="0.3" excludeFromExports="0" uuid="{9e04fde7-4ebb-42c4-a38e-e4b31e7c3491}" height="13.4222" itemRotation="0" frame="false" pagex="188.218">
+        <ComposerItem pagey="7.6611" page="2" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="180.884" y="227.661" visibility="1" zValue="9" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="4.14687" outlineWidth="0.3" excludeFromExports="0" uuid="{0f826c39-b6af-45ed-a47d-081fe38e7f00}" height="4.6875" itemRotation="0" frame="false" pagex="180.884">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
           <customproperties/>
         </ComposerItem>
       </ComposerLabel>
-      <ComposerScaleBar lineCapStyle="square" style="Line Ticks Up" numMapUnitsPerScaleBarUnit="1000" segmentSizeMode="0" alignment="0" numSegments="2" segmentMillimeters="4.84439" lineJoinStyle="miter" minBarWidth="9" numUnitsPerSegment="1000" units="1" labelBarSpace="3" outlineWidth="0.3" numSegmentsLeft="0" maxBarWidth="121" height="1" boxContentSpace="1" mapId="0" unitLabel=" km">
+      <ComposerLabel valign="128" marginX="1" marginY="1" labelText="N" htmlState="0" halign="4">
+        <LabelFont description="Tahoma,10,-1,5,50,0,0,0,0,0" style=""/>
+        <FontColor red="77" blue="77" green="75"/>
+        <ComposerItem pagey="7.6611" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="180.556" y="7.6611" visibility="1" zValue="8" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="4.14687" outlineWidth="0.3" excludeFromExports="0" uuid="{87867019-d73f-40e0-a013-40f0ea582c93}" height="4.6875" itemRotation="0" frame="false" pagex="180.556">
+          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+          <customproperties/>
+        </ComposerItem>
+      </ComposerLabel>
+      <ComposerShape shapeType="2" cornerRadius="0">
+        <symbol alpha="1" clip_to_extent="1" type="fill" name="">
+          <layer pass="0" class="SimpleFill" locked="0">
+            <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
+            <prop k="color" v="77,75,77,255"/>
+            <prop k="joinstyle" v="miter"/>
+            <prop k="offset" v="0,0"/>
+            <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+            <prop k="offset_unit" v="MM"/>
+            <prop k="outline_color" v="77,75,77,255"/>
+            <prop k="outline_style" v="no"/>
+            <prop k="outline_width" v="0.3"/>
+            <prop k="outline_width_unit" v="MM"/>
+            <prop k="style" v="solid"/>
+          </layer>
+        </symbol>
+        <ComposerItem pagey="2" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="181.296" y="2" visibility="1" zValue="7" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="2.66516" outlineWidth="0.3" excludeFromExports="0" uuid="{da82a7c2-77df-4939-9028-7d26e8475e42}" height="6.13608" itemRotation="0" frame="false" pagex="181.296">
+          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+          <customproperties/>
+        </ComposerItem>
+      </ComposerShape>
+      <ComposerLabel valign="64" marginX="1" marginY="1" labelText="Sources : INSEE, 2014.&#xa;Réalisation : INDDIGO, 2017" htmlState="0" halign="4">
+        <LabelFont description="MS Shell Dlg 2,10,-1,5,50,0,0,0,0,0" style=""/>
+        <FontColor red="77" blue="77" green="75"/>
+        <ComposerItem pagey="196.578" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="188.218" y="196.578" visibility="1" zValue="6" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="61.7822" outlineWidth="0.3" excludeFromExports="0" uuid="{9e04fde7-4ebb-42c4-a38e-e4b31e7c3491}" height="13.4222" itemRotation="0" frame="false" pagex="188.218">
+          <FrameColor alpha="255" red="0" blue="0" green="0"/>
+          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
+          <customproperties/>
+        </ComposerItem>
+      </ComposerLabel>
+      <ComposerScaleBar lineCapStyle="square" style="Line Ticks Up" numMapUnitsPerScaleBarUnit="1000" segmentSizeMode="0" alignment="0" numSegments="2" segmentMillimeters="6.66778" lineJoinStyle="miter" minBarWidth="9" numUnitsPerSegment="1000" units="1" labelBarSpace="3" outlineWidth="0.3" numSegmentsLeft="0" maxBarWidth="121" height="1" boxContentSpace="1" mapId="0" unitLabel=" km">
         <scaleBarFont description="MS Shell Dlg 2,8,-1,5,50,0,0,0,0,0" style=""/>
         <fillColor alpha="255" red="77" blue="77" green="75"/>
         <fillColor2 alpha="255" red="255" blue="255" green="255"/>
         <strokeColor alpha="255" red="77" blue="77" green="75"/>
         <textColor alpha="255" red="77" blue="77" green="75"/>
-        <ComposerItem pagey="199.375" page="1" id="" lastValidViewScaleFactor="-1" positionMode="8" positionLock="false" x="165.642" y="199.375" visibility="1" zValue="7" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="19.3888" outlineWidth="0.3" excludeFromExports="0" uuid="{cef5166a-01c7-4571-a6e4-e7f94e097e56}" height="10.625" itemRotation="0" frame="false" pagex="165.642">
+        <ComposerItem pagey="185.953" page="1" id="" lastValidViewScaleFactor="-1" positionMode="4" positionLock="false" x="209.415" y="185.953" visibility="1" zValue="5" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="23.0356" outlineWidth="0.3" excludeFromExports="0" uuid="{cef5166a-01c7-4571-a6e4-e7f94e097e56}" height="10.625" itemRotation="0" frame="false" pagex="209.415">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
           <customproperties/>
@@ -248,7 +290,7 @@
         </styles>
         <layer-tree-group expanded="1" checked="Qt::Checked" name="">
           <customproperties/>
-          <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="zone9320171221112229437" source="C:/Users/tjacquemot/Desktop/TRANFERT/10005879_PGD Grand Auch/vector/zone93.shp" name="zone93">
+          <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="zone9320171221112229437" source="../vector/zone93.shp" name="zone93">
             <customproperties>
               <property key="legend/title-label" value="Zone d'étude"/>
             </customproperties>
@@ -263,7 +305,7 @@
               <property key="legend/title-label" value="Communes"/>
             </customproperties>
           </layer-tree-layer>
-          <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="com_poly20171221112250562" source="C:/Users/tjacquemot/Desktop/TRANFERT/10005879_PGD Grand Auch/vector/com_poly.shp" name="com_poly">
+          <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="com_poly20171221112250562" source="../vector/com_poly.shp" name="com_poly">
             <customproperties>
               <property key="legend/title-label" value="Limites communales"/>
             </customproperties>
@@ -279,52 +321,19 @@
             </customproperties>
           </layer-tree-layer>
         </layer-tree-group>
-        <ComposerItem pagey="33.5229" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="188.218" y="33.5229" visibility="1" zValue="6" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="61.7822" outlineWidth="0.3" excludeFromExports="0" uuid="{dce5e2a3-732d-4836-99d3-41ab15870a68}" height="176.477" itemRotation="0" frame="false" pagex="188.218">
+        <ComposerItem pagey="33.5229" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="188.218" y="33.5229" visibility="1" zValue="4" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="61.7822" outlineWidth="0.3" excludeFromExports="0" uuid="{dce5e2a3-732d-4836-99d3-41ab15870a68}" height="176.477" itemRotation="0" frame="false" pagex="188.218">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="205" blue="220" green="220"/>
           <customproperties/>
         </ComposerItem>
       </ComposerLegend>
       <ComposerItemGroup>
-        <ComposerItemGroupElement uuid="{ba7bfd60-6066-4c6b-880e-53b86eaaba71}"/>
-        <ComposerItemGroupElement uuid="{339a0925-4fe8-4c8c-982a-7d7124be6c69}"/>
-        <ComposerItem pagey="-2.53923e-16" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="0" y="-2.53923e-16" visibility="1" zValue="5" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="4.14687" outlineWidth="0.3" excludeFromExports="0" uuid="{31b470bb-9319-49a3-97e4-2985b75d39b2}" height="10.3486" itemRotation="0" frame="false" pagex="0">
+        <ComposerItem pagey="2" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="180.884" y="2" visibility="1" zValue="3" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="4.14687" outlineWidth="0.3" excludeFromExports="0" uuid="{17bb3a16-0255-48e4-a917-a195c32fc1fe}" height="10.3486" itemRotation="0" frame="false" pagex="180.884">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
           <customproperties/>
         </ComposerItem>
       </ComposerItemGroup>
-      <ComposerLabel valign="128" marginX="1" marginY="1" labelText="N" htmlState="0" halign="4">
-        <LabelFont description="Tahoma,10,-1,5,50,0,0,0,0,0" style=""/>
-        <FontColor red="77" blue="77" green="75"/>
-        <ComposerItem pagey="5.6611" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="0" y="5.6611" visibility="1" zValue="4" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="4.14687" outlineWidth="0.3" excludeFromExports="0" uuid="{339a0925-4fe8-4c8c-982a-7d7124be6c69}" height="4.6875" itemRotation="0" frame="false" pagex="0">
-          <FrameColor alpha="255" red="0" blue="0" green="0"/>
-          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
-          <customproperties/>
-        </ComposerItem>
-      </ComposerLabel>
-      <ComposerShape shapeType="2" cornerRadius="0">
-        <symbol alpha="1" clip_to_extent="1" type="fill" name="">
-          <layer pass="0" class="SimpleFill" locked="0">
-            <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
-            <prop k="color" v="77,75,77,255"/>
-            <prop k="joinstyle" v="miter"/>
-            <prop k="offset" v="0,0"/>
-            <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-            <prop k="offset_unit" v="MM"/>
-            <prop k="outline_color" v="77,75,77,255"/>
-            <prop k="outline_style" v="no"/>
-            <prop k="outline_width" v="0.3"/>
-            <prop k="outline_width_unit" v="MM"/>
-            <prop k="style" v="solid"/>
-          </layer>
-        </symbol>
-        <ComposerItem pagey="-2.53923e-16" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="0.74" y="-2.53923e-16" visibility="1" zValue="3" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="2.66516" outlineWidth="0.3" excludeFromExports="0" uuid="{ba7bfd60-6066-4c6b-880e-53b86eaaba71}" height="6.13608" itemRotation="0" frame="false" pagex="0.74">
-          <FrameColor alpha="255" red="0" blue="0" green="0"/>
-          <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
-          <customproperties/>
-        </ComposerItem>
-      </ComposerShape>
       <ComposerLabel valign="128" marginX="3" marginY="0" labelText="TYPOLOGIE COMMUNALE" htmlState="0" halign="4">
         <LabelFont description="Tahoma,20,-1,5,50,0,0,0,0,0" style=""/>
         <FontColor red="77" blue="77" green="75"/>
@@ -335,7 +344,7 @@
         </ComposerItem>
       </ComposerLabel>
       <ComposerMap followPreset="false" mapRotation="0" keepLayerSet="false" followPresetName="" id="0" previewMode="Cache" drawCanvasItems="true">
-        <Extent ymin="6371157.23143556993454695" xmin="627453.85675909544806927" ymax="6402651.95397364068776369" xmax="655203.85678740043658763"/>
+        <Extent ymin="6371157.23143556993454695" xmin="627453.85675909544806927" ymax="6402651.95397365279495716" xmax="655203.85678740043658763"/>
         <LayerSet/>
         <Grid/>
         <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{6aca13ec-3a45-4d73-946e-421721572d83}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grille 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
@@ -387,7 +396,7 @@
           <annotationFontProperties description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" style=""/>
         </ComposerMapGrid>
         <AtlasMap scalingMode="2" atlasDriven="1" margin="0.05"/>
-        <ComposerItem pagey="0" page="1" id="" lastValidViewScaleFactor="3.69038" positionMode="0" positionLock="false" x="0" y="0" visibility="1" zValue="1" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="185.031" outlineWidth="0.25" excludeFromExports="0" uuid="{f04fab1a-e2bd-4e18-9549-31ce6355c3d4}" height="210" itemRotation="0" frame="false" pagex="0">
+        <ComposerItem pagey="0" page="1" id="" lastValidViewScaleFactor="2.07113" positionMode="0" positionLock="false" x="0" y="0" visibility="1" zValue="1" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="185.031" outlineWidth="0.25" excludeFromExports="0" uuid="{f04fab1a-e2bd-4e18-9549-31ce6355c3d4}" height="210" itemRotation="0" frame="false" pagex="0">
           <FrameColor alpha="255" red="70" blue="105" green="105"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
           <customproperties/>
@@ -401,115 +410,9 @@
         <property key="imageCropToContents" value="false"/>
       </customproperties>
     </Composition>
-    <Atlas hideCoverage="false" coverageLayer="zone9320171221112229437" singleFile="false" filenamePattern="'output_'||@atlas_featurenumber" enabled="true" coverageLayerName="zone93" filterFeatures="false" coverageLayerProvider="ogr" sortFeatures="false" pageNameExpression="" coverageLayerSource="C:/Users/tjacquemot/Desktop/TRANFERT/10005879_PGD Grand Auch/vector/zone93.shp"/>
+    <Atlas hideCoverage="false" coverageLayer="zone9320171221112229437" singleFile="false" filenamePattern="'output_'||@atlas_featurenumber" enabled="true" coverageLayerName="zone93" filterFeatures="false" coverageLayerProvider="ogr" sortFeatures="false" pageNameExpression="" coverageLayerSource="../vector/zone93.shp"/>
   </Composer>
   <projectlayers>
-    <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
-      <id>Centres20180312202307735</id>
-      <datasource>../vector/Centres.shp</datasource>
-      <keywordList>
-        <value></value>
-      </keywordList>
-      <layername>Centres</layername>
-      <srs>
-        <spatialrefsys>
-          <proj4>+proj=lcc +lat_1=49 +lat_2=44 +lat_0=46.5 +lon_0=3 +x_0=700000 +y_0=6600000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
-          <srsid>145</srsid>
-          <srid>2154</srid>
-          <authid>EPSG:2154</authid>
-          <description>RGF93 / Lambert-93</description>
-          <projectionacronym>lcc</projectionacronym>
-          <ellipsoidacronym>GRS80</ellipsoidacronym>
-          <geographicflag>false</geographicflag>
-        </spatialrefsys>
-      </srs>
-      <provider encoding="UTF-8">ogr</provider>
-      <vectorjoins/>
-      <layerDependencies/>
-      <expressionfields/>
-      <map-layer-style-manager current="">
-        <map-layer-style name=""/>
-      </map-layer-style-manager>
-      <edittypes>
-        <edittype widgetv2type="TextEdit" name="id">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-      </edittypes>
-      <renderer-v2 forceraster="0" symbollevels="0" type="singleSymbol" enableorderby="0">
-        <symbols>
-          <symbol alpha="1" clip_to_extent="1" type="fill" name="0">
-            <layer pass="0" class="SimpleFill" locked="0">
-              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="color" v="164,59,175,255"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.26"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="style" v="solid"/>
-            </layer>
-          </symbol>
-        </symbols>
-        <rotation/>
-        <sizescale scalemethod="diameter"/>
-      </renderer-v2>
-      <labeling type="simple"/>
-      <customproperties/>
-      <blendMode>0</blendMode>
-      <featureBlendMode>0</featureBlendMode>
-      <layerTransparency>0</layerTransparency>
-      <displayfield>id</displayfield>
-      <label>0</label>
-      <labelattributes>
-        <label fieldname="" text="Étiquette"/>
-        <family fieldname="" name="MS Shell Dlg 2"/>
-        <size fieldname="" units="pt" value="12"/>
-        <bold fieldname="" on="0"/>
-        <italic fieldname="" on="0"/>
-        <underline fieldname="" on="0"/>
-        <strikeout fieldname="" on="0"/>
-        <color fieldname="" red="0" blue="0" green="0"/>
-        <x fieldname=""/>
-        <y fieldname=""/>
-        <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
-        <angle fieldname="" value="0" auto="0"/>
-        <alignment fieldname="" value="center"/>
-        <buffercolor fieldname="" red="255" blue="255" green="255"/>
-        <buffersize fieldname="" units="pt" value="1"/>
-        <bufferenabled fieldname="" on=""/>
-        <multilineenabled fieldname="" on=""/>
-        <selectedonly on=""/>
-      </labelattributes>
-      <annotationform>.</annotationform>
-      <aliases>
-        <alias field="id" index="0" name=""/>
-      </aliases>
-      <excludeAttributesWMS/>
-      <excludeAttributesWFS/>
-      <attributeactions default="-1"/>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
-        <columns/>
-      </attributetableconfig>
-      <editform>.</editform>
-      <editforminit/>
-      <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>.</editforminitfilepath>
-      <editforminitcode><![CDATA[]]></editforminitcode>
-      <featformsuppress>0</featformsuppress>
-      <editorlayout>generatedlayout</editorlayout>
-      <widgets/>
-      <conditionalstyles>
-        <rowstyles/>
-        <fieldstyles/>
-      </conditionalstyles>
-      <defaults>
-        <default field="id" expression=""/>
-      </defaults>
-      <previewExpression></previewExpression>
-    </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Line" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <extent>
         <xmin>162802</xmin>
@@ -773,7 +676,7 @@
         </symbol>
       </SingleCategoryDiagramRenderer>
       <DiagramLayerSettings yPosColumn="-1" showColumn="-1" linePlacementFlags="10" placement="2" dist="0" xPosColumn="-1" priority="0" obstacle="0" zIndex="0" showAll="1"/>
-      <annotationform>C:/Users/tjacquemot/Desktop/TRANFERT/10005879_PGD Grand Auch/projets</annotationform>
+      <annotationform>../projets</annotationform>
       <aliases>
         <alias field="LARGEUR" index="0" name=""/>
         <alias field="TOPONYME" index="1" name=""/>
@@ -788,10 +691,10 @@
           <column width="-1" hidden="1" type="actions"/>
         </columns>
       </attributetableconfig>
-      <editform>C:/Users/tjacquemot/Desktop/TRANFERT/10005879_PGD Grand Auch/projets</editform>
+      <editform>../projets</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>C:/Users/tjacquemot/Desktop/TRANFERT/10005879_PGD Grand Auch/projets</editforminitfilepath>
+      <editforminitfilepath>../projets</editforminitfilepath>
       <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
 """
 Les formulaires QGIS peuvent avoir une fonction Python qui sera appelée à l'ouverture du formulaire.
@@ -1280,7 +1183,7 @@ def my_form_open(dialog, layer, feature):
       <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath></editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -1568,7 +1471,7 @@ def my_form_open(dialog, layer, feature):
         </symbol>
       </SingleCategoryDiagramRenderer>
       <DiagramLayerSettings yPosColumn="-1" showColumn="-1" linePlacementFlags="10" placement="0" dist="0" xPosColumn="-1" priority="0" obstacle="0" zIndex="0" showAll="1"/>
-      <annotationform>C:/Users/tjacquemot/Desktop/TRANFERT/10005879_PGD Grand Auch/projets</annotationform>
+      <annotationform>../projets</annotationform>
       <aliases>
         <alias field="NATURE" index="0" name=""/>
         <alias field="orig_ogc_fid" index="1" name=""/>
@@ -1582,10 +1485,10 @@ def my_form_open(dialog, layer, feature):
           <column width="-1" hidden="1" type="actions"/>
         </columns>
       </attributetableconfig>
-      <editform>C:/Users/tjacquemot/Desktop/TRANFERT/10005879_PGD Grand Auch/projets</editform>
+      <editform>../projets</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>C:/Users/tjacquemot/Desktop/TRANFERT/10005879_PGD Grand Auch/projets</editforminitfilepath>
+      <editforminitfilepath>../projets</editforminitfilepath>
       <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
 """
 Les formulaires QGIS peuvent avoir une fonction Python qui sera appelée à l'ouverture du formulaire.
@@ -1623,7 +1526,7 @@ def my_form_open(dialog, layer, feature):
         <ymax>6308737.42659513745456934</ymax>
       </extent>
       <id>com_poly20171221112250562</id>
-      <datasource>C:/Users/tjacquemot/Desktop/TRANFERT/10005879_PGD Grand Auch/vector/com_poly.shp</datasource>
+      <datasource>../vector/com_poly.shp</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -1910,7 +1813,7 @@ def my_form_open(dialog, layer, feature):
         </symbol>
       </SingleCategoryDiagramRenderer>
       <DiagramLayerSettings yPosColumn="-1" showColumn="-1" linePlacementFlags="10" placement="0" dist="0" xPosColumn="-1" priority="0" obstacle="0" zIndex="0" showAll="1"/>
-      <annotationform>C:/Users/tjacquemot/Desktop/TRANFERT/10005879_PGD Grand Auch/projets</annotationform>
+      <annotationform>../projets</annotationform>
       <aliases>
         <alias field="id" index="0" name=""/>
         <alias field="insee" index="1" name=""/>
@@ -1949,7 +1852,7 @@ def my_form_open(dialog, layer, feature):
           <column width="-1" hidden="1" type="actions"/>
         </columns>
       </attributetableconfig>
-      <editform>C:/Users/tjacquemot/Desktop/TRANFERT/10005879_PGD Grand Auch/projets</editform>
+      <editform>../projets</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
       <editforminitfilepath>/projets</editforminitfilepath>
@@ -2002,7 +1905,7 @@ def my_form_open(dialog, layer, feature):
         <ymax>6380599.99979998823255301</ymax>
       </extent>
       <id>com_pt20171221112141859</id>
-      <datasource>C:/Users/tjacquemot/Desktop/TRANFERT/10005879_PGD Grand Auch/vector/com_pt.shp</datasource>
+      <datasource>../vector/com_pt.shp</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -2284,7 +2187,7 @@ def my_form_open(dialog, layer, feature):
         </symbol>
       </SingleCategoryDiagramRenderer>
       <DiagramLayerSettings yPosColumn="-1" showColumn="-1" linePlacementFlags="10" placement="0" dist="0" xPosColumn="-1" priority="0" obstacle="0" zIndex="0" showAll="1"/>
-      <annotationform>C:/Users/tjacquemot/Desktop/TRANFERT/10005879_PGD Grand Auch/projets</annotationform>
+      <annotationform>../projets</annotationform>
       <aliases>
         <alias field="id" index="0" name=""/>
         <alias field="dep" index="1" name=""/>
@@ -2315,10 +2218,10 @@ def my_form_open(dialog, layer, feature):
           <column width="-1" hidden="1" type="actions"/>
         </columns>
       </attributetableconfig>
-      <editform>C:/Users/tjacquemot/Desktop/TRANFERT/10005879_PGD Grand Auch/projets</editform>
+      <editform>../projets</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>C:/Users/tjacquemot/Desktop/TRANFERT/10005879_PGD Grand Auch/projets</editforminitfilepath>
+      <editforminitfilepath>../projets</editforminitfilepath>
       <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
 """
 Les formulaires QGIS peuvent avoir une fonction Python qui sera appelée à l'ouverture du formulaire.
@@ -3483,7 +3386,7 @@ def my_form_open(dialog, layer, feature):
         </symbol>
       </SingleCategoryDiagramRenderer>
       <DiagramLayerSettings yPosColumn="-1" showColumn="-1" linePlacementFlags="10" placement="0" dist="0" xPosColumn="-1" priority="0" obstacle="0" zIndex="0" showAll="1"/>
-      <annotationform>C:/Users/tjacquemot/Desktop/TRANFERT/10005879_PGD Grand Auch/projets</annotationform>
+      <annotationform>../projets</annotationform>
       <aliases>
         <alias field="code_insee" index="0" name=""/>
         <alias field="nom" index="1" name=""/>
@@ -3502,10 +3405,10 @@ def my_form_open(dialog, layer, feature):
           <column width="-1" hidden="1" type="actions"/>
         </columns>
       </attributetableconfig>
-      <editform>C:/Users/tjacquemot/Desktop/TRANFERT/10005879_PGD Grand Auch/projets</editform>
+      <editform>../projets</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>C:/Users/tjacquemot/Desktop/TRANFERT/10005879_PGD Grand Auch/projets</editforminitfilepath>
+      <editforminitfilepath>../projets</editforminitfilepath>
       <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
 """
 Les formulaires QGIS peuvent avoir une fonction Python qui sera appelée à l'ouverture du formulaire.
@@ -3811,9 +3714,29 @@ def my_form_open(dialog, layer, feature):
       <renderer-v2 forceraster="0" symbollevels="0" type="singleSymbol" enableorderby="0">
         <symbols>
           <symbol alpha="1" clip_to_extent="1" type="marker" name="0">
-            <layer pass="0" class="SvgMarker" locked="0">
+            <layer pass="0" class="SimpleMarker" locked="0">
               <prop k="angle" v="0"/>
               <prop k="color" v="77,75,77,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="name" v="circle"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_style" v="no"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="2.9"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+            </layer>
+            <layer pass="0" class="SvgMarker" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="255,255,255,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
               <prop k="name" v="transport/transport_train_station2.svg"/>
               <prop k="offset" v="0,0"/>
@@ -3824,7 +3747,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="outline_width_unit" v="MM"/>
               <prop k="scale_method" v="diameter"/>
-              <prop k="size" v="3"/>
+              <prop k="size" v="2.4"/>
               <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="size_unit" v="MM"/>
               <prop k="vertical_anchor_point" v="1"/>
@@ -3860,9 +3783,9 @@ def my_form_open(dialog, layer, feature):
         <property key="labeling/dist" value="0"/>
         <property key="labeling/distInMapUnits" value="false"/>
         <property key="labeling/distMapUnitScale" value="0,0,0,0,0,0"/>
-        <property key="labeling/drawLabels" value="false"/>
-        <property key="labeling/enabled" value="false"/>
-        <property key="labeling/fieldName" value=""/>
+        <property key="labeling/drawLabels" value="true"/>
+        <property key="labeling/enabled" value="true"/>
+        <property key="labeling/fieldName" value="IDCYPRES"/>
         <property key="labeling/fitInPolygonOnly" value="false"/>
         <property key="labeling/fontCapitals" value="0"/>
         <property key="labeling/fontFamily" value="MS Shell Dlg 2"/>
@@ -3879,7 +3802,7 @@ def my_form_open(dialog, layer, feature):
         <property key="labeling/fontWeight" value="50"/>
         <property key="labeling/fontWordSpacing" value="0"/>
         <property key="labeling/formatNumbers" value="false"/>
-        <property key="labeling/isExpression" value="true"/>
+        <property key="labeling/isExpression" value="false"/>
         <property key="labeling/labelOffsetInMapUnits" value="true"/>
         <property key="labeling/labelOffsetMapUnitScale" value="0,0,0,0,0,0"/>
         <property key="labeling/labelPerPart" value="false"/>
@@ -3898,7 +3821,7 @@ def my_form_open(dialog, layer, feature):
         <property key="labeling/obstacleType" value="0"/>
         <property key="labeling/offsetType" value="0"/>
         <property key="labeling/placeDirectionSymbol" value="0"/>
-        <property key="labeling/placement" value="6"/>
+        <property key="labeling/placement" value="1"/>
         <property key="labeling/placementFlags" value="10"/>
         <property key="labeling/plussign" value="false"/>
         <property key="labeling/predefinedPositionOrder" value="TR,TL,BR,BL,R,L,TSR,BSR"/>
@@ -3968,7 +3891,7 @@ def my_form_open(dialog, layer, feature):
         <property key="labeling/textColorB" value="0"/>
         <property key="labeling/textColorG" value="0"/>
         <property key="labeling/textColorR" value="0"/>
-        <property key="labeling/textTransp" value="0"/>
+        <property key="labeling/textTransp" value="100"/>
         <property key="labeling/upsidedownLabels" value="0"/>
         <property key="labeling/useSubstitutions" value="false"/>
         <property key="labeling/wrapChar" value=""/>
@@ -4032,7 +3955,7 @@ def my_form_open(dialog, layer, feature):
         </symbol>
       </SingleCategoryDiagramRenderer>
       <DiagramLayerSettings yPosColumn="-1" showColumn="-1" linePlacementFlags="10" placement="0" dist="0" xPosColumn="-1" priority="0" obstacle="0" zIndex="0" showAll="1"/>
-      <annotationform>C:/Users/tjacquemot/Desktop/TRANFERT/10005879_PGD Grand Auch/projets</annotationform>
+      <annotationform>../projets</annotationform>
       <aliases>
         <alias field="IDCYPRES" index="0" name=""/>
         <alias field="IDUIC" index="1" name=""/>
@@ -4201,10 +4124,10 @@ def my_form_open(dialog, layer, feature):
           <column width="-1" hidden="1" type="actions"/>
         </columns>
       </attributetableconfig>
-      <editform>C:/Users/tjacquemot/Desktop/TRANFERT/10005879_PGD Grand Auch/projets</editform>
+      <editform>../projets</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>C:/Users/tjacquemot/Desktop/TRANFERT/10005879_PGD Grand Auch/projets</editforminitfilepath>
+      <editforminitfilepath>../projets</editforminitfilepath>
       <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
 """
 Les formulaires QGIS peuvent avoir une fonction Python qui sera appelée à l'ouverture du formulaire.
@@ -4573,7 +4496,7 @@ def my_form_open(dialog, layer, feature):
         </symbol>
       </SingleCategoryDiagramRenderer>
       <DiagramLayerSettings yPosColumn="-1" showColumn="-1" linePlacementFlags="10" placement="0" dist="0" xPosColumn="-1" priority="0" obstacle="0" zIndex="0" showAll="1"/>
-      <annotationform>C:/Users/tjacquemot/Desktop/TRANFERT/10005879_PGD Grand Auch/projets</annotationform>
+      <annotationform>../projets</annotationform>
       <aliases>
         <alias field="ID" index="0" name=""/>
         <alias field="CODE_06" index="1" name=""/>
@@ -4590,10 +4513,10 @@ def my_form_open(dialog, layer, feature):
           <column width="-1" hidden="1" type="actions"/>
         </columns>
       </attributetableconfig>
-      <editform>C:/Users/tjacquemot/Desktop/TRANFERT/10005879_PGD Grand Auch/projets</editform>
+      <editform>../projets</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>C:/Users/tjacquemot/Desktop/TRANFERT/10005879_PGD Grand Auch/projets</editforminitfilepath>
+      <editforminitfilepath>../projets</editforminitfilepath>
       <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
 """
 Les formulaires QGIS peuvent avoir une fonction Python qui sera appelée à l'ouverture du formulaire.
@@ -4632,7 +4555,7 @@ def my_form_open(dialog, layer, feature):
         <ymax>6308737.42659513745456934</ymax>
       </extent>
       <id>zone9320171221112229437</id>
-      <datasource>C:/Users/tjacquemot/Desktop/TRANFERT/10005879_PGD Grand Auch/vector/zone93.shp</datasource>
+      <datasource>../vector/zone93.shp</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -4710,7 +4633,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="157,0,65,255"/>
+              <prop k="outline_color" v="77,75,77,255"/>
               <prop k="outline_style" v="solid"/>
               <prop k="outline_width" v="1"/>
               <prop k="outline_width_unit" v="MM"/>
@@ -4919,7 +4842,7 @@ def my_form_open(dialog, layer, feature):
         </symbol>
       </SingleCategoryDiagramRenderer>
       <DiagramLayerSettings yPosColumn="-1" showColumn="-1" linePlacementFlags="10" placement="0" dist="0" xPosColumn="-1" priority="0" obstacle="0" zIndex="0" showAll="1"/>
-      <annotationform>C:/Users/tjacquemot/Desktop/TRANFERT/10005879_PGD Grand Auch/projets</annotationform>
+      <annotationform>../projets</annotationform>
       <aliases>
         <alias field="id" index="0" name=""/>
         <alias field="insee" index="1" name=""/>
@@ -4958,10 +4881,396 @@ def my_form_open(dialog, layer, feature):
           <column width="-1" hidden="1" type="actions"/>
         </columns>
       </attributetableconfig>
-      <editform>C:/Users/tjacquemot/Desktop/TRANFERT/10005879_PGD Grand Auch/projets</editform>
+      <editform>../projets</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>C:/Users/tjacquemot/Desktop/TRANFERT/10005879_PGD Grand Auch/projets</editforminitfilepath>
+      <editforminitfilepath>../projets</editforminitfilepath>
+      <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
+"""
+Les formulaires QGIS peuvent avoir une fonction Python qui sera appelée à l'ouverture du formulaire.
+
+Utilisez cette fonction pour ajouter plus de fonctionnalités à vos formulaires.
+
+Entrez le nom de la fonction dans le champ "Fonction d'initialisation Python".
+Voici un exemple à suivre:
+"""
+from qgis.PyQt.QtWidgets import QWidget
+
+def my_form_open(dialog, layer, feature):
+    geom = feature.geometry()
+    control = dialog.findChild(QWidget, "MyLineEdit")
+
+]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <widgets/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <defaults>
+        <default field="id" expression=""/>
+        <default field="insee" expression=""/>
+        <default field="_insee" expression=""/>
+        <default field="nom" expression=""/>
+        <default field="pnomqgis" expression=""/>
+        <default field="pnommin" expression=""/>
+        <default field="pdep" expression=""/>
+        <default field="pcom" expression=""/>
+        <default field="pcp" expression=""/>
+        <default field="ptypecom" expression=""/>
+        <default field="wikipedia" expression=""/>
+        <default field="surf_m2" expression=""/>
+        <default field="i_p12_pop" expression=""/>
+        <default field="pdpop13" expression=""/>
+      </defaults>
+      <previewExpression></previewExpression>
+    </maplayer>
+    <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+      <extent>
+        <xmin>486385.00899804075015709</xmin>
+        <ymin>6274527.26597730629146099</ymin>
+        <xmax>522761.1296049608499743</xmax>
+        <ymax>6308737.42659513745456934</ymax>
+      </extent>
+      <id>zone93_copier20180323111957407</id>
+      <datasource>../vector/zone93.shp</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>zone93 copier</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=lcc +lat_1=49 +lat_2=44 +lat_0=46.5 +lon_0=3 +x_0=700000 +y_0=6600000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs</proj4>
+          <srsid>145</srsid>
+          <srid>2154</srid>
+          <authid>EPSG:2154</authid>
+          <description>RGF93 / Lambert-93</description>
+          <projectionacronym>lcc</projectionacronym>
+          <ellipsoidacronym>GRS80</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <provider encoding="System">ogr</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <edittypes>
+        <edittype widgetv2type="TextEdit" name="id">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="insee">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="_insee">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="nom">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="pnomqgis">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="pnommin">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="pdep">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="pcom">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="pcp">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="ptypecom">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="wikipedia">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="surf_m2">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="i_p12_pop">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="pdpop13">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+      </edittypes>
+      <renderer-v2 forceraster="0" preprocessing="0" type="invertedPolygonRenderer" enableorderby="0">
+        <renderer-v2 forceraster="0" symbollevels="0" type="singleSymbol" enableorderby="0">
+          <symbols>
+            <symbol alpha="1" clip_to_extent="1" type="fill" name="0">
+              <layer pass="0" class="ShapeburstFill" locked="0">
+                <prop k="blur_radius" v="18"/>
+                <prop k="color" v="70,105,105,255"/>
+                <prop k="color1" v="0,0,255,255"/>
+                <prop k="color2" v="0,255,0,255"/>
+                <prop k="color_type" v="0"/>
+                <prop k="discrete" v="0"/>
+                <prop k="distance_map_unit_scale" v="0,0,0,0,0,0"/>
+                <prop k="distance_unit" v="MM"/>
+                <prop k="gradient_color2" v="255,255,255,128"/>
+                <prop k="ignore_rings" v="0"/>
+                <prop k="max_distance" v="3"/>
+                <prop k="offset" v="0,0"/>
+                <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+                <prop k="offset_unit" v="MM"/>
+                <prop k="use_whole_shape" v="0"/>
+              </layer>
+            </symbol>
+          </symbols>
+          <rotation/>
+          <sizescale scalemethod="diameter"/>
+        </renderer-v2>
+      </renderer-v2>
+      <labeling type="simple"/>
+      <customproperties>
+        <property key="labeling" value="pal"/>
+        <property key="labeling/addDirectionSymbol" value="false"/>
+        <property key="labeling/angleOffset" value="0"/>
+        <property key="labeling/blendMode" value="0"/>
+        <property key="labeling/bufferBlendMode" value="0"/>
+        <property key="labeling/bufferColorA" value="255"/>
+        <property key="labeling/bufferColorB" value="255"/>
+        <property key="labeling/bufferColorG" value="255"/>
+        <property key="labeling/bufferColorR" value="255"/>
+        <property key="labeling/bufferDraw" value="false"/>
+        <property key="labeling/bufferJoinStyle" value="128"/>
+        <property key="labeling/bufferNoFill" value="false"/>
+        <property key="labeling/bufferSize" value="1"/>
+        <property key="labeling/bufferSizeInMapUnits" value="false"/>
+        <property key="labeling/bufferSizeMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/bufferTransp" value="0"/>
+        <property key="labeling/centroidInside" value="false"/>
+        <property key="labeling/centroidWhole" value="false"/>
+        <property key="labeling/decimals" value="3"/>
+        <property key="labeling/displayAll" value="false"/>
+        <property key="labeling/dist" value="0"/>
+        <property key="labeling/distInMapUnits" value="false"/>
+        <property key="labeling/distMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/drawLabels" value="false"/>
+        <property key="labeling/enabled" value="false"/>
+        <property key="labeling/fieldName" value=""/>
+        <property key="labeling/fitInPolygonOnly" value="false"/>
+        <property key="labeling/fontCapitals" value="0"/>
+        <property key="labeling/fontFamily" value="MS Shell Dlg 2"/>
+        <property key="labeling/fontItalic" value="false"/>
+        <property key="labeling/fontLetterSpacing" value="0"/>
+        <property key="labeling/fontLimitPixelSize" value="false"/>
+        <property key="labeling/fontMaxPixelSize" value="10000"/>
+        <property key="labeling/fontMinPixelSize" value="3"/>
+        <property key="labeling/fontSize" value="8.25"/>
+        <property key="labeling/fontSizeInMapUnits" value="false"/>
+        <property key="labeling/fontSizeMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/fontStrikeout" value="false"/>
+        <property key="labeling/fontUnderline" value="false"/>
+        <property key="labeling/fontWeight" value="50"/>
+        <property key="labeling/fontWordSpacing" value="0"/>
+        <property key="labeling/formatNumbers" value="false"/>
+        <property key="labeling/isExpression" value="true"/>
+        <property key="labeling/labelOffsetInMapUnits" value="true"/>
+        <property key="labeling/labelOffsetMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/labelPerPart" value="false"/>
+        <property key="labeling/leftDirectionSymbol" value="&lt;"/>
+        <property key="labeling/limitNumLabels" value="false"/>
+        <property key="labeling/maxCurvedCharAngleIn" value="25"/>
+        <property key="labeling/maxCurvedCharAngleOut" value="-25"/>
+        <property key="labeling/maxNumLabels" value="2000"/>
+        <property key="labeling/mergeLines" value="false"/>
+        <property key="labeling/minFeatureSize" value="0"/>
+        <property key="labeling/multilineAlign" value="4294967295"/>
+        <property key="labeling/multilineHeight" value="1"/>
+        <property key="labeling/namedStyle" value="Normal"/>
+        <property key="labeling/obstacle" value="true"/>
+        <property key="labeling/obstacleFactor" value="1"/>
+        <property key="labeling/obstacleType" value="0"/>
+        <property key="labeling/offsetType" value="0"/>
+        <property key="labeling/placeDirectionSymbol" value="0"/>
+        <property key="labeling/placement" value="1"/>
+        <property key="labeling/placementFlags" value="10"/>
+        <property key="labeling/plussign" value="false"/>
+        <property key="labeling/predefinedPositionOrder" value="TR,TL,BR,BL,R,L,TSR,BSR"/>
+        <property key="labeling/preserveRotation" value="true"/>
+        <property key="labeling/previewBkgrdColor" value="#ffffff"/>
+        <property key="labeling/priority" value="5"/>
+        <property key="labeling/quadOffset" value="4"/>
+        <property key="labeling/repeatDistance" value="0"/>
+        <property key="labeling/repeatDistanceMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/repeatDistanceUnit" value="1"/>
+        <property key="labeling/reverseDirectionSymbol" value="false"/>
+        <property key="labeling/rightDirectionSymbol" value=">"/>
+        <property key="labeling/scaleMax" value="10000000"/>
+        <property key="labeling/scaleMin" value="1"/>
+        <property key="labeling/scaleVisibility" value="false"/>
+        <property key="labeling/shadowBlendMode" value="6"/>
+        <property key="labeling/shadowColorB" value="0"/>
+        <property key="labeling/shadowColorG" value="0"/>
+        <property key="labeling/shadowColorR" value="0"/>
+        <property key="labeling/shadowDraw" value="false"/>
+        <property key="labeling/shadowOffsetAngle" value="135"/>
+        <property key="labeling/shadowOffsetDist" value="1"/>
+        <property key="labeling/shadowOffsetGlobal" value="true"/>
+        <property key="labeling/shadowOffsetMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shadowOffsetUnits" value="1"/>
+        <property key="labeling/shadowRadius" value="1.5"/>
+        <property key="labeling/shadowRadiusAlphaOnly" value="false"/>
+        <property key="labeling/shadowRadiusMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shadowRadiusUnits" value="1"/>
+        <property key="labeling/shadowScale" value="100"/>
+        <property key="labeling/shadowTransparency" value="30"/>
+        <property key="labeling/shadowUnder" value="0"/>
+        <property key="labeling/shapeBlendMode" value="0"/>
+        <property key="labeling/shapeBorderColorA" value="255"/>
+        <property key="labeling/shapeBorderColorB" value="128"/>
+        <property key="labeling/shapeBorderColorG" value="128"/>
+        <property key="labeling/shapeBorderColorR" value="128"/>
+        <property key="labeling/shapeBorderWidth" value="0"/>
+        <property key="labeling/shapeBorderWidthMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shapeBorderWidthUnits" value="1"/>
+        <property key="labeling/shapeDraw" value="false"/>
+        <property key="labeling/shapeFillColorA" value="255"/>
+        <property key="labeling/shapeFillColorB" value="255"/>
+        <property key="labeling/shapeFillColorG" value="255"/>
+        <property key="labeling/shapeFillColorR" value="255"/>
+        <property key="labeling/shapeJoinStyle" value="64"/>
+        <property key="labeling/shapeOffsetMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shapeOffsetUnits" value="1"/>
+        <property key="labeling/shapeOffsetX" value="0"/>
+        <property key="labeling/shapeOffsetY" value="0"/>
+        <property key="labeling/shapeRadiiMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shapeRadiiUnits" value="1"/>
+        <property key="labeling/shapeRadiiX" value="0"/>
+        <property key="labeling/shapeRadiiY" value="0"/>
+        <property key="labeling/shapeRotation" value="0"/>
+        <property key="labeling/shapeRotationType" value="0"/>
+        <property key="labeling/shapeSVGFile" value=""/>
+        <property key="labeling/shapeSizeMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shapeSizeType" value="0"/>
+        <property key="labeling/shapeSizeUnits" value="1"/>
+        <property key="labeling/shapeSizeX" value="0"/>
+        <property key="labeling/shapeSizeY" value="0"/>
+        <property key="labeling/shapeTransparency" value="0"/>
+        <property key="labeling/shapeType" value="0"/>
+        <property key="labeling/substitutions" value="&lt;substitutions/>"/>
+        <property key="labeling/textColorA" value="255"/>
+        <property key="labeling/textColorB" value="0"/>
+        <property key="labeling/textColorG" value="0"/>
+        <property key="labeling/textColorR" value="0"/>
+        <property key="labeling/textTransp" value="0"/>
+        <property key="labeling/upsidedownLabels" value="0"/>
+        <property key="labeling/useSubstitutions" value="false"/>
+        <property key="labeling/wrapChar" value=""/>
+        <property key="labeling/xOffset" value="0"/>
+        <property key="labeling/yOffset" value="0"/>
+        <property key="labeling/zIndex" value="0"/>
+        <property key="variableNames"/>
+        <property key="variableValues"/>
+      </customproperties>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerTransparency>0</layerTransparency>
+      <displayfield>id</displayfield>
+      <label>0</label>
+      <labelattributes>
+        <label fieldname="" text="Étiquette"/>
+        <family fieldname="" name="MS Shell Dlg 2"/>
+        <size fieldname="" units="pt" value="12"/>
+        <bold fieldname="" on="0"/>
+        <italic fieldname="" on="0"/>
+        <underline fieldname="" on="0"/>
+        <strikeout fieldname="" on="0"/>
+        <color fieldname="" red="0" blue="0" green="0"/>
+        <x fieldname=""/>
+        <y fieldname=""/>
+        <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
+        <angle fieldname="" value="0" auto="0"/>
+        <alignment fieldname="" value="center"/>
+        <buffercolor fieldname="" red="255" blue="255" green="255"/>
+        <buffersize fieldname="" units="pt" value="1"/>
+        <bufferenabled fieldname="" on=""/>
+        <multilineenabled fieldname="" on=""/>
+        <selectedonly on=""/>
+      </labelattributes>
+      <SingleCategoryDiagramRenderer diagramType="Histogram" sizeLegend="0" attributeLegend="1">
+        <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" sizeScale="0,0,0,0,0,0" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="1e+08" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="0" enabled="0" height="15" lineSizeScale="0,0,0,0,0,0" sizeType="MM" lineSizeType="MM" minScaleDenominator="inf">
+          <fontProperties description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" style=""/>
+          <attribute field="" color="#000000" label=""/>
+        </DiagramCategory>
+        <symbol alpha="1" clip_to_extent="1" type="marker" name="sizeSymbol">
+          <layer pass="0" class="SimpleMarker" locked="0">
+            <prop k="angle" v="0"/>
+            <prop k="color" v="255,0,0,255"/>
+            <prop k="horizontal_anchor_point" v="1"/>
+            <prop k="joinstyle" v="bevel"/>
+            <prop k="name" v="circle"/>
+            <prop k="offset" v="0,0"/>
+            <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+            <prop k="offset_unit" v="MM"/>
+            <prop k="outline_color" v="0,0,0,255"/>
+            <prop k="outline_style" v="solid"/>
+            <prop k="outline_width" v="0"/>
+            <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+            <prop k="outline_width_unit" v="MM"/>
+            <prop k="scale_method" v="diameter"/>
+            <prop k="size" v="2"/>
+            <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+            <prop k="size_unit" v="MM"/>
+            <prop k="vertical_anchor_point" v="1"/>
+          </layer>
+        </symbol>
+      </SingleCategoryDiagramRenderer>
+      <DiagramLayerSettings yPosColumn="-1" showColumn="-1" linePlacementFlags="10" placement="0" dist="0" xPosColumn="-1" priority="0" obstacle="0" zIndex="0" showAll="1"/>
+      <annotationform>../projets</annotationform>
+      <aliases>
+        <alias field="id" index="0" name=""/>
+        <alias field="insee" index="1" name=""/>
+        <alias field="_insee" index="2" name=""/>
+        <alias field="nom" index="3" name=""/>
+        <alias field="pnomqgis" index="4" name=""/>
+        <alias field="pnommin" index="5" name=""/>
+        <alias field="pdep" index="6" name=""/>
+        <alias field="pcom" index="7" name=""/>
+        <alias field="pcp" index="8" name=""/>
+        <alias field="ptypecom" index="9" name=""/>
+        <alias field="wikipedia" index="10" name=""/>
+        <alias field="surf_m2" index="11" name=""/>
+        <alias field="i_p12_pop" index="12" name=""/>
+        <alias field="pdpop13" index="13" name=""/>
+      </aliases>
+      <excludeAttributesWMS/>
+      <excludeAttributesWFS/>
+      <attributeactions default="-1"/>
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
+        <columns>
+          <column width="-1" hidden="0" type="field" name="id"/>
+          <column width="-1" hidden="0" type="field" name="insee"/>
+          <column width="-1" hidden="0" type="field" name="_insee"/>
+          <column width="-1" hidden="0" type="field" name="nom"/>
+          <column width="-1" hidden="0" type="field" name="pnomqgis"/>
+          <column width="-1" hidden="0" type="field" name="pnommin"/>
+          <column width="-1" hidden="0" type="field" name="pdep"/>
+          <column width="-1" hidden="0" type="field" name="pcom"/>
+          <column width="-1" hidden="0" type="field" name="pcp"/>
+          <column width="-1" hidden="0" type="field" name="ptypecom"/>
+          <column width="-1" hidden="0" type="field" name="wikipedia"/>
+          <column width="-1" hidden="0" type="field" name="surf_m2"/>
+          <column width="-1" hidden="0" type="field" name="i_p12_pop"/>
+          <column width="-1" hidden="0" type="field" name="pdpop13"/>
+          <column width="-1" hidden="0" type="field" name="_SOURCES"/>
+          <column width="-1" hidden="0" type="field" name="S_nom"/>
+          <column width="-1" hidden="1" type="actions"/>
+        </columns>
+      </attributetableconfig>
+      <editform>../projets</editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath>../projets</editforminitfilepath>
       <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
 """
 Les formulaires QGIS peuvent avoir une fonction Python qui sera appelée à l'ouverture du formulaire.
@@ -5005,45 +5314,35 @@ def my_form_open(dialog, layer, feature):
     </maplayer>
   </projectlayers>
   <properties>
-    <Variables>
-      <variableNames type="QStringList"/>
-      <variableValues type="QStringList"/>
-    </Variables>
-    <WMSContactPerson type="QString"></WMSContactPerson>
-    <WMSOnlineResource type="QString"></WMSOnlineResource>
-    <WMSUseLayerIDs type="bool">false</WMSUseLayerIDs>
-    <WMSContactOrganization type="QString"></WMSContactOrganization>
-    <WMSKeywordList type="QStringList">
-      <value></value>
-    </WMSKeywordList>
-    <WFSUrl type="QString"></WFSUrl>
-    <Paths>
-      <Absolute type="bool">false</Absolute>
-    </Paths>
-    <WMSServiceTitle type="QString"></WMSServiceTitle>
-    <WFSLayers type="QStringList"/>
-    <WMSContactMail type="QString"></WMSContactMail>
-    <PositionPrecision>
-      <DecimalPlaces type="int">2</DecimalPlaces>
-      <Automatic type="bool">true</Automatic>
-      <DegreeFormat type="QString">MU</DegreeFormat>
-    </PositionPrecision>
-    <WCSUrl type="QString"></WCSUrl>
-    <WMSContactPhone type="QString"></WMSContactPhone>
-    <WMSServiceCapabilities type="bool">false</WMSServiceCapabilities>
-    <WMSServiceAbstract type="QString"></WMSServiceAbstract>
-    <WMSContactPosition type="QString"></WMSContactPosition>
-    <WMSAddWktGeometry type="bool">false</WMSAddWktGeometry>
-    <Measure>
-      <Ellipsoid type="QString">NONE</Ellipsoid>
-    </Measure>
-    <WMSPrecision type="QString">8</WMSPrecision>
+    <WMSUrl type="QString"></WMSUrl>
+    <SpatialRefSys>
+      <ProjectCRSProj4String type="QString">+proj=longlat +datum=WGS84 +no_defs</ProjectCRSProj4String>
+      <ProjectCrs type="QString">EPSG:4326</ProjectCrs>
+      <ProjectCRSID type="int">3452</ProjectCRSID>
+      <ProjectionsEnabled type="int">1</ProjectionsEnabled>
+    </SpatialRefSys>
+    <Measurement>
+      <DistanceUnits type="QString">meters</DistanceUnits>
+      <AreaUnits type="QString">m2</AreaUnits>
+    </Measurement>
+    <Legend>
+      <filterByMap type="bool">false</filterByMap>
+    </Legend>
+    <DefaultStyles>
+      <Fill type="QString"></Fill>
+      <Line type="QString"></Line>
+      <Marker type="QString"></Marker>
+      <RandomColors type="bool">true</RandomColors>
+      <AlphaInt type="int">255</AlphaInt>
+      <ColorRamp type="QString"></ColorRamp>
+    </DefaultStyles>
+    <WMSAccessConstraints type="QString">None</WMSAccessConstraints>
     <WMSSegmentizeFeatureInfoGeometry type="bool">false</WMSSegmentizeFeatureInfoGeometry>
-    <WFSTLayers>
-      <Insert type="QStringList"/>
-      <Update type="QStringList"/>
-      <Delete type="QStringList"/>
-    </WFSTLayers>
+    <WMSContactMail type="QString"></WMSContactMail>
+    <WMSImageQuality type="int">90</WMSImageQuality>
+    <WMSRestrictedComposers type="QStringList"/>
+    <WMSServiceTitle type="QString"></WMSServiceTitle>
+    <WMSContactPhone type="QString"></WMSContactPhone>
     <PAL>
       <SearchMethod type="int">3</SearchMethod>
       <ShowingShadowRects type="bool">false</ShowingShadowRects>
@@ -5056,20 +5355,26 @@ def my_form_open(dialog, layer, feature):
       <ShowingAllLabels type="bool">false</ShowingAllLabels>
       <DrawOutlineLabels type="bool">true</DrawOutlineLabels>
     </PAL>
-    <Gui>
-      <SelectionColorBluePart type="int">0</SelectionColorBluePart>
-      <CanvasColorGreenPart type="int">255</CanvasColorGreenPart>
-      <CanvasColorRedPart type="int">255</CanvasColorRedPart>
-      <SelectionColorRedPart type="int">255</SelectionColorRedPart>
-      <SelectionColorAlphaPart type="int">255</SelectionColorAlphaPart>
-      <SelectionColorGreenPart type="int">255</SelectionColorGreenPart>
-      <CanvasColorBluePart type="int">255</CanvasColorBluePart>
-    </Gui>
+    <WFSTLayers>
+      <Insert type="QStringList"/>
+      <Update type="QStringList"/>
+      <Delete type="QStringList"/>
+    </WFSTLayers>
+    <WCSLayers type="QStringList"/>
+    <WMSRestrictedLayers type="QStringList"/>
+    <WMSFees type="QString">conditions unknown</WMSFees>
+    <Macros>
+      <pythonCode type="QString"></pythonCode>
+    </Macros>
+    <WMSAddWktGeometry type="bool">false</WMSAddWktGeometry>
+    <WCSUrl type="QString"></WCSUrl>
+    <WMSOnlineResource type="QString"></WMSOnlineResource>
+    <WMSPrecision type="QString">8</WMSPrecision>
     <Digitizing>
       <DefaultSnapToleranceUnit type="int">2</DefaultSnapToleranceUnit>
       <LayerSnappingList type="QStringList">
-        <value>Centres20180312202307735</value>
         <value>TRONCON_HYDROGRAPHIQUE20171124224124250</value>
+        <value>TRONCON_ROUTE20180323100550645</value>
         <value>ZONE_OCCUPATION_SOL_copier20171124224507718</value>
         <value>com_poly20171221112250562</value>
         <value>com_pt20171221112141859</value>
@@ -5079,19 +5384,21 @@ def my_form_open(dialog, layer, feature):
         <value>gares_cypres20171212094027421</value>
         <value>urbain20171124230705656</value>
         <value>zone9320171221112229437</value>
+        <value>zone93_copier20180323111957407</value>
       </LayerSnappingList>
       <LayerSnappingEnabledList type="QStringList">
+        <value>enabled</value>
+        <value>disabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>disabled</value>
         <value>disabled</value>
         <value>enabled</value>
         <value>enabled</value>
         <value>enabled</value>
         <value>enabled</value>
         <value>disabled</value>
-        <value>disabled</value>
-        <value>enabled</value>
-        <value>enabled</value>
-        <value>enabled</value>
-        <value>enabled</value>
       </LayerSnappingEnabledList>
       <SnappingMode type="QString">current_layer</SnappingMode>
       <AvoidIntersectionsList type="QStringList"/>
@@ -5107,8 +5414,10 @@ def my_form_open(dialog, layer, feature):
         <value>2</value>
         <value>2</value>
         <value>2</value>
+        <value>2</value>
       </LayerSnappingToleranceUnitList>
       <LayerSnapToList type="QStringList">
+        <value>to_vertex_and_segment</value>
         <value>to_vertex_and_segment</value>
         <value>to_vertex_and_segment</value>
         <value>to_vertex_and_segment</value>
@@ -5135,40 +5444,47 @@ def my_form_open(dialog, layer, feature):
         <value>0.000000</value>
         <value>0.000000</value>
         <value>0.000000</value>
+        <value>0.000000</value>
       </LayerSnappingToleranceList>
     </Digitizing>
     <Identify>
       <disabledLayers type="QStringList"/>
     </Identify>
-    <Macros>
-      <pythonCode type="QString"></pythonCode>
-    </Macros>
-    <WMSAccessConstraints type="QString">None</WMSAccessConstraints>
-    <WCSLayers type="QStringList"/>
-    <Legend>
-      <filterByMap type="bool">false</filterByMap>
-    </Legend>
-    <SpatialRefSys>
-      <ProjectCRSProj4String type="QString">+proj=longlat +datum=WGS84 +no_defs</ProjectCRSProj4String>
-      <ProjectCrs type="QString">EPSG:4326</ProjectCrs>
-      <ProjectCRSID type="int">3452</ProjectCRSID>
-      <ProjectionsEnabled type="int">1</ProjectionsEnabled>
-    </SpatialRefSys>
-    <DefaultStyles>
-      <Fill type="QString"></Fill>
-      <Line type="QString"></Line>
-      <Marker type="QString"></Marker>
-      <RandomColors type="bool">true</RandomColors>
-      <AlphaInt type="int">255</AlphaInt>
-      <ColorRamp type="QString"></ColorRamp>
-    </DefaultStyles>
-    <WMSFees type="QString">conditions unknown</WMSFees>
-    <WMSImageQuality type="int">90</WMSImageQuality>
-    <Measurement>
-      <DistanceUnits type="QString">meters</DistanceUnits>
-      <AreaUnits type="QString">m2</AreaUnits>
-    </Measurement>
-    <WMSUrl type="QString"></WMSUrl>
+    <WMSContactPerson type="QString"></WMSContactPerson>
+    <WMSContactOrganization type="QString"></WMSContactOrganization>
+    <WMSKeywordList type="QStringList">
+      <value></value>
+    </WMSKeywordList>
+    <Variables>
+      <variableNames type="QStringList"/>
+      <variableValues type="QStringList"/>
+    </Variables>
+    <Paths>
+      <Absolute type="bool">false</Absolute>
+    </Paths>
+    <WMSContactPosition type="QString"></WMSContactPosition>
+    <PositionPrecision>
+      <DecimalPlaces type="int">2</DecimalPlaces>
+      <Automatic type="bool">true</Automatic>
+      <DegreeFormat type="QString">MU</DegreeFormat>
+    </PositionPrecision>
+    <Gui>
+      <SelectionColorBluePart type="int">0</SelectionColorBluePart>
+      <CanvasColorGreenPart type="int">255</CanvasColorGreenPart>
+      <CanvasColorRedPart type="int">255</CanvasColorRedPart>
+      <SelectionColorRedPart type="int">255</SelectionColorRedPart>
+      <SelectionColorAlphaPart type="int">255</SelectionColorAlphaPart>
+      <SelectionColorGreenPart type="int">255</SelectionColorGreenPart>
+      <CanvasColorBluePart type="int">255</CanvasColorBluePart>
+    </Gui>
+    <WMSServiceAbstract type="QString"></WMSServiceAbstract>
+    <Measure>
+      <Ellipsoid type="QString">NONE</Ellipsoid>
+    </Measure>
+    <WFSLayers type="QStringList"/>
+    <WFSUrl type="QString"></WFSUrl>
+    <WMSServiceCapabilities type="bool">false</WMSServiceCapabilities>
+    <WMSUseLayerIDs type="bool">false</WMSUseLayerIDs>
   </properties>
   <visibility-presets/>
 </qgis>
