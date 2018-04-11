@@ -5,31 +5,31 @@
   <evaluateDefaultValues active="0"/>
   <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="">
     <customproperties/>
-    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="com_pt20171221112141859" source="Z:/TAM/10005878_PGD Thore/vector/com_pt.shp" name="com_pt">
+    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="com_pt20171221112141859" source="../vector/com_pt.shp" name="com_pt">
       <customproperties/>
     </layer-tree-layer>
     <layer-tree-layer expanded="1" providerKey="delimitedtext" checked="Qt::Checked" id="gares_cypres20171212094027421" source="file:///C:/CartoInddigo/DiagBuilder/db/gares-cypres.csv?encoding=System&amp;type=csv&amp;delimiter=;&amp;quote=&amp;escape=&amp;xyDms=yes&amp;wktField=geom&amp;spatialIndex=no&amp;subsetIndex=no&amp;watchFile=no" name="gares-cypres">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Unchecked" id="com_pt_copier20180323111014970" source="Z:/TAM/10005878_PGD Thore/vector/com_pt.shp" name="com_pt copier">
+    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Unchecked" id="com_pt_copier20180323111014970" source="../vector/com_pt.shp" name="com_pt copier">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="OSM_streets20180329151050170" source="Z:\TAM\10005878_PGD Thore\vector\OSM_streets.shp" name="OSM_streets">
+    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="OSM_streets20180329151050170" source="..\vector\OSM_streets.shp" name="OSM_streets">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Unchecked" id="zone93_copier20180323104413192" source="Z:/TAM/10005878_PGD Thore/vector/zone93.shp" name="zone93 copier">
+    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Unchecked" id="zone93_copier20180323104413192" source="../vector/zone93.shp" name="zone93 copier">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="OSM_streets_copier_copier20180329151104034" source="Z:/TAM/10005878_PGD Thore/vector/OSM_streets.shp" name="OSM_streets copier copier">
+    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="OSM_streets_copier_copier20180329151104034" source="../vector/OSM_streets.shp" name="OSM_streets copier copier">
       <customproperties/>
     </layer-tree-layer>
     <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="departements_20140306_5m20171125005933609" source="C:/CartoInddigo/Mes Données SIG/vecteurs/departements-20140306-5m.shp" name="departements-20140306-5m">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Unchecked" id="com_poly20171221112250562" source="Z:/TAM/10005878_PGD Thore/vector/com_poly.shp" name="com_poly">
+    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Unchecked" id="com_poly20171221112250562" source="../vector/com_poly.shp" name="com_poly">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="zone9320171221112229437" source="Z:/TAM/10005878_PGD Thore/vector/zone93.shp" name="zone93">
+    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="zone9320171221112229437" source="../vector/zone93.shp" name="zone93">
       <customproperties>
         <property key="overview" value="1"/>
       </customproperties>
@@ -49,7 +49,7 @@
     <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="TRONCON_HYDROGRAPHIQUE20171124224124250" source="C:/CartoInddigo/Mes Données SIG/vecteurs/R120_1-1_SHP_LAMB93_FR-ED121/HYDROGRAPHIE/TRONCON_HYDROGRAPHIQUE.SHP" name="TRONCON_HYDROGRAPHIQUE">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Unchecked" id="zone93_copier20180327131344885" source="Z:/TAM/10005878_PGD Thore/vector/zone93.shp" name="zone93 copier">
+    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Unchecked" id="zone93_copier20180327131344885" source="../vector/zone93.shp" name="zone93 copier">
       <customproperties/>
     </layer-tree-layer>
   </layer-tree-group>
@@ -283,7 +283,7 @@
         </styles>
         <layer-tree-group expanded="1" checked="Qt::Checked" name="">
           <customproperties/>
-          <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="zone9320171221112229437" source="Z:/TAM/10005878_PGD Thore/vector/zone93.shp" name="zone93">
+          <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="zone9320171221112229437" source="../vector/zone93.shp" name="zone93">
             <customproperties>
               <property key="legend/title-label" value="Zone d'étude"/>
             </customproperties>
@@ -436,7 +436,7 @@
         <property key="imageCropToContents" value="false"/>
       </customproperties>
     </Composition>
-    <Atlas hideCoverage="false" coverageLayer="zone9320171221112229437" singleFile="false" filenamePattern="'output_'||@atlas_featurenumber" enabled="true" coverageLayerName="zone93" filterFeatures="false" coverageLayerProvider="ogr" sortFeatures="false" pageNameExpression="" coverageLayerSource="Z:/TAM/10005878_PGD Thore/vector/zone93.shp"/>
+    <Atlas hideCoverage="false" coverageLayer="zone9320171221112229437" singleFile="false" filenamePattern="'output_'||@atlas_featurenumber" enabled="true" coverageLayerName="zone93" filterFeatures="false" coverageLayerProvider="ogr" sortFeatures="false" pageNameExpression="" coverageLayerSource="../vector/zone93.shp"/>
   </Composer>
   <projectlayers>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="1" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Line" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">

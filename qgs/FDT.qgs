@@ -5,13 +5,13 @@
   <evaluateDefaultValues active="0"/>
   <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="">
     <customproperties/>
-    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="FDT_Internes20180411145724394" source="Z:\TAM\10005879_PGD Grand Auch\vector\FDT_Internes.shp|layerid=0|subset=&quot;DEST&quot; != &quot;ORIGINE&quot;" name="FDT_Internes">
+    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="FDT_Internes20180411145724394" source="..\vector\FDT_Internes.shp|layerid=0|subset=&quot;DEST&quot; != &quot;ORIGINE&quot;" name="FDT_Internes">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="FDT_Sortants20180411131008072" source="Z:/TAM/10005879_PGD Grand Auch/vector/FDT_Sortants.shp|layerid=0|subset=&quot;ORIGINE&quot; != &quot;DEST&quot;   AND &quot;FLUX&quot; >0" name="FDT_Sortants">
+    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="FDT_Sortants20180411131008072" source="../vector/FDT_Sortants.shp|layerid=0|subset=&quot;ORIGINE&quot; != &quot;DEST&quot;   AND &quot;FLUX&quot; >0" name="FDT_Sortants">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="FDT_Entrants20180411130401701" source="Z:/TAM/10005879_PGD Grand Auch/vector/FDT_Entrants.shp|layerid=0|subset=&quot;ORIGINE&quot; != &quot;DEST&quot;   AND &quot;FLUX&quot; >0" name="FDT_Entrants">
+    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="FDT_Entrants20180411130401701" source="../vector/FDT_Entrants.shp|layerid=0|subset=&quot;ORIGINE&quot; != &quot;DEST&quot;   AND &quot;FLUX&quot; >0" name="FDT_Entrants">
       <customproperties/>
     </layer-tree-layer>
     <layer-tree-layer expanded="0" providerKey="ogr" checked="Qt::Checked" id="CentresAdmin20160126111450705" source="C:/CartoInddigo/Mes Données SIG/vecteurs/CentresAdmin.TAB" name="CentresAdmin">
@@ -62,7 +62,7 @@
         <customproperties/>
       </layer-tree-layer>
     </layer-tree-group>
-    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="zone9320180411132937093" source="Z:/TAM/10005879_PGD Grand Auch/vector/zone93.shp" name="zone93">
+    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="zone9320180411132937093" source="../vector/zone93.shp" name="zone93">
       <customproperties/>
     </layer-tree-layer>
     <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="departements_20140306_5m20160126111241677" source="C:/CartoInddigo/Mes Données SIG/vecteurs/departements-20140306-5m.shp" name="departements-20140306-5m">
@@ -376,7 +376,7 @@
         </styles>
         <layer-tree-group expanded="1" checked="Qt::Checked" name="">
           <customproperties/>
-          <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="FDT_Sortants20180411131008072" source="Z:/TAM/10005879_PGD Grand Auch/vector/FDT_Sortants.shp|layerid=0|subset=&quot;ORIGINE&quot; != &quot;DEST&quot;   AND &quot;FLUX&quot; >0" name="FDT_Sortants">
+          <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="FDT_Sortants20180411131008072" source="../vector/FDT_Sortants.shp|layerid=0|subset=&quot;ORIGINE&quot; != &quot;DEST&quot;   AND &quot;FLUX&quot; >0" name="FDT_Sortants">
             <customproperties>
               <property key="legend/label-1" value=" "/>
               <property key="legend/label-2" value=" "/>
@@ -385,7 +385,7 @@
               <property key="legend/title-label" value="Sortants"/>
             </customproperties>
           </layer-tree-layer>
-          <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="FDT_Entrants20180411130401701" source="Z:/TAM/10005879_PGD Grand Auch/vector/FDT_Entrants.shp|layerid=0|subset=&quot;ORIGINE&quot; != &quot;DEST&quot;   AND &quot;FLUX&quot; >0" name="FDT_Entrants">
+          <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="FDT_Entrants20180411130401701" source="../vector/FDT_Entrants.shp|layerid=0|subset=&quot;ORIGINE&quot; != &quot;DEST&quot;   AND &quot;FLUX&quot; >0" name="FDT_Entrants">
             <customproperties>
               <property key="legend/label-1" value=" "/>
               <property key="legend/label-2" value=" "/>
@@ -394,7 +394,7 @@
               <property key="legend/title-label" value="Entrants"/>
             </customproperties>
           </layer-tree-layer>
-          <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="FDT_Internes20180411145724394" source="Z:\TAM\10005879_PGD Grand Auch\vector\FDT_Internes.shp|layerid=0|subset=&quot;DEST&quot; != &quot;ORIGINE&quot;" name="FDT_Internes">
+          <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="FDT_Internes20180411145724394" source="..\vector\FDT_Internes.shp|layerid=0|subset=&quot;DEST&quot; != &quot;ORIGINE&quot;" name="FDT_Internes">
             <customproperties>
               <property key="legend/node-order" value="1,2,3"/>
               <property key="legend/title-label" value="Internes à l'EPCI"/>
