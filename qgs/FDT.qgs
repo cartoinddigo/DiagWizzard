@@ -5,7 +5,7 @@
   <evaluateDefaultValues active="0"/>
   <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="">
     <customproperties/>
-    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="FDT_Internes20180411145724394" source="..\vector\FDT_Internes.shp|layerid=0|subset=&quot;DEST&quot; != &quot;ORIGINE&quot;" name="FDT_Internes">
+    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="FDT_Internes20180411145724394" source="../vector/FDT_Internes.shp|layerid=0|subset=&quot;DEST&quot; != &quot;ORIGINE&quot;" name="FDT_Internes">
       <customproperties/>
     </layer-tree-layer>
     <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="FDT_Sortants20180411131008072" source="../vector/FDT_Sortants.shp|layerid=0|subset=&quot;ORIGINE&quot; != &quot;DEST&quot;   AND &quot;FLUX&quot; >0" name="FDT_Sortants">
@@ -394,14 +394,14 @@
               <property key="legend/title-label" value="Entrants"/>
             </customproperties>
           </layer-tree-layer>
-          <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="FDT_Internes20180411145724394" source="..\vector\FDT_Internes.shp|layerid=0|subset=&quot;DEST&quot; != &quot;ORIGINE&quot;" name="FDT_Internes">
+          <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="FDT_Internes20180411145724394" source="../vector/FDT_Internes.shp|layerid=0|subset=&quot;DEST&quot; != &quot;ORIGINE&quot;" name="FDT_Internes">
             <customproperties>
               <property key="legend/node-order" value="1,2,3"/>
               <property key="legend/title-label" value="Internes à l'EPCI"/>
             </customproperties>
           </layer-tree-layer>
         </layer-tree-group>
-        <ComposerItem pagey="17.122" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="156.44" y="17.122" visibility="1" zValue="9" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="76.6" outlineWidth="0.3" excludeFromExports="0" uuid="{2f99fdbc-c2fc-4361-a691-139a25439d25}" height="37.6" itemRotation="0" frame="false" pagex="156.44">
+        <ComposerItem pagey="17.122" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="156.44" y="17.122" visibility="1" zValue="9" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="81.9" outlineWidth="0.3" excludeFromExports="0" uuid="{2f99fdbc-c2fc-4361-a691-139a25439d25}" height="37.9" itemRotation="0" frame="false" pagex="156.44">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="77" blue="77" green="75"/>
           <customproperties/>
@@ -476,7 +476,7 @@
         </ComposerItem>
       </ComposerItemGroup>
       <ComposerMap followPreset="false" mapRotation="0" keepLayerSet="false" followPresetName="" id="0" previewMode="Cache" drawCanvasItems="true">
-        <Extent ymin="5367027.08539044205099344" xmin="25617.92236293268797453" ymax="5474850.85417458321899176" xmax="163117.92250318266451359"/>
+        <Extent ymin="5367027.08539044205099344" xmin="25617.92236293268797453" ymax="5474850.85417458228766918" xmax="163117.92250318266451359"/>
         <LayerSet/>
         <Grid/>
         <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{fd658123-e2ec-46b4-842d-c750c80aab5e}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grille 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
@@ -528,7 +528,7 @@
           <annotationFontProperties description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" style=""/>
         </ComposerMapGrid>
         <AtlasMap scalingMode="2" atlasDriven="0" margin="0.10000000000000001"/>
-        <ComposerItem pagey="13.738" page="1" id="" lastValidViewScaleFactor="3.82427" positionMode="0" positionLock="false" x="-0.27927" y="13.738" visibility="1" zValue="2" background="true" transparency="0" frameJoinStyle="round" blendMode="0" width="250.279" outlineWidth="0.3" excludeFromExports="0" uuid="{0880bdcf-2826-4797-a10a-c6b642001405}" height="196.262" itemRotation="0" frame="false" pagex="-0.27927">
+        <ComposerItem pagey="13.738" page="1" id="" lastValidViewScaleFactor="3.69038" positionMode="0" positionLock="false" x="-0.27927" y="13.738" visibility="1" zValue="2" background="true" transparency="0" frameJoinStyle="round" blendMode="0" width="250.279" outlineWidth="0.3" excludeFromExports="0" uuid="{0880bdcf-2826-4797-a10a-c6b642001405}" height="196.262" itemRotation="0" frame="false" pagex="-0.27927">
           <FrameColor alpha="255" red="32" blue="68" green="56"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
           <customproperties/>
@@ -569,9 +569,9 @@
       <srs>
         <spatialrefsys>
           <proj4>+proj=lcc +lat_1=45.898918964419 +lat_2=47.696014502038 +lat_0=46.8 +lon_0=0 +x_0=600000 +y_0=2200000 +a=6378249.2 +b=6356515.000000472 +towgs84=-168,-60,320,0,0,0,0 +pm=paris +units=m +no_defs</proj4>
-          <srsid>100001</srsid>
+          <srsid>100003</srsid>
           <srid>0</srid>
-          <authid>USER:100001</authid>
+          <authid>USER:100003</authid>
           <description> * SCR généré (+proj=lcc +lat_1=45.898918964419 +lat_2=47.696014502038 +lat_0=46.8 +lon_0=0 +x_0=600000 +y_0=2200000 +a=6378249.2 +b=6356515.000000472 +towgs84=-168,-60,320,0,0,0,0 +pm=paris +units=m +no_defs)</description>
           <projectionacronym>lcc</projectionacronym>
           <ellipsoidacronym></ellipsoidacronym>
@@ -942,9 +942,9 @@
       <srs>
         <spatialrefsys>
           <proj4>+proj=lcc +lat_1=45.898918964419 +lat_2=47.696014502038 +lat_0=46.8 +lon_0=0 +x_0=600000 +y_0=2200000 +a=6378249.2 +b=6356515.000000472 +towgs84=-168,-60,320,0,0,0,0 +pm=paris +units=m +no_defs</proj4>
-          <srsid>100001</srsid>
+          <srsid>100003</srsid>
           <srid>0</srid>
-          <authid>USER:100001</authid>
+          <authid>USER:100003</authid>
           <description> * SCR généré (+proj=lcc +lat_1=45.898918964419 +lat_2=47.696014502038 +lat_0=46.8 +lon_0=0 +x_0=600000 +y_0=2200000 +a=6378249.2 +b=6356515.000000472 +towgs84=-168,-60,320,0,0,0,0 +pm=paris +units=m +no_defs)</description>
           <projectionacronym>lcc</projectionacronym>
           <ellipsoidacronym></ellipsoidacronym>
@@ -1241,9 +1241,9 @@
       <srs>
         <spatialrefsys>
           <proj4>+proj=lcc +lat_1=45.898918964419 +lat_2=47.696014502038 +lat_0=46.8 +lon_0=0 +x_0=600000 +y_0=2200000 +a=6378249.2 +b=6356515.000000472 +towgs84=-168,-60,320,0,0,0,0 +pm=paris +units=m +no_defs</proj4>
-          <srsid>100001</srsid>
+          <srsid>100003</srsid>
           <srid>0</srid>
-          <authid>USER:100001</authid>
+          <authid>USER:100003</authid>
           <description> * SCR généré (+proj=lcc +lat_1=45.898918964419 +lat_2=47.696014502038 +lat_0=46.8 +lon_0=0 +x_0=600000 +y_0=2200000 +a=6378249.2 +b=6356515.000000472 +towgs84=-168,-60,320,0,0,0,0 +pm=paris +units=m +no_defs)</description>
           <projectionacronym>lcc</projectionacronym>
           <ellipsoidacronym></ellipsoidacronym>
@@ -1540,9 +1540,9 @@
       <srs>
         <spatialrefsys>
           <proj4>+proj=lcc +lat_1=45.898918964419 +lat_2=47.696014502038 +lat_0=46.8 +lon_0=0 +x_0=600000 +y_0=2200000 +a=6378249.2 +b=6356515.000000472 +towgs84=-168,-60,320,0,0,0,0 +pm=paris +units=m +no_defs</proj4>
-          <srsid>100001</srsid>
+          <srsid>100003</srsid>
           <srid>0</srid>
-          <authid>USER:100001</authid>
+          <authid>USER:100003</authid>
           <description> * SCR généré (+proj=lcc +lat_1=45.898918964419 +lat_2=47.696014502038 +lat_0=46.8 +lon_0=0 +x_0=600000 +y_0=2200000 +a=6378249.2 +b=6356515.000000472 +towgs84=-168,-60,320,0,0,0,0 +pm=paris +units=m +no_defs)</description>
           <projectionacronym>lcc</projectionacronym>
           <ellipsoidacronym></ellipsoidacronym>
@@ -2243,7 +2243,7 @@ def my_form_open(dialog, layer, feature):
       </edittypes>
       <renderer-v2 attr="FLUX" forceraster="0" symbollevels="0" type="graduatedSymbol" graduatedMethod="GraduatedSize" enableorderby="0">
         <ranges>
-          <range render="true" symbol="0" lower="10.000000000000000" upper="50.000000000000000" label=" 10 - 50 "/>
+          <range render="false" symbol="0" lower="10.000000000000000" upper="50.000000000000000" label=" 10 - 50 "/>
           <range render="true" symbol="1" lower="50.000000000000000" upper="100.000000000000000" label=" 50 - 100 "/>
           <range render="true" symbol="2" lower="100.000000000000000" upper="150.000000000000000" label=" 100 - 150 "/>
           <range render="true" symbol="3" lower="150.000000000000000" upper="201.000000000000000" label=" 150 +"/>
@@ -2652,7 +2652,7 @@ def my_form_open(dialog, layer, feature):
       </edittypes>
       <renderer-v2 attr="FLUX" forceraster="0" symbollevels="0" type="graduatedSymbol" graduatedMethod="GraduatedSize" enableorderby="0">
         <ranges>
-          <range render="true" symbol="0" lower="10.000000000000000" upper="50.000000000000000" label=" 10 - 50 "/>
+          <range render="false" symbol="0" lower="10.000000000000000" upper="50.000000000000000" label=" 10 - 50 "/>
           <range render="true" symbol="1" lower="50.000000000000000" upper="100.000000000000000" label=" 50 - 100 "/>
           <range render="true" symbol="2" lower="100.000000000000000" upper="150.000000000000000" label=" 100 - 150 "/>
           <range render="true" symbol="3" lower="150.000000000000000" upper="201.000000000000000" label=" 150 +"/>
@@ -3067,7 +3067,7 @@ def my_form_open(dialog, layer, feature):
       </edittypes>
       <renderer-v2 attr="FLUX" forceraster="0" symbollevels="0" type="graduatedSymbol" graduatedMethod="GraduatedSize" enableorderby="0">
         <ranges>
-          <range render="true" symbol="0" lower="10.000000000000000" upper="50.000000000000000" label=" 10 - 50 "/>
+          <range render="false" symbol="0" lower="10.000000000000000" upper="50.000000000000000" label=" 10 - 50 "/>
           <range render="true" symbol="1" lower="50.000000000000000" upper="100.000000000000000" label=" 50 - 100 "/>
           <range render="true" symbol="2" lower="100.000000000000000" upper="150.000000000000000" label=" 100 - 150 "/>
           <range render="true" symbol="3" lower="150.000000000000000" upper="201.000000000000000" label=" 150 +"/>
@@ -6031,9 +6031,6 @@ def my_form_open(dialog, layer, feature):
         <edittype widgetv2type="TextEdit" name="wikipedia">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="_Dep">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
       </edittypes>
       <renderer-v2 forceraster="0" symbollevels="0" type="singleSymbol" enableorderby="0">
         <symbols>
@@ -6283,7 +6280,6 @@ def my_form_open(dialog, layer, feature):
         <alias field="nom" index="1" name=""/>
         <alias field="nuts3" index="2" name=""/>
         <alias field="wikipedia" index="3" name=""/>
-        <alias field="_Dep" index="4" name=""/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
@@ -6329,7 +6325,6 @@ def my_form_open(dialog, layer, feature):
         <default field="nom" expression=""/>
         <default field="nuts3" expression=""/>
         <default field="wikipedia" expression=""/>
-        <default field="_Dep" expression=""/>
       </defaults>
       <previewExpression>COALESCE("Polygon_id", '&lt;NULL>')</previewExpression>
     </maplayer>
@@ -7429,9 +7424,9 @@ def my_form_open(dialog, layer, feature):
       <srs>
         <spatialrefsys>
           <proj4>+proj=lcc +lat_1=45.898918964419 +lat_2=47.696014502038 +lat_0=46.8 +lon_0=2.337229104484 +x_0=600000 +y_0=2200000 +ellps=clrk80 +units=m +no_defs</proj4>
-          <srsid>100023</srsid>
+          <srsid>100001</srsid>
           <srid>0</srid>
-          <authid>USER:100023</authid>
+          <authid>USER:100001</authid>
           <description> * SCR généré (+proj=lcc +lat_1=45.898918964419 +lat_2=47.696014502038 +lat_0=46.8 +lon_0=2.337229104484 +x_0=600000 +y_0=2200000 +ellps=clrk80 +units=m +no_defs)</description>
           <projectionacronym>lcc</projectionacronym>
           <ellipsoidacronym>clrk80</ellipsoidacronym>
@@ -7815,9 +7810,9 @@ def my_form_open(dialog, layer, feature):
       <srs>
         <spatialrefsys>
           <proj4>+proj=lcc +lat_1=45.898918964419 +lat_2=47.696014502038 +lat_0=46.8 +lon_0=2.337229104484 +x_0=600000 +y_0=2200000 +ellps=clrk80 +units=m +no_defs</proj4>
-          <srsid>100023</srsid>
+          <srsid>100001</srsid>
           <srid>0</srid>
-          <authid>USER:100023</authid>
+          <authid>USER:100001</authid>
           <description> * SCR généré (+proj=lcc +lat_1=45.898918964419 +lat_2=47.696014502038 +lat_0=46.8 +lon_0=2.337229104484 +x_0=600000 +y_0=2200000 +ellps=clrk80 +units=m +no_defs)</description>
           <projectionacronym>lcc</projectionacronym>
           <ellipsoidacronym>clrk80</ellipsoidacronym>
@@ -8880,16 +8875,17 @@ def my_form_open(dialog, layer, feature):
       <ColorRamp type="QString"></ColorRamp>
     </DefaultStyles>
     <WMSAccessConstraints type="QString">None</WMSAccessConstraints>
+    <WMSSegmentizeFeatureInfoGeometry type="bool">false</WMSSegmentizeFeatureInfoGeometry>
     <d3MapRenderer>
       <OutputFormat type="QString">GeoJson</OutputFormat>
       <ProjOutputPath type="QString">C:\Users\tjacquemot\Desktop\TEMP\Qgis 3djs</ProjOutputPath>
       <d3Proj type="QString">Aitoff</d3Proj>
     </d3MapRenderer>
-    <WMSSegmentizeFeatureInfoGeometry type="bool">false</WMSSegmentizeFeatureInfoGeometry>
     <WMSContactMail type="QString"></WMSContactMail>
     <WMSImageQuality type="int">90</WMSImageQuality>
     <WMSRestrictedComposers type="QStringList"/>
     <WMSServiceTitle type="QString"></WMSServiceTitle>
+    <WMSContactPhone type="QString"></WMSContactPhone>
     <PAL>
       <SearchMethod type="int">0</SearchMethod>
       <ShowingShadowRects type="bool">false</ShowingShadowRects>
@@ -8902,7 +8898,6 @@ def my_form_open(dialog, layer, feature):
       <ShowingAllLabels type="bool">false</ShowingAllLabels>
       <DrawOutlineLabels type="bool">true</DrawOutlineLabels>
     </PAL>
-    <WMSContactPhone type="QString"></WMSContactPhone>
     <WFSTLayers>
       <Insert type="QStringList"/>
       <Update type="QStringList"/>
@@ -9080,11 +9075,11 @@ def my_form_open(dialog, layer, feature):
       <SelectionColorGreenPart type="int">255</SelectionColorGreenPart>
       <CanvasColorBluePart type="int">255</CanvasColorBluePart>
     </Gui>
+    <WFSLayers type="QStringList"/>
+    <WMSServiceAbstract type="QString"></WMSServiceAbstract>
     <Measure>
       <Ellipsoid type="QString">GRS80</Ellipsoid>
     </Measure>
-    <WMSServiceAbstract type="QString"></WMSServiceAbstract>
-    <WFSLayers type="QStringList"/>
     <WFSUrl type="QString"></WFSUrl>
     <WMSServiceCapabilities type="bool">false</WMSServiceCapabilities>
     <WMSUseLayerIDs type="bool">false</WMSUseLayerIDs>
