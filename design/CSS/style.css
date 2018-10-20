@@ -1,0 +1,1454 @@
+.csspie {
+  position: absolute;
+  width: 50px;
+  height: 100px;
+  overflow: hidden;
+  left: 75px;
+  -moz-transform-origin: left center;
+  -ms-transform-origin: left center;
+  -webkit-transform-origin: left center;
+  transform-origin: left center;
+}
+.csspie:BEFORE {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 100px;
+  left: -50px;
+  border-radius: 50px 0 0 50px;
+  -moz-transform-origin: right center;
+  -ms-transform-origin: right center;
+  -webkit-transform-origin: right center;
+  transform-origin: right center;
+}
+.csspie.big {
+  width: 100px;
+  height: 100px;
+  left: 25px;
+  -moz-transform-origin: center center;
+  -ms-transform-origin: center center;
+  -webkit-transform-origin: center center;
+  transform-origin: center center;
+}
+.csspie.big:BEFORE {
+  left: 0px;
+}
+.csspie.big:AFTER {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 100px;
+  left: 50px;
+  border-radius: 0 50px 50px 0;
+}
+
+.csspie:nth-of-type(1):BEFORE,
+.csspie:nth-of-type(1):AFTER {
+  background-color: #d91e3d;
+}
+
+.csspie:nth-of-type(2):AFTER,
+.csspie:nth-of-type(2):BEFORE {
+  background-color: #5c5c5c;
+}
+
+.csspie[data-start="1"] {
+  -moz-transform: rotate(3.6deg);
+  -ms-transform: rotate(3.6deg);
+  -webkit-transform: rotate(3.6deg);
+  transform: rotate(3.6deg);
+}
+
+.csspie[data-start="2"] {
+  -moz-transform: rotate(7.2deg);
+  -ms-transform: rotate(7.2deg);
+  -webkit-transform: rotate(7.2deg);
+  transform: rotate(7.2deg);
+}
+
+.csspie[data-start="3"] {
+  -moz-transform: rotate(10.8deg);
+  -ms-transform: rotate(10.8deg);
+  -webkit-transform: rotate(10.8deg);
+  transform: rotate(10.8deg);
+}
+
+.csspie[data-start="4"] {
+  -moz-transform: rotate(14.4deg);
+  -ms-transform: rotate(14.4deg);
+  -webkit-transform: rotate(14.4deg);
+  transform: rotate(14.4deg);
+}
+
+.csspie[data-start="5"] {
+  -moz-transform: rotate(18deg);
+  -ms-transform: rotate(18deg);
+  -webkit-transform: rotate(18deg);
+  transform: rotate(18deg);
+}
+
+.csspie[data-start="6"] {
+  -moz-transform: rotate(21.6deg);
+  -ms-transform: rotate(21.6deg);
+  -webkit-transform: rotate(21.6deg);
+  transform: rotate(21.6deg);
+}
+
+.csspie[data-start="7"] {
+  -moz-transform: rotate(25.2deg);
+  -ms-transform: rotate(25.2deg);
+  -webkit-transform: rotate(25.2deg);
+  transform: rotate(25.2deg);
+}
+
+.csspie[data-start="8"] {
+  -moz-transform: rotate(28.8deg);
+  -ms-transform: rotate(28.8deg);
+  -webkit-transform: rotate(28.8deg);
+  transform: rotate(28.8deg);
+}
+
+.csspie[data-start="9"] {
+  -moz-transform: rotate(32.4deg);
+  -ms-transform: rotate(32.4deg);
+  -webkit-transform: rotate(32.4deg);
+  transform: rotate(32.4deg);
+}
+
+.csspie[data-start="10"] {
+  -moz-transform: rotate(36deg);
+  -ms-transform: rotate(36deg);
+  -webkit-transform: rotate(36deg);
+  transform: rotate(36deg);
+}
+
+.csspie[data-start="11"] {
+  -moz-transform: rotate(39.6deg);
+  -ms-transform: rotate(39.6deg);
+  -webkit-transform: rotate(39.6deg);
+  transform: rotate(39.6deg);
+}
+
+.csspie[data-start="12"] {
+  -moz-transform: rotate(43.2deg);
+  -ms-transform: rotate(43.2deg);
+  -webkit-transform: rotate(43.2deg);
+  transform: rotate(43.2deg);
+}
+
+.csspie[data-start="13"] {
+  -moz-transform: rotate(46.8deg);
+  -ms-transform: rotate(46.8deg);
+  -webkit-transform: rotate(46.8deg);
+  transform: rotate(46.8deg);
+}
+
+.csspie[data-start="14"] {
+  -moz-transform: rotate(50.4deg);
+  -ms-transform: rotate(50.4deg);
+  -webkit-transform: rotate(50.4deg);
+  transform: rotate(50.4deg);
+}
+
+.csspie[data-start="15"] {
+  -moz-transform: rotate(54deg);
+  -ms-transform: rotate(54deg);
+  -webkit-transform: rotate(54deg);
+  transform: rotate(54deg);
+}
+
+.csspie[data-start="16"] {
+  -moz-transform: rotate(57.6deg);
+  -ms-transform: rotate(57.6deg);
+  -webkit-transform: rotate(57.6deg);
+  transform: rotate(57.6deg);
+}
+
+.csspie[data-start="17"] {
+  -moz-transform: rotate(61.2deg);
+  -ms-transform: rotate(61.2deg);
+  -webkit-transform: rotate(61.2deg);
+  transform: rotate(61.2deg);
+}
+
+.csspie[data-start="18"] {
+  -moz-transform: rotate(64.8deg);
+  -ms-transform: rotate(64.8deg);
+  -webkit-transform: rotate(64.8deg);
+  transform: rotate(64.8deg);
+}
+
+.csspie[data-start="19"] {
+  -moz-transform: rotate(68.4deg);
+  -ms-transform: rotate(68.4deg);
+  -webkit-transform: rotate(68.4deg);
+  transform: rotate(68.4deg);
+}
+
+.csspie[data-start="20"] {
+  -moz-transform: rotate(72deg);
+  -ms-transform: rotate(72deg);
+  -webkit-transform: rotate(72deg);
+  transform: rotate(72deg);
+}
+
+.csspie[data-start="21"] {
+  -moz-transform: rotate(75.6deg);
+  -ms-transform: rotate(75.6deg);
+  -webkit-transform: rotate(75.6deg);
+  transform: rotate(75.6deg);
+}
+
+.csspie[data-start="22"] {
+  -moz-transform: rotate(79.2deg);
+  -ms-transform: rotate(79.2deg);
+  -webkit-transform: rotate(79.2deg);
+  transform: rotate(79.2deg);
+}
+
+.csspie[data-start="23"] {
+  -moz-transform: rotate(82.8deg);
+  -ms-transform: rotate(82.8deg);
+  -webkit-transform: rotate(82.8deg);
+  transform: rotate(82.8deg);
+}
+
+.csspie[data-start="24"] {
+  -moz-transform: rotate(86.4deg);
+  -ms-transform: rotate(86.4deg);
+  -webkit-transform: rotate(86.4deg);
+  transform: rotate(86.4deg);
+}
+
+.csspie[data-start="25"] {
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.csspie[data-start="26"] {
+  -moz-transform: rotate(93.6deg);
+  -ms-transform: rotate(93.6deg);
+  -webkit-transform: rotate(93.6deg);
+  transform: rotate(93.6deg);
+}
+
+.csspie[data-start="27"] {
+  -moz-transform: rotate(97.2deg);
+  -ms-transform: rotate(97.2deg);
+  -webkit-transform: rotate(97.2deg);
+  transform: rotate(97.2deg);
+}
+
+.csspie[data-start="28"] {
+  -moz-transform: rotate(100.8deg);
+  -ms-transform: rotate(100.8deg);
+  -webkit-transform: rotate(100.8deg);
+  transform: rotate(100.8deg);
+}
+
+.csspie[data-start="29"] {
+  -moz-transform: rotate(104.4deg);
+  -ms-transform: rotate(104.4deg);
+  -webkit-transform: rotate(104.4deg);
+  transform: rotate(104.4deg);
+}
+
+.csspie[data-start="30"] {
+  -moz-transform: rotate(108deg);
+  -ms-transform: rotate(108deg);
+  -webkit-transform: rotate(108deg);
+  transform: rotate(108deg);
+}
+
+.csspie[data-start="31"] {
+  -moz-transform: rotate(111.6deg);
+  -ms-transform: rotate(111.6deg);
+  -webkit-transform: rotate(111.6deg);
+  transform: rotate(111.6deg);
+}
+
+.csspie[data-start="32"] {
+  -moz-transform: rotate(115.2deg);
+  -ms-transform: rotate(115.2deg);
+  -webkit-transform: rotate(115.2deg);
+  transform: rotate(115.2deg);
+}
+
+.csspie[data-start="33"] {
+  -moz-transform: rotate(118.8deg);
+  -ms-transform: rotate(118.8deg);
+  -webkit-transform: rotate(118.8deg);
+  transform: rotate(118.8deg);
+}
+
+.csspie[data-start="34"] {
+  -moz-transform: rotate(122.4deg);
+  -ms-transform: rotate(122.4deg);
+  -webkit-transform: rotate(122.4deg);
+  transform: rotate(122.4deg);
+}
+
+.csspie[data-start="35"] {
+  -moz-transform: rotate(126deg);
+  -ms-transform: rotate(126deg);
+  -webkit-transform: rotate(126deg);
+  transform: rotate(126deg);
+}
+
+.csspie[data-start="36"] {
+  -moz-transform: rotate(129.6deg);
+  -ms-transform: rotate(129.6deg);
+  -webkit-transform: rotate(129.6deg);
+  transform: rotate(129.6deg);
+}
+
+.csspie[data-start="37"] {
+  -moz-transform: rotate(133.2deg);
+  -ms-transform: rotate(133.2deg);
+  -webkit-transform: rotate(133.2deg);
+  transform: rotate(133.2deg);
+}
+
+.csspie[data-start="38"] {
+  -moz-transform: rotate(136.8deg);
+  -ms-transform: rotate(136.8deg);
+  -webkit-transform: rotate(136.8deg);
+  transform: rotate(136.8deg);
+}
+
+.csspie[data-start="39"] {
+  -moz-transform: rotate(140.4deg);
+  -ms-transform: rotate(140.4deg);
+  -webkit-transform: rotate(140.4deg);
+  transform: rotate(140.4deg);
+}
+
+.csspie[data-start="40"] {
+  -moz-transform: rotate(144deg);
+  -ms-transform: rotate(144deg);
+  -webkit-transform: rotate(144deg);
+  transform: rotate(144deg);
+}
+
+.csspie[data-start="41"] {
+  -moz-transform: rotate(147.6deg);
+  -ms-transform: rotate(147.6deg);
+  -webkit-transform: rotate(147.6deg);
+  transform: rotate(147.6deg);
+}
+
+.csspie[data-start="42"] {
+  -moz-transform: rotate(151.2deg);
+  -ms-transform: rotate(151.2deg);
+  -webkit-transform: rotate(151.2deg);
+  transform: rotate(151.2deg);
+}
+
+.csspie[data-start="43"] {
+  -moz-transform: rotate(154.8deg);
+  -ms-transform: rotate(154.8deg);
+  -webkit-transform: rotate(154.8deg);
+  transform: rotate(154.8deg);
+}
+
+.csspie[data-start="44"] {
+  -moz-transform: rotate(158.4deg);
+  -ms-transform: rotate(158.4deg);
+  -webkit-transform: rotate(158.4deg);
+  transform: rotate(158.4deg);
+}
+
+.csspie[data-start="45"] {
+  -moz-transform: rotate(162deg);
+  -ms-transform: rotate(162deg);
+  -webkit-transform: rotate(162deg);
+  transform: rotate(162deg);
+}
+
+.csspie[data-start="46"] {
+  -moz-transform: rotate(165.6deg);
+  -ms-transform: rotate(165.6deg);
+  -webkit-transform: rotate(165.6deg);
+  transform: rotate(165.6deg);
+}
+
+.csspie[data-start="47"] {
+  -moz-transform: rotate(169.2deg);
+  -ms-transform: rotate(169.2deg);
+  -webkit-transform: rotate(169.2deg);
+  transform: rotate(169.2deg);
+}
+
+.csspie[data-start="48"] {
+  -moz-transform: rotate(172.8deg);
+  -ms-transform: rotate(172.8deg);
+  -webkit-transform: rotate(172.8deg);
+  transform: rotate(172.8deg);
+}
+
+.csspie[data-start="49"] {
+  -moz-transform: rotate(176.4deg);
+  -ms-transform: rotate(176.4deg);
+  -webkit-transform: rotate(176.4deg);
+  transform: rotate(176.4deg);
+}
+
+.csspie[data-start="50"] {
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.csspie[data-start="51"] {
+  -moz-transform: rotate(183.6deg);
+  -ms-transform: rotate(183.6deg);
+  -webkit-transform: rotate(183.6deg);
+  transform: rotate(183.6deg);
+}
+
+.csspie[data-start="52"] {
+  -moz-transform: rotate(187.2deg);
+  -ms-transform: rotate(187.2deg);
+  -webkit-transform: rotate(187.2deg);
+  transform: rotate(187.2deg);
+}
+
+.csspie[data-start="53"] {
+  -moz-transform: rotate(190.8deg);
+  -ms-transform: rotate(190.8deg);
+  -webkit-transform: rotate(190.8deg);
+  transform: rotate(190.8deg);
+}
+
+.csspie[data-start="54"] {
+  -moz-transform: rotate(194.4deg);
+  -ms-transform: rotate(194.4deg);
+  -webkit-transform: rotate(194.4deg);
+  transform: rotate(194.4deg);
+}
+
+.csspie[data-start="55"] {
+  -moz-transform: rotate(198deg);
+  -ms-transform: rotate(198deg);
+  -webkit-transform: rotate(198deg);
+  transform: rotate(198deg);
+}
+
+.csspie[data-start="56"] {
+  -moz-transform: rotate(201.6deg);
+  -ms-transform: rotate(201.6deg);
+  -webkit-transform: rotate(201.6deg);
+  transform: rotate(201.6deg);
+}
+
+.csspie[data-start="57"] {
+  -moz-transform: rotate(205.2deg);
+  -ms-transform: rotate(205.2deg);
+  -webkit-transform: rotate(205.2deg);
+  transform: rotate(205.2deg);
+}
+
+.csspie[data-start="58"] {
+  -moz-transform: rotate(208.8deg);
+  -ms-transform: rotate(208.8deg);
+  -webkit-transform: rotate(208.8deg);
+  transform: rotate(208.8deg);
+}
+
+.csspie[data-start="59"] {
+  -moz-transform: rotate(212.4deg);
+  -ms-transform: rotate(212.4deg);
+  -webkit-transform: rotate(212.4deg);
+  transform: rotate(212.4deg);
+}
+
+.csspie[data-start="60"] {
+  -moz-transform: rotate(216deg);
+  -ms-transform: rotate(216deg);
+  -webkit-transform: rotate(216deg);
+  transform: rotate(216deg);
+}
+
+.csspie[data-start="61"] {
+  -moz-transform: rotate(219.6deg);
+  -ms-transform: rotate(219.6deg);
+  -webkit-transform: rotate(219.6deg);
+  transform: rotate(219.6deg);
+}
+
+.csspie[data-start="62"] {
+  -moz-transform: rotate(223.2deg);
+  -ms-transform: rotate(223.2deg);
+  -webkit-transform: rotate(223.2deg);
+  transform: rotate(223.2deg);
+}
+
+.csspie[data-start="63"] {
+  -moz-transform: rotate(226.8deg);
+  -ms-transform: rotate(226.8deg);
+  -webkit-transform: rotate(226.8deg);
+  transform: rotate(226.8deg);
+}
+
+.csspie[data-start="64"] {
+  -moz-transform: rotate(230.4deg);
+  -ms-transform: rotate(230.4deg);
+  -webkit-transform: rotate(230.4deg);
+  transform: rotate(230.4deg);
+}
+
+.csspie[data-start="65"] {
+  -moz-transform: rotate(234deg);
+  -ms-transform: rotate(234deg);
+  -webkit-transform: rotate(234deg);
+  transform: rotate(234deg);
+}
+
+.csspie[data-start="66"] {
+  -moz-transform: rotate(237.6deg);
+  -ms-transform: rotate(237.6deg);
+  -webkit-transform: rotate(237.6deg);
+  transform: rotate(237.6deg);
+}
+
+.csspie[data-start="67"] {
+  -moz-transform: rotate(241.2deg);
+  -ms-transform: rotate(241.2deg);
+  -webkit-transform: rotate(241.2deg);
+  transform: rotate(241.2deg);
+}
+
+.csspie[data-start="68"] {
+  -moz-transform: rotate(244.8deg);
+  -ms-transform: rotate(244.8deg);
+  -webkit-transform: rotate(244.8deg);
+  transform: rotate(244.8deg);
+}
+
+.csspie[data-start="69"] {
+  -moz-transform: rotate(248.4deg);
+  -ms-transform: rotate(248.4deg);
+  -webkit-transform: rotate(248.4deg);
+  transform: rotate(248.4deg);
+}
+
+.csspie[data-start="70"] {
+  -moz-transform: rotate(252deg);
+  -ms-transform: rotate(252deg);
+  -webkit-transform: rotate(252deg);
+  transform: rotate(252deg);
+}
+
+.csspie[data-start="71"] {
+  -moz-transform: rotate(255.6deg);
+  -ms-transform: rotate(255.6deg);
+  -webkit-transform: rotate(255.6deg);
+  transform: rotate(255.6deg);
+}
+
+.csspie[data-start="72"] {
+  -moz-transform: rotate(259.2deg);
+  -ms-transform: rotate(259.2deg);
+  -webkit-transform: rotate(259.2deg);
+  transform: rotate(259.2deg);
+}
+
+.csspie[data-start="73"] {
+  -moz-transform: rotate(262.8deg);
+  -ms-transform: rotate(262.8deg);
+  -webkit-transform: rotate(262.8deg);
+  transform: rotate(262.8deg);
+}
+
+.csspie[data-start="74"] {
+  -moz-transform: rotate(266.4deg);
+  -ms-transform: rotate(266.4deg);
+  -webkit-transform: rotate(266.4deg);
+  transform: rotate(266.4deg);
+}
+
+.csspie[data-start="75"] {
+  -moz-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  -webkit-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+
+.csspie[data-start="76"] {
+  -moz-transform: rotate(273.6deg);
+  -ms-transform: rotate(273.6deg);
+  -webkit-transform: rotate(273.6deg);
+  transform: rotate(273.6deg);
+}
+
+.csspie[data-start="77"] {
+  -moz-transform: rotate(277.2deg);
+  -ms-transform: rotate(277.2deg);
+  -webkit-transform: rotate(277.2deg);
+  transform: rotate(277.2deg);
+}
+
+.csspie[data-start="78"] {
+  -moz-transform: rotate(280.8deg);
+  -ms-transform: rotate(280.8deg);
+  -webkit-transform: rotate(280.8deg);
+  transform: rotate(280.8deg);
+}
+
+.csspie[data-start="79"] {
+  -moz-transform: rotate(284.4deg);
+  -ms-transform: rotate(284.4deg);
+  -webkit-transform: rotate(284.4deg);
+  transform: rotate(284.4deg);
+}
+
+.csspie[data-start="80"] {
+  -moz-transform: rotate(288deg);
+  -ms-transform: rotate(288deg);
+  -webkit-transform: rotate(288deg);
+  transform: rotate(288deg);
+}
+
+.csspie[data-start="81"] {
+  -moz-transform: rotate(291.6deg);
+  -ms-transform: rotate(291.6deg);
+  -webkit-transform: rotate(291.6deg);
+  transform: rotate(291.6deg);
+}
+
+.csspie[data-start="82"] {
+  -moz-transform: rotate(295.2deg);
+  -ms-transform: rotate(295.2deg);
+  -webkit-transform: rotate(295.2deg);
+  transform: rotate(295.2deg);
+}
+
+.csspie[data-start="83"] {
+  -moz-transform: rotate(298.8deg);
+  -ms-transform: rotate(298.8deg);
+  -webkit-transform: rotate(298.8deg);
+  transform: rotate(298.8deg);
+}
+
+.csspie[data-start="84"] {
+  -moz-transform: rotate(302.4deg);
+  -ms-transform: rotate(302.4deg);
+  -webkit-transform: rotate(302.4deg);
+  transform: rotate(302.4deg);
+}
+
+.csspie[data-start="85"] {
+  -moz-transform: rotate(306deg);
+  -ms-transform: rotate(306deg);
+  -webkit-transform: rotate(306deg);
+  transform: rotate(306deg);
+}
+
+.csspie[data-start="86"] {
+  -moz-transform: rotate(309.6deg);
+  -ms-transform: rotate(309.6deg);
+  -webkit-transform: rotate(309.6deg);
+  transform: rotate(309.6deg);
+}
+
+.csspie[data-start="87"] {
+  -moz-transform: rotate(313.2deg);
+  -ms-transform: rotate(313.2deg);
+  -webkit-transform: rotate(313.2deg);
+  transform: rotate(313.2deg);
+}
+
+.csspie[data-start="88"] {
+  -moz-transform: rotate(316.8deg);
+  -ms-transform: rotate(316.8deg);
+  -webkit-transform: rotate(316.8deg);
+  transform: rotate(316.8deg);
+}
+
+.csspie[data-start="89"] {
+  -moz-transform: rotate(320.4deg);
+  -ms-transform: rotate(320.4deg);
+  -webkit-transform: rotate(320.4deg);
+  transform: rotate(320.4deg);
+}
+
+.csspie[data-start="90"] {
+  -moz-transform: rotate(324deg);
+  -ms-transform: rotate(324deg);
+  -webkit-transform: rotate(324deg);
+  transform: rotate(324deg);
+}
+
+.csspie[data-start="91"] {
+  -moz-transform: rotate(327.6deg);
+  -ms-transform: rotate(327.6deg);
+  -webkit-transform: rotate(327.6deg);
+  transform: rotate(327.6deg);
+}
+
+.csspie[data-start="92"] {
+  -moz-transform: rotate(331.2deg);
+  -ms-transform: rotate(331.2deg);
+  -webkit-transform: rotate(331.2deg);
+  transform: rotate(331.2deg);
+}
+
+.csspie[data-start="93"] {
+  -moz-transform: rotate(334.8deg);
+  -ms-transform: rotate(334.8deg);
+  -webkit-transform: rotate(334.8deg);
+  transform: rotate(334.8deg);
+}
+
+.csspie[data-start="94"] {
+  -moz-transform: rotate(338.4deg);
+  -ms-transform: rotate(338.4deg);
+  -webkit-transform: rotate(338.4deg);
+  transform: rotate(338.4deg);
+}
+
+.csspie[data-start="95"] {
+  -moz-transform: rotate(342deg);
+  -ms-transform: rotate(342deg);
+  -webkit-transform: rotate(342deg);
+  transform: rotate(342deg);
+}
+
+.csspie[data-start="96"] {
+  -moz-transform: rotate(345.6deg);
+  -ms-transform: rotate(345.6deg);
+  -webkit-transform: rotate(345.6deg);
+  transform: rotate(345.6deg);
+}
+
+.csspie[data-start="97"] {
+  -moz-transform: rotate(349.2deg);
+  -ms-transform: rotate(349.2deg);
+  -webkit-transform: rotate(349.2deg);
+  transform: rotate(349.2deg);
+}
+
+.csspie[data-start="98"] {
+  -moz-transform: rotate(352.8deg);
+  -ms-transform: rotate(352.8deg);
+  -webkit-transform: rotate(352.8deg);
+  transform: rotate(352.8deg);
+}
+
+.csspie[data-start="99"] {
+  -moz-transform: rotate(356.4deg);
+  -ms-transform: rotate(356.4deg);
+  -webkit-transform: rotate(356.4deg);
+  transform: rotate(356.4deg);
+}
+
+.csspie[data-start="100"] {
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+.csspie[data-value="1"]:BEFORE {
+  -moz-transform: rotate(4.6deg);
+  -ms-transform: rotate(4.6deg);
+  -webkit-transform: rotate(4.6deg);
+  transform: rotate(4.6deg);
+}
+
+.csspie[data-value="2"]:BEFORE {
+  -moz-transform: rotate(8.2deg);
+  -ms-transform: rotate(8.2deg);
+  -webkit-transform: rotate(8.2deg);
+  transform: rotate(8.2deg);
+}
+
+.csspie[data-value="3"]:BEFORE {
+  -moz-transform: rotate(11.8deg);
+  -ms-transform: rotate(11.8deg);
+  -webkit-transform: rotate(11.8deg);
+  transform: rotate(11.8deg);
+}
+
+.csspie[data-value="4"]:BEFORE {
+  -moz-transform: rotate(15.4deg);
+  -ms-transform: rotate(15.4deg);
+  -webkit-transform: rotate(15.4deg);
+  transform: rotate(15.4deg);
+}
+
+.csspie[data-value="5"]:BEFORE {
+  -moz-transform: rotate(19deg);
+  -ms-transform: rotate(19deg);
+  -webkit-transform: rotate(19deg);
+  transform: rotate(19deg);
+}
+
+.csspie[data-value="6"]:BEFORE {
+  -moz-transform: rotate(22.6deg);
+  -ms-transform: rotate(22.6deg);
+  -webkit-transform: rotate(22.6deg);
+  transform: rotate(22.6deg);
+}
+
+.csspie[data-value="7"]:BEFORE {
+  -moz-transform: rotate(26.2deg);
+  -ms-transform: rotate(26.2deg);
+  -webkit-transform: rotate(26.2deg);
+  transform: rotate(26.2deg);
+}
+
+.csspie[data-value="8"]:BEFORE {
+  -moz-transform: rotate(29.8deg);
+  -ms-transform: rotate(29.8deg);
+  -webkit-transform: rotate(29.8deg);
+  transform: rotate(29.8deg);
+}
+
+.csspie[data-value="9"]:BEFORE {
+  -moz-transform: rotate(33.4deg);
+  -ms-transform: rotate(33.4deg);
+  -webkit-transform: rotate(33.4deg);
+  transform: rotate(33.4deg);
+}
+
+.csspie[data-value="10"]:BEFORE {
+  -moz-transform: rotate(37deg);
+  -ms-transform: rotate(37deg);
+  -webkit-transform: rotate(37deg);
+  transform: rotate(37deg);
+}
+
+.csspie[data-value="11"]:BEFORE {
+  -moz-transform: rotate(40.6deg);
+  -ms-transform: rotate(40.6deg);
+  -webkit-transform: rotate(40.6deg);
+  transform: rotate(40.6deg);
+}
+
+.csspie[data-value="12"]:BEFORE {
+  -moz-transform: rotate(44.2deg);
+  -ms-transform: rotate(44.2deg);
+  -webkit-transform: rotate(44.2deg);
+  transform: rotate(44.2deg);
+}
+
+.csspie[data-value="13"]:BEFORE {
+  -moz-transform: rotate(47.8deg);
+  -ms-transform: rotate(47.8deg);
+  -webkit-transform: rotate(47.8deg);
+  transform: rotate(47.8deg);
+}
+
+.csspie[data-value="14"]:BEFORE {
+  -moz-transform: rotate(51.4deg);
+  -ms-transform: rotate(51.4deg);
+  -webkit-transform: rotate(51.4deg);
+  transform: rotate(51.4deg);
+}
+
+.csspie[data-value="15"]:BEFORE {
+  -moz-transform: rotate(55deg);
+  -ms-transform: rotate(55deg);
+  -webkit-transform: rotate(55deg);
+  transform: rotate(55deg);
+}
+
+.csspie[data-value="16"]:BEFORE {
+  -moz-transform: rotate(58.6deg);
+  -ms-transform: rotate(58.6deg);
+  -webkit-transform: rotate(58.6deg);
+  transform: rotate(58.6deg);
+}
+
+.csspie[data-value="17"]:BEFORE {
+  -moz-transform: rotate(62.2deg);
+  -ms-transform: rotate(62.2deg);
+  -webkit-transform: rotate(62.2deg);
+  transform: rotate(62.2deg);
+}
+
+.csspie[data-value="18"]:BEFORE {
+  -moz-transform: rotate(65.8deg);
+  -ms-transform: rotate(65.8deg);
+  -webkit-transform: rotate(65.8deg);
+  transform: rotate(65.8deg);
+}
+
+.csspie[data-value="19"]:BEFORE {
+  -moz-transform: rotate(69.4deg);
+  -ms-transform: rotate(69.4deg);
+  -webkit-transform: rotate(69.4deg);
+  transform: rotate(69.4deg);
+}
+
+.csspie[data-value="20"]:BEFORE {
+  -moz-transform: rotate(73deg);
+  -ms-transform: rotate(73deg);
+  -webkit-transform: rotate(73deg);
+  transform: rotate(73deg);
+}
+
+.csspie[data-value="21"]:BEFORE {
+  -moz-transform: rotate(76.6deg);
+  -ms-transform: rotate(76.6deg);
+  -webkit-transform: rotate(76.6deg);
+  transform: rotate(76.6deg);
+}
+
+.csspie[data-value="22"]:BEFORE {
+  -moz-transform: rotate(80.2deg);
+  -ms-transform: rotate(80.2deg);
+  -webkit-transform: rotate(80.2deg);
+  transform: rotate(80.2deg);
+}
+
+.csspie[data-value="23"]:BEFORE {
+  -moz-transform: rotate(83.8deg);
+  -ms-transform: rotate(83.8deg);
+  -webkit-transform: rotate(83.8deg);
+  transform: rotate(83.8deg);
+}
+
+.csspie[data-value="24"]:BEFORE {
+  -moz-transform: rotate(87.4deg);
+  -ms-transform: rotate(87.4deg);
+  -webkit-transform: rotate(87.4deg);
+  transform: rotate(87.4deg);
+}
+
+.csspie[data-value="25"]:BEFORE {
+  -moz-transform: rotate(91deg);
+  -ms-transform: rotate(91deg);
+  -webkit-transform: rotate(91deg);
+  transform: rotate(91deg);
+}
+
+.csspie[data-value="26"]:BEFORE {
+  -moz-transform: rotate(94.6deg);
+  -ms-transform: rotate(94.6deg);
+  -webkit-transform: rotate(94.6deg);
+  transform: rotate(94.6deg);
+}
+
+.csspie[data-value="27"]:BEFORE {
+  -moz-transform: rotate(98.2deg);
+  -ms-transform: rotate(98.2deg);
+  -webkit-transform: rotate(98.2deg);
+  transform: rotate(98.2deg);
+}
+
+.csspie[data-value="28"]:BEFORE {
+  -moz-transform: rotate(101.8deg);
+  -ms-transform: rotate(101.8deg);
+  -webkit-transform: rotate(101.8deg);
+  transform: rotate(101.8deg);
+}
+
+.csspie[data-value="29"]:BEFORE {
+  -moz-transform: rotate(105.4deg);
+  -ms-transform: rotate(105.4deg);
+  -webkit-transform: rotate(105.4deg);
+  transform: rotate(105.4deg);
+}
+
+.csspie[data-value="30"]:BEFORE {
+  -moz-transform: rotate(109deg);
+  -ms-transform: rotate(109deg);
+  -webkit-transform: rotate(109deg);
+  transform: rotate(109deg);
+}
+
+.csspie[data-value="31"]:BEFORE {
+  -moz-transform: rotate(112.6deg);
+  -ms-transform: rotate(112.6deg);
+  -webkit-transform: rotate(112.6deg);
+  transform: rotate(112.6deg);
+}
+
+.csspie[data-value="32"]:BEFORE {
+  -moz-transform: rotate(116.2deg);
+  -ms-transform: rotate(116.2deg);
+  -webkit-transform: rotate(116.2deg);
+  transform: rotate(116.2deg);
+}
+
+.csspie[data-value="33"]:BEFORE {
+  -moz-transform: rotate(119.8deg);
+  -ms-transform: rotate(119.8deg);
+  -webkit-transform: rotate(119.8deg);
+  transform: rotate(119.8deg);
+}
+
+.csspie[data-value="34"]:BEFORE {
+  -moz-transform: rotate(123.4deg);
+  -ms-transform: rotate(123.4deg);
+  -webkit-transform: rotate(123.4deg);
+  transform: rotate(123.4deg);
+}
+
+.csspie[data-value="35"]:BEFORE {
+  -moz-transform: rotate(127deg);
+  -ms-transform: rotate(127deg);
+  -webkit-transform: rotate(127deg);
+  transform: rotate(127deg);
+}
+
+.csspie[data-value="36"]:BEFORE {
+  -moz-transform: rotate(130.6deg);
+  -ms-transform: rotate(130.6deg);
+  -webkit-transform: rotate(130.6deg);
+  transform: rotate(130.6deg);
+}
+
+.csspie[data-value="37"]:BEFORE {
+  -moz-transform: rotate(134.2deg);
+  -ms-transform: rotate(134.2deg);
+  -webkit-transform: rotate(134.2deg);
+  transform: rotate(134.2deg);
+}
+
+.csspie[data-value="38"]:BEFORE {
+  -moz-transform: rotate(137.8deg);
+  -ms-transform: rotate(137.8deg);
+  -webkit-transform: rotate(137.8deg);
+  transform: rotate(137.8deg);
+}
+
+.csspie[data-value="39"]:BEFORE {
+  -moz-transform: rotate(141.4deg);
+  -ms-transform: rotate(141.4deg);
+  -webkit-transform: rotate(141.4deg);
+  transform: rotate(141.4deg);
+}
+
+.csspie[data-value="40"]:BEFORE {
+  -moz-transform: rotate(145deg);
+  -ms-transform: rotate(145deg);
+  -webkit-transform: rotate(145deg);
+  transform: rotate(145deg);
+}
+
+.csspie[data-value="41"]:BEFORE {
+  -moz-transform: rotate(148.6deg);
+  -ms-transform: rotate(148.6deg);
+  -webkit-transform: rotate(148.6deg);
+  transform: rotate(148.6deg);
+}
+
+.csspie[data-value="42"]:BEFORE {
+  -moz-transform: rotate(152.2deg);
+  -ms-transform: rotate(152.2deg);
+  -webkit-transform: rotate(152.2deg);
+  transform: rotate(152.2deg);
+}
+
+.csspie[data-value="43"]:BEFORE {
+  -moz-transform: rotate(155.8deg);
+  -ms-transform: rotate(155.8deg);
+  -webkit-transform: rotate(155.8deg);
+  transform: rotate(155.8deg);
+}
+
+.csspie[data-value="44"]:BEFORE {
+  -moz-transform: rotate(159.4deg);
+  -ms-transform: rotate(159.4deg);
+  -webkit-transform: rotate(159.4deg);
+  transform: rotate(159.4deg);
+}
+
+.csspie[data-value="45"]:BEFORE {
+  -moz-transform: rotate(163deg);
+  -ms-transform: rotate(163deg);
+  -webkit-transform: rotate(163deg);
+  transform: rotate(163deg);
+}
+
+.csspie[data-value="46"]:BEFORE {
+  -moz-transform: rotate(166.6deg);
+  -ms-transform: rotate(166.6deg);
+  -webkit-transform: rotate(166.6deg);
+  transform: rotate(166.6deg);
+}
+
+.csspie[data-value="47"]:BEFORE {
+  -moz-transform: rotate(170.2deg);
+  -ms-transform: rotate(170.2deg);
+  -webkit-transform: rotate(170.2deg);
+  transform: rotate(170.2deg);
+}
+
+.csspie[data-value="48"]:BEFORE {
+  -moz-transform: rotate(173.8deg);
+  -ms-transform: rotate(173.8deg);
+  -webkit-transform: rotate(173.8deg);
+  transform: rotate(173.8deg);
+}
+
+.csspie[data-value="49"]:BEFORE {
+  -moz-transform: rotate(177.4deg);
+  -ms-transform: rotate(177.4deg);
+  -webkit-transform: rotate(177.4deg);
+  transform: rotate(177.4deg);
+}
+
+.csspie[data-value="50"]:BEFORE {
+  -moz-transform: rotate(181deg);
+  -ms-transform: rotate(181deg);
+  -webkit-transform: rotate(181deg);
+  transform: rotate(181deg);
+}
+
+.csspie[data-value="51"]:BEFORE {
+  -moz-transform: rotate(184.6deg);
+  -ms-transform: rotate(184.6deg);
+  -webkit-transform: rotate(184.6deg);
+  transform: rotate(184.6deg);
+}
+
+.csspie[data-value="52"]:BEFORE {
+  -moz-transform: rotate(188.2deg);
+  -ms-transform: rotate(188.2deg);
+  -webkit-transform: rotate(188.2deg);
+  transform: rotate(188.2deg);
+}
+
+.csspie[data-value="53"]:BEFORE {
+  -moz-transform: rotate(191.8deg);
+  -ms-transform: rotate(191.8deg);
+  -webkit-transform: rotate(191.8deg);
+  transform: rotate(191.8deg);
+}
+
+.csspie[data-value="54"]:BEFORE {
+  -moz-transform: rotate(195.4deg);
+  -ms-transform: rotate(195.4deg);
+  -webkit-transform: rotate(195.4deg);
+  transform: rotate(195.4deg);
+}
+
+.csspie[data-value="55"]:BEFORE {
+  -moz-transform: rotate(199deg);
+  -ms-transform: rotate(199deg);
+  -webkit-transform: rotate(199deg);
+  transform: rotate(199deg);
+}
+
+.csspie[data-value="56"]:BEFORE {
+  -moz-transform: rotate(202.6deg);
+  -ms-transform: rotate(202.6deg);
+  -webkit-transform: rotate(202.6deg);
+  transform: rotate(202.6deg);
+}
+
+.csspie[data-value="57"]:BEFORE {
+  -moz-transform: rotate(206.2deg);
+  -ms-transform: rotate(206.2deg);
+  -webkit-transform: rotate(206.2deg);
+  transform: rotate(206.2deg);
+}
+
+.csspie[data-value="58"]:BEFORE {
+  -moz-transform: rotate(209.8deg);
+  -ms-transform: rotate(209.8deg);
+  -webkit-transform: rotate(209.8deg);
+  transform: rotate(209.8deg);
+}
+
+.csspie[data-value="59"]:BEFORE {
+  -moz-transform: rotate(213.4deg);
+  -ms-transform: rotate(213.4deg);
+  -webkit-transform: rotate(213.4deg);
+  transform: rotate(213.4deg);
+}
+
+.csspie[data-value="60"]:BEFORE {
+  -moz-transform: rotate(217deg);
+  -ms-transform: rotate(217deg);
+  -webkit-transform: rotate(217deg);
+  transform: rotate(217deg);
+}
+
+.csspie[data-value="61"]:BEFORE {
+  -moz-transform: rotate(220.6deg);
+  -ms-transform: rotate(220.6deg);
+  -webkit-transform: rotate(220.6deg);
+  transform: rotate(220.6deg);
+}
+
+.csspie[data-value="62"]:BEFORE {
+  -moz-transform: rotate(224.2deg);
+  -ms-transform: rotate(224.2deg);
+  -webkit-transform: rotate(224.2deg);
+  transform: rotate(224.2deg);
+}
+
+.csspie[data-value="63"]:BEFORE {
+  -moz-transform: rotate(227.8deg);
+  -ms-transform: rotate(227.8deg);
+  -webkit-transform: rotate(227.8deg);
+  transform: rotate(227.8deg);
+}
+
+.csspie[data-value="64"]:BEFORE {
+  -moz-transform: rotate(231.4deg);
+  -ms-transform: rotate(231.4deg);
+  -webkit-transform: rotate(231.4deg);
+  transform: rotate(231.4deg);
+}
+
+.csspie[data-value="65"]:BEFORE {
+  -moz-transform: rotate(235deg);
+  -ms-transform: rotate(235deg);
+  -webkit-transform: rotate(235deg);
+  transform: rotate(235deg);
+}
+
+.csspie[data-value="66"]:BEFORE {
+  -moz-transform: rotate(238.6deg);
+  -ms-transform: rotate(238.6deg);
+  -webkit-transform: rotate(238.6deg);
+  transform: rotate(238.6deg);
+}
+
+.csspie[data-value="67"]:BEFORE {
+  -moz-transform: rotate(242.2deg);
+  -ms-transform: rotate(242.2deg);
+  -webkit-transform: rotate(242.2deg);
+  transform: rotate(242.2deg);
+}
+
+.csspie[data-value="68"]:BEFORE {
+  -moz-transform: rotate(245.8deg);
+  -ms-transform: rotate(245.8deg);
+  -webkit-transform: rotate(245.8deg);
+  transform: rotate(245.8deg);
+}
+
+.csspie[data-value="69"]:BEFORE {
+  -moz-transform: rotate(249.4deg);
+  -ms-transform: rotate(249.4deg);
+  -webkit-transform: rotate(249.4deg);
+  transform: rotate(249.4deg);
+}
+
+.csspie[data-value="70"]:BEFORE {
+  -moz-transform: rotate(253deg);
+  -ms-transform: rotate(253deg);
+  -webkit-transform: rotate(253deg);
+  transform: rotate(253deg);
+}
+
+.csspie[data-value="71"]:BEFORE {
+  -moz-transform: rotate(256.6deg);
+  -ms-transform: rotate(256.6deg);
+  -webkit-transform: rotate(256.6deg);
+  transform: rotate(256.6deg);
+}
+
+.csspie[data-value="72"]:BEFORE {
+  -moz-transform: rotate(260.2deg);
+  -ms-transform: rotate(260.2deg);
+  -webkit-transform: rotate(260.2deg);
+  transform: rotate(260.2deg);
+}
+
+.csspie[data-value="73"]:BEFORE {
+  -moz-transform: rotate(263.8deg);
+  -ms-transform: rotate(263.8deg);
+  -webkit-transform: rotate(263.8deg);
+  transform: rotate(263.8deg);
+}
+
+.csspie[data-value="74"]:BEFORE {
+  -moz-transform: rotate(267.4deg);
+  -ms-transform: rotate(267.4deg);
+  -webkit-transform: rotate(267.4deg);
+  transform: rotate(267.4deg);
+}
+
+.csspie[data-value="75"]:BEFORE {
+  -moz-transform: rotate(271deg);
+  -ms-transform: rotate(271deg);
+  -webkit-transform: rotate(271deg);
+  transform: rotate(271deg);
+}
+
+.csspie[data-value="76"]:BEFORE {
+  -moz-transform: rotate(274.6deg);
+  -ms-transform: rotate(274.6deg);
+  -webkit-transform: rotate(274.6deg);
+  transform: rotate(274.6deg);
+}
+
+.csspie[data-value="77"]:BEFORE {
+  -moz-transform: rotate(278.2deg);
+  -ms-transform: rotate(278.2deg);
+  -webkit-transform: rotate(278.2deg);
+  transform: rotate(278.2deg);
+}
+
+.csspie[data-value="78"]:BEFORE {
+  -moz-transform: rotate(281.8deg);
+  -ms-transform: rotate(281.8deg);
+  -webkit-transform: rotate(281.8deg);
+  transform: rotate(281.8deg);
+}
+
+.csspie[data-value="79"]:BEFORE {
+  -moz-transform: rotate(285.4deg);
+  -ms-transform: rotate(285.4deg);
+  -webkit-transform: rotate(285.4deg);
+  transform: rotate(285.4deg);
+}
+
+.csspie[data-value="80"]:BEFORE {
+  -moz-transform: rotate(289deg);
+  -ms-transform: rotate(289deg);
+  -webkit-transform: rotate(289deg);
+  transform: rotate(289deg);
+}
+
+.csspie[data-value="81"]:BEFORE {
+  -moz-transform: rotate(292.6deg);
+  -ms-transform: rotate(292.6deg);
+  -webkit-transform: rotate(292.6deg);
+  transform: rotate(292.6deg);
+}
+
+.csspie[data-value="82"]:BEFORE {
+  -moz-transform: rotate(296.2deg);
+  -ms-transform: rotate(296.2deg);
+  -webkit-transform: rotate(296.2deg);
+  transform: rotate(296.2deg);
+}
+
+.csspie[data-value="83"]:BEFORE {
+  -moz-transform: rotate(299.8deg);
+  -ms-transform: rotate(299.8deg);
+  -webkit-transform: rotate(299.8deg);
+  transform: rotate(299.8deg);
+}
+
+.csspie[data-value="84"]:BEFORE {
+  -moz-transform: rotate(303.4deg);
+  -ms-transform: rotate(303.4deg);
+  -webkit-transform: rotate(303.4deg);
+  transform: rotate(303.4deg);
+}
+
+.csspie[data-value="85"]:BEFORE {
+  -moz-transform: rotate(307deg);
+  -ms-transform: rotate(307deg);
+  -webkit-transform: rotate(307deg);
+  transform: rotate(307deg);
+}
+
+.csspie[data-value="86"]:BEFORE {
+  -moz-transform: rotate(310.6deg);
+  -ms-transform: rotate(310.6deg);
+  -webkit-transform: rotate(310.6deg);
+  transform: rotate(310.6deg);
+}
+
+.csspie[data-value="87"]:BEFORE {
+  -moz-transform: rotate(314.2deg);
+  -ms-transform: rotate(314.2deg);
+  -webkit-transform: rotate(314.2deg);
+  transform: rotate(314.2deg);
+}
+
+.csspie[data-value="88"]:BEFORE {
+  -moz-transform: rotate(317.8deg);
+  -ms-transform: rotate(317.8deg);
+  -webkit-transform: rotate(317.8deg);
+  transform: rotate(317.8deg);
+}
+
+.csspie[data-value="89"]:BEFORE {
+  -moz-transform: rotate(321.4deg);
+  -ms-transform: rotate(321.4deg);
+  -webkit-transform: rotate(321.4deg);
+  transform: rotate(321.4deg);
+}
+
+.csspie[data-value="90"]:BEFORE {
+  -moz-transform: rotate(325deg);
+  -ms-transform: rotate(325deg);
+  -webkit-transform: rotate(325deg);
+  transform: rotate(325deg);
+}
+
+.csspie[data-value="91"]:BEFORE {
+  -moz-transform: rotate(328.6deg);
+  -ms-transform: rotate(328.6deg);
+  -webkit-transform: rotate(328.6deg);
+  transform: rotate(328.6deg);
+}
+
+.csspie[data-value="92"]:BEFORE {
+  -moz-transform: rotate(332.2deg);
+  -ms-transform: rotate(332.2deg);
+  -webkit-transform: rotate(332.2deg);
+  transform: rotate(332.2deg);
+}
+
+.csspie[data-value="93"]:BEFORE {
+  -moz-transform: rotate(335.8deg);
+  -ms-transform: rotate(335.8deg);
+  -webkit-transform: rotate(335.8deg);
+  transform: rotate(335.8deg);
+}
+
+.csspie[data-value="94"]:BEFORE {
+  -moz-transform: rotate(339.4deg);
+  -ms-transform: rotate(339.4deg);
+  -webkit-transform: rotate(339.4deg);
+  transform: rotate(339.4deg);
+}
+
+.csspie[data-value="95"]:BEFORE {
+  -moz-transform: rotate(343deg);
+  -ms-transform: rotate(343deg);
+  -webkit-transform: rotate(343deg);
+  transform: rotate(343deg);
+}
+
+.csspie[data-value="96"]:BEFORE {
+  -moz-transform: rotate(346.6deg);
+  -ms-transform: rotate(346.6deg);
+  -webkit-transform: rotate(346.6deg);
+  transform: rotate(346.6deg);
+}
+
+.csspie[data-value="97"]:BEFORE {
+  -moz-transform: rotate(350.2deg);
+  -ms-transform: rotate(350.2deg);
+  -webkit-transform: rotate(350.2deg);
+  transform: rotate(350.2deg);
+}
+
+.csspie[data-value="98"]:BEFORE {
+  -moz-transform: rotate(353.8deg);
+  -ms-transform: rotate(353.8deg);
+  -webkit-transform: rotate(353.8deg);
+  transform: rotate(353.8deg);
+}
+
+.csspie[data-value="99"]:BEFORE {
+  -moz-transform: rotate(357.4deg);
+  -ms-transform: rotate(357.4deg);
+  -webkit-transform: rotate(357.4deg);
+  transform: rotate(357.4deg);
+}
+
+/*DEMO ONLY STYLES*/
+.demo-wrapper {
+  height: 110px;
+  width: 110px;
+  display: inline-block;
+  position: relative;
+}

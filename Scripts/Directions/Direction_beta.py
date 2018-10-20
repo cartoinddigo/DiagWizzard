@@ -25,8 +25,20 @@ with open(fsource) as csvfile:
         origine = str(latO+","+lngO)
         destination = str(latD+","+lngD)
         now = datetime.now()
+        # Parametre de l-API :
+        # https://developers.google.com/maps/documentation/directions/intro
         directions_result = gmaps.directions(origine, destination,mode="driving",departure_time=now)
         point_str = directions_result[0]["overview_polyline"]["points"]
+        
+        seg_str = directions_result[0]["legs"][0]["steps"]
+        
+        steps_lst =[]
+        for rows in seg_str:
+            steps_lst.append(rows)
+
+         #print steps_lst
+        
+        
         coord_chunks = [[]]
         for char in point_str:
             value = ord(char) - 63
