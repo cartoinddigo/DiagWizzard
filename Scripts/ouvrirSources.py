@@ -74,7 +74,7 @@ def ListeSource(fsource):
         sliste = str(liste)
         sliste = sliste.replace(" ","").replace("[","").replace("]","")
         bliste = sliste.replace("_","")
-#        print(sliste)
+        #print(sliste)
     return (sliste)
 
 def ListeBPE(fsource):
@@ -147,6 +147,15 @@ def ExtractComIris(sliste):
     comiris = QgsVectorFileWriter.writeAsVectorFormat(sp_iris3, pathuser+'/vector/'+"com_iris.shp", "CP2154", None, "ESRI Shapefile")
     QgsMapLayerRegistry.instance().removeMapLayers( [sp_iris3.id()] )
     com_iris = iface.addVectorLayer(pathuser+'/vector/'+"com_iris.shp", "com_iris", "ogr")
+    com_iris.startEditing()
+    provider = com_iris.dataProvider()
+    provider.addAttributes([QgsField("_dcomiris", QVariant.String),])
+    com_iris.updateFields()
+    for feature in com_iris.getFeatures():
+        feature["_dcomiris"] = str("_" + feature["dcomiris"])
+        com_iris.updateFeature(feature)
+        print(feature["_dcomiris"] )
+    com_iris.commitChanges()
     print("...effectue.")
     if not com_iris:
         print "Selection d'iris impossible à charger !"
@@ -158,11 +167,12 @@ def ListeIris(iris):
     liste = []
     for feature in liris.getFeatures():
         attrs = feature.attributes()
-        idx = liris.fieldNameIndex("dcomiris")
+        idx = liris.fieldNameIndex("_dcomiris")
         val = (feature.attributes()[idx])
         liste.append(val)
     sliste = str(liste)
     iliste = sliste.replace("'","").replace("[","").replace("]","").replace("u","").replace(" ","")
+    print(iliste)
     return (iliste)
 
 def RGP(iliste):
@@ -170,15 +180,15 @@ def RGP(iliste):
     print("Exctraction des donnees du RGP...")
     uri = QgsDataSourceURI()
     uri.setDatabase('C:\CartoInddigo\DiagBuilder\db\diagBuilder2.sqlite')
-    uri.setDataSource("", "RGP","","IRIS in ("+iliste+")") #TODO !!attention au codes iris sans les 0 dans la table RGP !!
+    uri.setDataSource("", "RGP","","_IRIS in ("+iliste+")") #TODO !!attention au codes iris sans les 0 dans la table RGP !!
     sRGP = iface.addVectorLayer(uri.uri(), "sRGP", "spatialite")
     print("...effectue.")
     print("Export CSV des donnees du RGP...")
     fRGP = QgsVectorFileWriter.writeAsVectorFormat(sRGP, pathuser+'/tableaux/'+"DonneeRGP.csv", "CP1250", None, "CSV")
-    res = processing.runalg('qgis:joinattributestable', pathuser+'/vector/'+"com_iris.shp",pathuser+'/tableaux/'+"DonneeRGP.csv",'dcomiris','IRIS',pathuser+'/vector/'+"DonneeRGP.shp")
+    res = processing.runalg('qgis:joinattributestable', pathuser+'/vector/'+"com_iris.shp",pathuser+'/tableaux/'+"DonneeRGP.csv",'_dcomiris','_IRIS',pathuser+'/vector/'+"DonneeRGP.shp")
     layer = QgsVectorLayer(res['OUTPUT_LAYER'], "Donnees RGP", "ogr")
     QgsMapLayerRegistry.instance().addMapLayer(layer)
-    QgsMapLayerRegistry.instance().removeMapLayers( [sRGP.id()] )
+    #QgsMapLayerRegistry.instance().removeMapLayers( [sRGP.id()] )
     print("...effectue.")
     print("Extraction des centres des iris...")
     centroids = processing.runalg('qgis:convertgeometrytype', layer, 0, pathuser+'/vector/'+"iris_data_pt.shp")
