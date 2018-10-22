@@ -36,7 +36,8 @@ joinObject.targetFieldName = shpField
 joinObject.memoryCache = True
 car2.addJoin(joinObject)
 QgsVectorFileWriter.writeAsVectorFormat(car2, pathuser+'/vector/'+"carreaux_data.shp", "CP2154", None, "ESRI Shapefile")
-centroids = processing.runalg('qgis:convertgeometrytype', car2, 0, pathuser+'/vector/'+"carreaux_data_pt.shp")
+car3 = QgsVectorLayer(pathuser+'/vector/'+"carreaux_data.shp", "isource", "ogr")
+centroids = processing.runalg('qgis:convertgeometrytype', car3, 0, pathuser+'/vector/'+"carreaux_data_pt.shp")
 iface.addVectorLayer(pathuser+'/vector/'+"carreaux_data_pt.shp", "carreaux_data_pt", "ogr")
 
 

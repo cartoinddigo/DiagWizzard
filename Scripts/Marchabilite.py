@@ -1,19 +1,21 @@
 #!/usr/bin/python
 # encoding: utf-8
 
-##point_layer=vector
-##polygon_layer=vector
+
 
 from PyQt4 import QtGui
 from qgis.core import *
 from qgis.PyQt.QtCore import *
 from qgis.PyQt.QtGui import *
 from qgis.PyQt.QtWidgets import *
+from qgis.gui import QgsMessageBar
 from PyQt4.QtGui import QFileDialog
 from pyspatialite import dbapi2 as db
 import processing
 import os
 import csv
+
+
 
 def iso (catf, distf):
     # fonction de filtrage des isochrone et maj des points
@@ -36,8 +38,14 @@ def iso (catf, distf):
     print("Grille mise à jour")
 
 
+
 pathuser = str(QFileDialog.getExistingDirectory(None, "Select Directory"))
+
 filter = "shp(*.shp)"
+
+
+
+
 
 # Chargement des isochrones
 print("Chargement des isochrones")
@@ -59,6 +67,7 @@ cMarchabilite = QgsVectorLayer(pathuser+"/vector/grd_Marchabilite.shp", "grille"
 
 #Création des nouveaux champs
 print("Ajout des nouveaux champs")
+
 cMarchabilite.startEditing()
 provider = cMarchabilite.dataProvider()
 provider.addAttributes([
@@ -106,6 +115,8 @@ provider.addAttributes([
                                 ])
 cMarchabilite.updateFields()
 print("Mise à jour des valeurs pas défaut")
+
+
 for feature in cMarchabilite.getFeatures():
     feature["g3-pharm"] = 0
     feature["g3-medec"] = 0
@@ -148,9 +159,11 @@ for feature in cMarchabilite.getFeatures():
     feature["g10-tglob"] = 0
     feature["g-marchab"] = 0.0
     cMarchabilite.updateFeature(feature)
+
     print(feature[0])
 
 cMarchabilite.commitChanges()
+
 QgsMapLayerRegistry.instance().addMapLayers([cMarchabilite,])
 
 
@@ -164,7 +177,7 @@ iso("boulang", 300)
 iso("ecoles", 300)
 iso("tabacpress", 300)
 iso("restau", 300)
-iso("pharma", 300)
+iso("pharma", 500)
 iso("medecins", 500)
 iso("alim", 500)
 iso("gdsurf", 500)
@@ -205,12 +218,116 @@ for i in cMarchabilite.getFeatures():
 print("Calcul des sommes terminé.")
 cMarchabilite.commitChanges()
 
+# Calculs des regroupements thématiques
+print ("Début de calcul des indicateurs thématiques")
+cMarchabilite.startEditing()
 
+# Thématique santé
+print ("Thématique Santé")
+cMarchabilite.removeSelection()
+select = cMarchabilite.getFeatures( QgsFeatureRequest().setFilterExpression ( ' "g3-pharm" = 1 AND "g3-medec" = 1 ' ) )
+cMarchabilite.setSelectedFeatures( [ f.id() for f in select ] )
+selection = cMarchabilite.selectedFeatures()
+for r in selection:
+    r["g3-tsant"]=1
+    cMarchabilite.updateFeature(r)
 
+cMarchabilite.removeSelection()
+select = cMarchabilite.getFeatures( QgsFeatureRequest().setFilterExpression ( ' "g5-pharm" = 1 AND "g5-medec" = 1 ' ) )
+cMarchabilite.setSelectedFeatures( [ f.id() for f in select ] )
+selection = cMarchabilite.selectedFeatures()
+for r in selection:
+    r["g5-tsant"]=1
+    cMarchabilite.updateFeature(r)
+
+cMarchabilite.removeSelection()
+select = cMarchabilite.getFeatures( QgsFeatureRequest().setFilterExpression ( ' "g10-pharm" = 1 AND "g10-medec" = 1 ' ) )
+cMarchabilite.setSelectedFeatures( [ f.id() for f in select ] )
+selection = cMarchabilite.selectedFeatures()
+for r in selection:
+    r["g10-tsant"]=1
+    cMarchabilite.updateFeature(r)
     
+# Thématique Alimentation
+print ("Thématique Alimentation")
+cMarchabilite.removeSelection()
+select = cMarchabilite.getFeatures( QgsFeatureRequest().setFilterExpression ( ' "g3-boula" = 1 AND "g3-alim" = 1 AND "g3-gdsur" = 1 ' ) )
+cMarchabilite.setSelectedFeatures( [ f.id() for f in select ] )
+selection = cMarchabilite.selectedFeatures()
+for r in selection:
+    r["g3-talim"]=1
+    cMarchabilite.updateFeature(r)
 
+cMarchabilite.removeSelection()
+select = cMarchabilite.getFeatures( QgsFeatureRequest().setFilterExpression ( ' "g5-boula" = 1 AND "g5-alim" = 1 AND "g5-gdsur" = 1 ' ) )
+cMarchabilite.setSelectedFeatures( [ f.id() for f in select ] )
+selection = cMarchabilite.selectedFeatures()
+for r in selection:
+    r["g5-talim"]=1
+    cMarchabilite.updateFeature(r)
 
+cMarchabilite.removeSelection()
+select = cMarchabilite.getFeatures( QgsFeatureRequest().setFilterExpression ( ' "g5-boula" = 1 AND "g5-alim" = 1 AND "g5-gdsur" = 1 ' ) )
+cMarchabilite.setSelectedFeatures( [ f.id() for f in select ] )
+selection = cMarchabilite.selectedFeatures()
+for r in selection:
+    r["g10-talim"]=1
+    cMarchabilite.updateFeature(r)
+    
+    # Thématique Sociale
+print ("Thématique Sociale")
+cMarchabilite.removeSelection()
+select = cMarchabilite.getFeatures( QgsFeatureRequest().setFilterExpression ( ' "g3-resta" = 1 ' ) )
+cMarchabilite.setSelectedFeatures( [ f.id() for f in select ] )
+selection = cMarchabilite.selectedFeatures()
+for r in selection:
+    r["g3-tsoci"]=1
+    cMarchabilite.updateFeature(r)
 
+cMarchabilite.removeSelection()
+select = cMarchabilite.getFeatures( QgsFeatureRequest().setFilterExpression ( ' "g5-resta" = 1 ' ) )
+cMarchabilite.setSelectedFeatures( [ f.id() for f in select ] )
+selection = cMarchabilite.selectedFeatures()
+for r in selection:
+    r["g5-tsoci"]=1
+    cMarchabilite.updateFeature(r)
+
+cMarchabilite.removeSelection()
+select = cMarchabilite.getFeatures( QgsFeatureRequest().setFilterExpression ( ' "g5-resta" = 1 ' ) )
+cMarchabilite.setSelectedFeatures( [ f.id() for f in select ] )
+selection = cMarchabilite.selectedFeatures()
+for r in selection:
+    r["g10-tsoci"]=1
+    cMarchabilite.updateFeature(r)
+
+    # Thématique Globale
+print ("Thématique Globale")
+cMarchabilite.removeSelection()
+select = cMarchabilite.getFeatures( QgsFeatureRequest().setFilterExpression ( ' "g3-tsant" = 1 AND "g3-talim" = 1 AND "g3-tsoci" = 1 AND "g3-ecole" = 1 ' ) )
+cMarchabilite.setSelectedFeatures( [ f.id() for f in select ] )
+selection = cMarchabilite.selectedFeatures()
+for r in selection:
+    r["g3-tglob"]=1
+    cMarchabilite.updateFeature(r)
+
+cMarchabilite.removeSelection()
+select = cMarchabilite.getFeatures( QgsFeatureRequest().setFilterExpression ( ' "g5-tsant" = 1 AND "g5-talim" = 1 AND "g5-tsoci" = 1 AND "g5-ecole" = 1' ) )
+cMarchabilite.setSelectedFeatures( [ f.id() for f in select ] )
+selection = cMarchabilite.selectedFeatures()
+for r in selection:
+    r["g5-tglob"]=1
+    cMarchabilite.updateFeature(r)
+
+cMarchabilite.removeSelection()
+select = cMarchabilite.getFeatures( QgsFeatureRequest().setFilterExpression ( ' "g10-tsant" = 1 AND "g10-talim" = 1 AND "g10-tsoci" = 1 AND "g10-ecole" = 1' ) )
+cMarchabilite.setSelectedFeatures( [ f.id() for f in select ] )
+selection = cMarchabilite.selectedFeatures()
+for r in selection:
+    r["g10-tglob"]=1
+    cMarchabilite.updateFeature(r)
+
+cMarchabilite.removeSelection()
+cMarchabilite.commitChanges()
 
 
 
