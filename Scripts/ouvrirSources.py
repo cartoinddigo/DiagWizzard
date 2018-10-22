@@ -171,7 +171,7 @@ def ListeIris(iris):
         val = (feature.attributes()[idx])
         liste.append(val)
     sliste = str(liste)
-    iliste = sliste.replace("'","").replace("[","").replace("]","").replace("u","").replace(" ","")
+    iliste = sliste.replace("[","").replace("]","").replace("u","").replace(" ","")
     print(iliste)
     return (iliste)
 
@@ -180,7 +180,8 @@ def RGP(iliste):
     print("Exctraction des donnees du RGP...")
     uri = QgsDataSourceURI()
     uri.setDatabase('C:\CartoInddigo\DiagBuilder\db\diagBuilder2.sqlite')
-    uri.setDataSource("", "RGP","","_IRIS in ("+iliste+")") #TODO !!attention au codes iris sans les 0 dans la table RGP !!
+    uri.setDataSource("", "RGP","","_IRIS in ("+iliste+")") 
+    print (uri.uri())
     sRGP = iface.addVectorLayer(uri.uri(), "sRGP", "spatialite")
     print("...effectue.")
     print("Export CSV des donnees du RGP...")

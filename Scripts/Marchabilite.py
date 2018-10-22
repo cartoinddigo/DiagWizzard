@@ -111,6 +111,7 @@ provider.addAttributes([
                                     QgsField("g10-tsoci", QVariant.Int),
                                     QgsField("g10-tglob", QVariant.Int),
                                     QgsField("g-marchab", QVariant.Double),
+                                    QgsField("g-potmar", QVariant.Double),
 
                                 ])
 cMarchabilite.updateFields()
@@ -158,6 +159,7 @@ for feature in cMarchabilite.getFeatures():
     feature["g10-tsoci"] = 0
     feature["g10-tglob"] = 0
     feature["g-marchab"] = 0.0
+    feature["g-potmar"] = 0.0
     cMarchabilite.updateFeature(feature)
 
     print(feature[0])
@@ -329,5 +331,14 @@ for r in selection:
 cMarchabilite.removeSelection()
 cMarchabilite.commitChanges()
 
+# Calcul du potentiel de de marchabilité
+print ("Calcul du potentiel de de marchabilité.")
+cMarchabilite.startEditing()
+for i in cMarchabilite.getFeatures():
+    i["g-potmar"] = i["g3-tglob"] + (i["g5-tglob"]*0.8) + (i["g10-tglob"]*0.6)
+    cMarchabilite.updateFeature(i)
+    print("Potentiel  Marchabilité : " + str(i["g-potmar"]))
+print("Calcul des potentiels terminé.")
+cMarchabilite.commitChanges()
 
 
