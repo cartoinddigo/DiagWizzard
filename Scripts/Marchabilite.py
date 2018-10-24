@@ -52,6 +52,7 @@ print("Chargement des isochrones")
 isource = QgsVectorLayer(pathuser+'/vector/Isochrones_93.shp', "isource", "ogr")
 if not isource.isValid():
   print "isource failed to load!"
+  
 QgsMapLayerRegistry.instance().addMapLayers([isource,])
 
 # Chargement de la table des carreaux source
@@ -59,11 +60,14 @@ print("Chargement de la table des carreaux source (carreaux_data_pt)")
 csource = QgsVectorLayer(pathuser+'/vector/carreaux_data_pt.shp', "csource", "ogr")
 if not csource.isValid():
   print "csource failed to load!"
-  
+
+QgsMapLayerRegistry.instance().addMapLayers([csource,])
+
 # Création du fichier Grille
 print("Création du fichier Grille")
 QgsVectorFileWriter.writeAsVectorFormat(csource, pathuser+'/vector/'+"grd_Marchabilite.shp", "CP2154", None, "ESRI Shapefile")
 cMarchabilite = QgsVectorLayer(pathuser+"/vector/grd_Marchabilite.shp", "grille", "ogr")
+QgsMapLayerRegistry.instance().addMapLayers([cMarchabilite,])
 
 #Création des nouveaux champs
 print("Ajout des nouveaux champs")
@@ -269,7 +273,7 @@ for r in selection:
     cMarchabilite.updateFeature(r)
 
 cMarchabilite.removeSelection()
-select = cMarchabilite.getFeatures( QgsFeatureRequest().setFilterExpression ( ' "g5-boula" = 1 AND "g5-alim" = 1 AND "g5-gdsur" = 1 ' ) )
+select = cMarchabilite.getFeatures( QgsFeatureRequest().setFilterExpression ( ' "g10-boula" = 1 AND "g10-alim" = 1 AND "g10-gdsur" = 1 ' ) )
 cMarchabilite.setSelectedFeatures( [ f.id() for f in select ] )
 selection = cMarchabilite.selectedFeatures()
 for r in selection:
@@ -295,7 +299,7 @@ for r in selection:
     cMarchabilite.updateFeature(r)
 
 cMarchabilite.removeSelection()
-select = cMarchabilite.getFeatures( QgsFeatureRequest().setFilterExpression ( ' "g5-resta" = 1 ' ) )
+select = cMarchabilite.getFeatures( QgsFeatureRequest().setFilterExpression ( ' "g10-resta" = 1 ' ) )
 cMarchabilite.setSelectedFeatures( [ f.id() for f in select ] )
 selection = cMarchabilite.selectedFeatures()
 for r in selection:
