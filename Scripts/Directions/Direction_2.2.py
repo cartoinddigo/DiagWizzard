@@ -3,8 +3,9 @@ from datetime import datetime
 import csv
 from PyQt4.QtGui import QFileDialog
 from PyQt4.QtCore import QVariant
+from key import keyg
 
-gmaps = googlemaps.Client(key="AIzaSyDPlT4ARtREvLAVCUFgTX9dRQHG64Lu1Wg")
+gmaps = googlemaps.Client(keyg)
 tsources = "C:/CartoInddigo/DiagWizzard/Scripts/Directions/SourcesDirections.csv"
 fsources = QFileDialog.getOpenFileName(None, "Selectionner le fichier source")
 
@@ -85,40 +86,45 @@ with open(fsources) as csvfile:
         origine = str(latO+","+lngO)
         destination = str(latD+","+lngD)
         now = datetime.now()
-        route = gmaps.directions(origine, destination,mode="driving",departure_time=now)
-        legs = route[0]["legs"]
-        for l in legs:
-            steps = l["steps"]
-#            print steps
-            for s in steps:
-                lines = s["polyline"]["points"]
-                dist = s["distance"]["value"]
-                temps = s["duration"]["value"]
-                gootogis(lines)
+        try:
+            route = gmaps.directions(origine, destination,mode="driving",departure_time=now)
+            
+            legs = route[0]["legs"]
+            for l in legs:
+                steps = l["steps"]
+    #            print steps
+                for s in steps:
+                    lines = s["polyline"]["points"]
+                    dist = s["distance"]["value"]
+                    temps = s["duration"]["value"]
+                    gootogis(lines)
+        except:
+            print (idd + " sucks !")
+                    
                 
 QgsMapLayerRegistry.instance().addMapLayer(layer)
 
-# Extrait les debuts de chaque steps
+# Creation du layer Points
 feat = QgsFeature()
 point_layer = QgsVectorLayer("Point?crs=epsg:4326", "Start", "memory")
 pt = point_layer.dataProvider()
 pt.addAttributes([QgsField("id", QVariant.String),
-                            QgsField("geomWKT", QVariant.String),
-                            QgsField("count", QVariant.Int),
-                            ])
+                        QgsField("count", QVariant.Double)])
 point_layer.updateFields()
+
+# Peuplement avec les points de departs
 for feature in layer.getFeatures():
+    count = 0
     geom = feature.geometry().asPolyline()
     start_point = QgsPoint(geom[0])
     feat.setGeometry(QgsGeometry.fromPoint(start_point))
+    feat.setAttributes([row[0],
+                            count])
     pt.addFeatures([feat])
     
-    feat.setAttributes([row[0],
-                            geom,
-                            ])
 QgsMapLayerRegistry.instance().addMapLayer(point_layer)
 
-
+# Maj de la colonne count
 geometries = []
 layer = qgis.utils.iface.activeLayer()
 iter = layer.getFeatures()
@@ -137,4 +143,4 @@ for feature in iter:
     feature['count'] = count
     layer.updateFeature(feature)
 
-layer.commitChanges
+layer.commitChanges()
