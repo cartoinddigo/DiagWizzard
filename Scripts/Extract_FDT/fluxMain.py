@@ -9,7 +9,6 @@ import psycopg2
 import psycopg2.extensions
 import psycopg2.extras
 
-import numpy as np
 
 # read connection parameters
 params = config()
@@ -161,27 +160,27 @@ conn.commit()
 
 #export des requêtes
 
-lst_det = [[]]
-cur.execute("SELECT * FROM flux_insee.temp_flux_v2")
-for i in range(cur.rowcount):
-    row = cur.fetchone()
-    lst_det.append(row)
+##lst_det = [[]]
+##cur.execute("SELECT * FROM flux_insee.temp_flux_v2")
+##for i in range(cur.rowcount):
+##    row = cur.fetchone()
+##    lst_det.append(row)
+##
+##    print(lst_det)
+##np.savetxt("C://DT_details_flux", lst-det, delimiter=",", fmt='%s', header=header)
+##
 
-#    print(lst_det)
-np.savetxt("C://DT_details_flux", lst-det, delimiter=",", fmt='%s', header=header)
+sql = "COPY flux_insee.temp_flux_v2 TO STDOUT WITH CSV HEADER ENCODING 'utf-8' DELIMITER ','"
 
+with open ('C://DT_details_flux.csv','w') as f:
+    cur.copy_expert(sql, f)
+    
+sql = "COPY flux_insee.temp_flux_v3 TO STDOUT WITH CSV HEADER ENCODING 'utf-8' DELIMITER ','"
 
-#sql = "COPY flux_insee.temp_flux_v2 TO STDOUT WITH CSV HEADER ENCODING 'utf-8' DELIMITER ','"
-#
-#with open ('C://DT_details_flux.csv','w') as f:
-#    cur.copy_expert(sql, f)
-#    
-#sql = "COPY flux_insee.temp_flux_v3 TO STDOUT WITH CSV HEADER ENCODING 'utf-8' DELIMITER ','"
-#
-#with open ('C://DT_synthese_flux.csv','w') as f:
-#    cur.copy_expert(sql, f)
-#    
-#print("Fichiers créés dans C://")
+with open ('C://DT_synthese_flux.csv','w') as f:
+    cur.copy_expert(sql, f)
+    
+print("Fichiers créés dans C://")
 
 #efface les tables temporaires
 cur.execute("""
