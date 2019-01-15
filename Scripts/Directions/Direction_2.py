@@ -63,7 +63,7 @@ def gootogis(enc_polyline):
     pr.addFeatures([fet])
 
     # layer.updateExtents() #update it 
-    print(idd +" ok !")
+    # print(idd +" ok !")
 
 
 
@@ -95,6 +95,8 @@ with open(fsources) as csvfile:
                 dist = s["distance"]["value"]
                 temps = s["duration"]["value"]
                 gootogis(lines)
+                
+        print(idd +" ok !")
                 
 QgsMapLayerRegistry.instance().addMapLayer(layer)
 

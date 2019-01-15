@@ -15,7 +15,7 @@ def isonav (coord, dmax):
     urla = "https://api.navitia.io/v1/coverage/"
     urlaa = "fr-sw/isochrones?from="
     urldmax = "&max_duration="
-    urlb = "&min_duration=0&datetime_represents=arrival&datetime=20180625T090000&"
+    urlb = "&min_duration=0&datetime_represents=arrival&datetime=20190125T090000&"
     urlq = urla+urlaa+dcoord+urldmax+ddmax+urlb
     print(urlq)
     resp = requests.get(urlq, headers={'Authorization':token})
@@ -34,8 +34,9 @@ def isonav (coord, dmax):
         pr.addFeatures( [ elem ] )
         layer.updateExtents()
         QgsMapLayerRegistry.instance().addMapLayers([layer])
+        
 
-coord = "1.36859853941076;43.5917966471886" #coordonnée du site 
+coord = "-0.58165800000000112;44.84019599999993488" #coordonnée du site 
 isonav(coord, 180)
 isonav(coord, 120)
 isonav(coord, 90)
@@ -44,6 +45,7 @@ isonav(coord, 45)
 isonav(coord, 30)
 isonav(coord, 15)
 isonav(coord, 10)
+
 
 
 
