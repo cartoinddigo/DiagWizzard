@@ -10,6 +10,8 @@ from PyQt4.QtCore import QVariant
 fsources = QFileDialog.getOpenFileName(None, "Selectionner le fichier source")
 token = "fa1756fd-f394-42e2-89b4-3b1c8e116b2b"
 
+dmax = 45 # Distance en metres
+
 
 #def isonav (coord, dmax):
 #    dcoord = coord
@@ -39,7 +41,7 @@ token = "fa1756fd-f394-42e2-89b4-3b1c8e116b2b"
         
         
 with open(fsources) as csvfile:
-    dmax = 10 # Distance en metres
+    
     layer = QgsVectorLayer('Polygon',str(dmax)+" min",'memory')
     pr = layer.dataProvider()
 
@@ -54,8 +56,9 @@ with open(fsources) as csvfile:
         urla = "https://api.navitia.io/v1/coverage/"
         urlaa = "fr-sw/isochrones?from="
         urldmax = "&max_duration="
-        urlb = "&min_duration=0&datetime_represents=arrival&datetime=20190125T090000&"
+        urlb = "&min_duration=0&datetime_represents=arrival&datetime=20190125T090000&forbidden_uris%5B%5D=physical_mode%3ABus&forbidden_uris%5B%5D=physical_mode%3AMetro&forbidden_uris%5B%5D=physical_mode%3ATramway&"
         urlq = urla+urlaa+dcoord+urldmax+ddmax+urlb
+        print(urlq)
         resp = requests.get(urlq, headers={'Authorization':token})
         iso_output = resp.json()
         iso = iso_output['isochrones']

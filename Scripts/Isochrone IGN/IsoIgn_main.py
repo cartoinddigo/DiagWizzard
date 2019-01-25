@@ -24,7 +24,7 @@ class IGN:
         #self.urlb = '&smoothing=true&holes=false&reverse=true&method=time&time=' #<- pour recherche durée
 
         self.urlb = '&smoothing=true&holes=false&reverse=true&method=distance&distance=' #<- pour recherche distance
-        self.urlc = '&graphName=Pieton&srs=EPSG:4326' #Pieton Voiture
+        self.urlc = '&graphName=Voiture&srs=EPSG:4326' #Pieton Voiture
         self.destination = self.coord
         self.distance = self.dist
         self.urlq = self.urla+self.destination+self.urlb+self.distance+self.urlc
