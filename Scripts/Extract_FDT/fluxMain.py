@@ -8,6 +8,7 @@ import csv
 import psycopg2
 import psycopg2.extensions
 import psycopg2.extras
+from PyQt4.QtGui import QFileDialog
 
 
 # read connection parameters
@@ -31,7 +32,8 @@ print("Données effacées")
 conn.commit()
 
 #importe les données
-fichier = csv.reader(open('territoire.csv'),delimiter=',')
+
+fichier = csv.reader(open('territoire.csv'),delimiter=';')
 next(fichier)
 for row in fichier:
         cur.execute("INSERT INTO flux_insee.territoire (insee,nom)"\

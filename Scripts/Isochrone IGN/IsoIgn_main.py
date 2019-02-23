@@ -21,10 +21,10 @@ class IGN:
         #result = isochrone(coord)
         #print (coord)
         self.urla = 'http://wxs.ign.fr/c98qkvawt3ygddluuz68vybf/isochrone/isochrone.json?location='
-        #self.urlb = '&smoothing=true&holes=false&reverse=true&method=time&time=' #<- pour recherche durée
+        self.urlb = '&smoothing=true&holes=false&reverse=true&method=time&time=' #<- pour recherche durée
 
-        self.urlb = '&smoothing=true&holes=false&reverse=true&method=distance&distance=' #<- pour recherche distance
-        self.urlc = '&graphName=Voiture&srs=EPSG:4326' #Pieton Voiture
+        #self.urlb = '&smoothing=true&holes=false&reverse=true&method=distance&distance=' #<- pour recherche distance
+        self.urlc = '&graphName=Pieton&srs=EPSG:4326' #Pieton Voiture
         self.destination = self.coord
         self.distance = self.dist
         self.urlq = self.urla+self.destination+self.urlb+self.distance+self.urlc
